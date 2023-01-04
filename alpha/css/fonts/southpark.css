@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "global-icons";
+    src: url("../../fonts/icon/global-icons.woff2?81034c74cad83af6d00931bb388e426a") format("woff2"),
+    url("../../fonts/icon/global-icons.woff?81034c74cad83af6d00931bb388e426a") format("woff");
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/southpark/Montserrat-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}

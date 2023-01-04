@@ -1,0 +1,63 @@
+.containerx1x1::before {
+    padding-top: 100%;
+}
+.containerx4x3::before {
+    padding-top: 75%;
+}
+.containerx16x9::before {
+    padding-top: 56.25%;
+}
+.containerx16x9.zoom::before {
+    padding-top: 43.5%;
+}
+.containerx7x20::before {
+    padding-top: 35%;
+}
+.containerx3x1::before {
+    padding-top: 33.33%;
+}
+.containerx1x1::before, .containerx16x9::before, .containerx4x3::before, .containerx7x20::before, .containerx3x1::before {
+    content: "";
+    display: block;
+}
+.containerx1x1, .containerx16x9, .containerx4x3, .containerx7x20, .containerx3x1 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+[class*="containerx"] > .content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.item-container .content > img {
+    height: auto;
+    width: 100%;
+}
+
+[class*="containerx"] > .content > img {
+    height: auto;
+    left: 100%;
+    margin-left: -200%;
+    max-width: none;
+    position: relative;
+    width: 100%;
+}
+
+[class*="containerx"][class*="container_fill"] > .content > img {
+    min-height:100%;
+    width: auto;
+}
+
+.containerx3x1 > .content > img {
+    margin-top: -14%;
+}
+.containerx4x3 > .content > img, .containerx1x1 > .content > img {
+    height: 100%;
+    width: auto;
+}

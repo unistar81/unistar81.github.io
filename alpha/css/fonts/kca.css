@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'global-icons';
+    src:  url('../../fonts/icon/global-icons.woff2?9bef24f907cc54424b2811fd9af434bf1') format('woff2'),
+    url('../../fonts/icon/global-icons.woff?9bef24f907cc54424b2811fd9af434bf1') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Light-Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Medium.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Medium-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic; 
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-SemiBold-Italic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Bold-Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    }
+
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Galano';
+    src: url('../../fonts/galano/Galano-Grotesque-Black-Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic; 
+    }

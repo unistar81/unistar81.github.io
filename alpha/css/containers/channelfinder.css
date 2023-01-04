@@ -1,0 +1,164 @@
+.channel-lookup-label {
+    /*width: 175px;
+    height: 42px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 12px;
+    text-transform: uppercase;
+    background-color: #0c0c0c;
+    cursor: pointer;
+    margin-right: 10px;*/
+}
+
+
+
+.channel-lookup-block .lookupLegend {
+    font-size: 12.5px;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    font-family: "Sailec Medium", sans-serif;
+}
+.channel-lookup-label:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.channel-lookup-container.expand .channel-lookup-block {
+    max-height: 1600px;
+}
+.channel-lookup-block {
+    position: absolute;
+    margin-right: 5px;
+    z-index: 999;
+    max-height: 0;
+    transition: max-height 1s ease;
+    overflow: hidden;
+}
+.channel-lookup-block .innerLookupResults {
+    background-color: black;
+    width: 500px;
+    color: white;
+    padding: 24px;
+    overflow: hidden;
+}
+.channel-lookup-block .localizeForm .zip {
+    border: solid 2px #ffffff;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    width: 100%;
+    font-size: 12.5px;
+    font-family: "Sailec Bold", Sans-Serif;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.selected--zg-ul-select {
+    align-items: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: none;
+    font-family: "Sailec Bold", sans-serif;
+    justify-content: space-between;
+    font-size: 2em;
+    width: auto;
+}
+ul.zg-ul-select {
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Sailec Bold", sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+.channel-lookup-block .localizeForm .zcctype li {
+    background-color: #0c0c0c;
+    width: 100%;
+    font-size: 12.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    position: relative;
+}
+ul.zg-ul-select li {
+    padding: 0.5em;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+ul.zg-ul-select li:first-child {
+    border-top: 2px solid #ffffff;
+}
+ul.zg-ul-select li.active {
+    align-items: center;
+    border-top: 2px solid #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;
+    border-left: 2px solid #ffffff !important;
+    border-right: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    height: 37px;
+    display: flex;
+}
+.channel-lookup-block .localizeForm .provider {
+    overflow-y: scroll;
+    max-height: 180px;
+}
+.lineup-subtitle-box {
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+}
+.lineup-value-channel {
+    font-size: 37.3px;
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: left;
+    padding-top: 10px;
+}
+.lineup-value-zip {
+    width: 100%;
+    font-size: 12.5px;
+    line-height: 1.2;
+    text-align: left;
+    color: #aaaeae;
+    font-family: "Sailec", sans-serif;
+    padding-top: 10px;
+}
+.lineup-value-zcode {
+    font-weight: bold;
+}
+.lineup-value-zcctype {
+    text-align: left;
+    color: #aaaeae;
+    padding-top: 5px;
+}
+.lineup-value-zcctype .label {
+    margin-right: 5px;
+    float: left;
+}
+.lineup-value-prov {
+    font-weight: bold;
+    margin-right: 89px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.lookup-reset {
+    float: right;
+    border: 2px solid #ffffff;
+    padding: 9px 12px;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    cursor: pointer;
+    font-size: 12.5px;
+    font-family: "Sailec Bold", sans-serif, Sans-Serif;
+    line-height: 1.17;
+    letter-spacing: 1px;
+    bottom: 37px;
+    position: relative;
+}

@@ -1,0 +1,67 @@
+/* WOBBLE */
+.module-container:not(.carousel-container) .item.full-ep,
+.module-container:not(.carousel-container) .item.article,
+.module-container:not(.carousel-container) .item.video,
+.module-container:not(.carousel-container) .item.app {
+    transform: perspective(1px) translateZ(0);
+}
+
+.module-container:not(.carousel-container) .item.full-ep:hover,
+.module-container:not(.carousel-container) .item.full-ep:focus,
+.module-container:not(.carousel-container) .item.full-ep:active,
+
+.module-container:not(.carousel-container) .item.article:hover,
+.module-container:not(.carousel-container) .item.article:focus,
+.module-container:not(.carousel-container) .item.article:active,
+
+.module-container:not(.carousel-container) .item.video:hover,
+.module-container:not(.carousel-container) .item.video:focus,
+.module-container:not(.carousel-container) .item.video:active,
+
+.module-container:not(.carousel-container) .item.app:hover,
+.module-container:not(.carousel-container) .item.app:focus,
+.module-container:not(.carousel-container) .item.app:active {
+    animation: wobble 0.8s ease-in-out 1;
+}
+
+@keyframes wobble {
+    10% {
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    20% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    30% {
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    40% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    60% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    70% {
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    80% {
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    90% {
+        transform: translateX(1px) rotate(0);
+    }
+
+    100% {
+        transform: translateX(-1px) rotate(0);
+    }
+}

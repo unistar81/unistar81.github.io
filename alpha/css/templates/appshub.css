@@ -1,0 +1,25 @@
+.appshub-template .grid-container {
+    --grid-columns: 3;
+    --grid-columns-only-one-item: 3;
+    --grid-columns-only-two-items: 3;
+    --grid-columns-only-three-items: 3;
+}
+
+@media screen and (max-width: 980px) {
+    .appshub-template .grid-container {
+        --grid-columns: 2;
+        --grid-columns-only-one-item: 2;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .appshub-template .grid-container  {
+        --grid-columns: 1;
+        --grid-columns-only-one-item: 1;
+        --grid-columns-only-two-items: 1;
+        --grid-columns-only-three-items: 1;
+    }
+}
+

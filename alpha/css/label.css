@@ -1,0 +1,34 @@
+/***************labels***************/
+
+.label,
+.item [class^="label"] {
+    display: inline-block;
+    font: var(--font-pico);
+    line-height: var(--label-line-height);
+    text-transform: var(--label-text-transform);
+    letter-spacing: var(--label-letter-spacing);
+
+    padding: var(--label-padding);
+    background-color: var(--color-ui-04);
+    color: var(--label-color);
+}
+
+.label-category,
+.item .label-category {
+    background-color: var(--color-brand-03);
+    color: var(--label-category-color);
+}
+
+.label-alert,
+.item .label-alert {
+    background-color: var(--color-support-01);
+    color: var(--label-alert-color);
+}
+
+.label-tag,
+.item .label-tag {
+    background-color: var(--color-ui-03);
+    color: var(--label-tag-color);
+}
+
+/***************labels***************/

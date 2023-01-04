@@ -1,0 +1,37 @@
+.dropdown-menu {
+    display: none;
+}
+
+
+.pjs.edge-player.edge-gui-content-active-state:not(.edge-native-platform) .edge-gui {
+    background: #333;
+}
+
+.carousel-container.cast-container .detail-container {
+    display: none;
+}
+
+
+.content-package-module-container + .ad-container.desktop + .ad-container.tablet {
+    display: none;
+}
+
+.content-package-module-container + .ad-container + .ad-container {
+    text-align: center;
+}
+
+
+.content-package-module-container + .ad-container:last-child,
+.content-package-module-container + .ad-container:nth-last-child(2){
+    display: none;
+}
+
+
+@media screen and (max-width: 980px) {
+    .content-package-module-container + .ad-container.desktop + .ad-container.tablet {
+        display: block;
+    }
+    .content-package-module-container + .ad-container.desktop  {
+        display: none;
+    }
+}

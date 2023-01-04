@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / UI / Menu 24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M2,5 L22,5 L22,7 L2,7 L2,5 Z M2,11 L22,11 L22,13 L2,13 L2,11 Z M2,17 L22,17 L22,19 L2,19 L2,17 Z" id="path-1"></path>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tier-1-Nav-D2" transform="translate(-38.000000, -42.000000)">
+            <g id="T1-Nav">
+                <g id="Icons-/-UI-/-Menu-24" transform="translate(36.000000, 37.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g id="Icons-/-Colors-/-Text-01" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                        <rect id="Text-01" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

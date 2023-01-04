@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'global-icons';
+    src:  url('../../fonts/icon/global-icons.woff2?9bef24f907cc54424b2811fd9af434bf1') format('woff2'),
+    url('../../fonts/icon/global-icons.woff?9bef24f907cc54424b2811fd9af434bf1') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'Apercu';
+    src: url('../../fonts/tvland/apercu-regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Apercu';
+    src: url('../../fonts/tvland/apercu_bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Leviathan';
+    src: url('../../fonts/tvland/Leviathan-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Garage';
+    src: url('../../fonts/tvland/GarageGothic-Regular.otf') format('truetype');
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Garage';
+    src: url('../../fonts/tvland/Garage_Gothic-Bold.ttf') format('truetype');
+    font-weight: 700;
+}

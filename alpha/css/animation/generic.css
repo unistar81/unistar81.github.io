@@ -1,0 +1,64 @@
+.module-container.carousel-container .item.poster,
+.module-container.carousel-container .item.cast,
+.module-container.carousel-container .item.full-ep,
+.module-container.carousel-container .item.article,
+.module-container.carousel-container .item.video {
+    transform: perspective(1px) translateZ(0);
+    transition: transform 0.2s;
+}
+
+.module-container.carousel-container .item.poster:hover,
+.module-container.carousel-container .item.cast:hover,
+.module-container.carousel-container .item.poster:focus,
+.module-container.carousel-container .item.cast:focus,
+.module-container.carousel-container .item.poster:active,
+.module-container.carousel-container .item.cast:active,
+.module-container.carousel-container .item.full-ep:hover,
+.module-container.carousel-container .item.full-ep:focus,
+.module-container.carousel-container .item.full-ep:active,
+.module-container.carousel-container .item.article:hover,
+.module-container.carousel-container .item.article:focus,
+.module-container.carousel-container .item.article:active,
+.module-container.carousel-container .item.video:hover,
+.module-container.carousel-container .item.video:focus,
+.module-container.carousel-container .item.video:active {
+    transform: scale(0.97);
+}
+
+.module-container .item.collection .meta-wrap div,
+.module-container .item.promo .meta-wrap div {
+    transition: all 0.2s ease-in-out;
+}
+
+.module-container .item.collection .meta-wrap .spr-header,
+.module-container .item.promo .meta-wrap .spr-header {
+    transition: all 0.3s ease-in-out;
+}
+
+.module-container .item.collection:hover .meta-wrap > div:not(.link-group):not(.meta),
+.module-container .item.promo:not(.item-small):hover .meta-wrap > div:not(.link-group):not(.btn-group):not(.meta),
+.module-container .item.collection:focus .meta-wrap > div:not(.link-group):not(.meta),
+.module-container .item.promo:not(.item-small):focus .meta-wrap > div:not(.link-group):not(.btn-group):not(.meta),
+.module-container .item.collection:active .meta-wrap > div:not(.link-group):not(.meta),
+.module-container .item.promo:not(.item-small):active .meta-wrap > div:not(.link-group):not(.btn-group):not(.meta) {
+    transform: translateY(calc(var(--spacer) * -2));
+}
+
+
+#site-header .nav-container .nav-item > div:after {
+    display: block;
+    left: 51%;
+    right: 51%;
+    width: 0;
+    transition-property: left, right, width;
+    transition-duration: 0.01s;
+    transition-timing-function: ease;
+}
+
+#site-header .nav-container .nav-item:hover > div:after {
+    left: 0;
+    right: 0;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+    width: 100%;
+}

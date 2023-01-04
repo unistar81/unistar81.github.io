@@ -1,0 +1,212 @@
+/*******cast-container*******/
+.carousel-container.cast-container .item .media {
+    padding-top: 100%;
+}
+.carousel-container.cast-container {
+    position: relative;
+}
+.carousel-container.cast-container .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel-container.cast-container .items-container {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-container.cast-container .items-wrap {
+    outline: none;
+}
+/*
+.carousel-container.cast-container .items-container {
+  --grid-columns: 6;
+  --grid-columns-only-one-item: 6;
+  --grid-columns-only-two-items: 6;
+  --grid-columns-only-three-items: 6;
+}*/
+.carousel-container.cast-container .items-container .item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    max-width: 200px;
+    min-height: 100%;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.carousel-container.cast-container .items-container .item .meta-wrap .deck,
+.carousel-container.cast-container .items-container .item .meta-wrap .links {
+    display: none;
+}
+.carousel-container.cast-container .items-container .item .media {
+    background-color: transparent;
+}
+.carousel-container.cast-container .items-container .item .media .content {
+    overflow: hidden;
+}
+.carousel-container.cast-container .flickity-slider {
+    margin-left: 0;
+}
+.carousel-container.cast-container .detail-container {
+    background-color: var(--color-ui-02);
+    position: relative;
+    height: 348px;
+    margin-top: calc(var(--spacer) * 8);
+}
+.carousel-container.cast-container .items-container + .detail-container .item {
+    background-color: var(--color-ui-02);
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: calc(var(--spacer) * 4);
+    position: absolute;
+    width: 100%;
+}
+.carousel-container.cast-container .detail-container .item.active {
+    z-index: 2;
+}
+.carousel-container.cast-container .detail-container .item-secondary {
+    display: none;
+}
+.carousel-container.cast-container .detail-container .item .media-wrap {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    margin-right: calc(var(--spacer) * 4);
+}
+.carousel-container.cast-container .detail-container .item .meta-wrap {
+    float: left;
+    width: calc(100% - (300px + var(--spacer) * 4));
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.carousel-container.cast-container .detail-container .item .header {
+    font: var(--font-kilo);
+    text-transform: var(--font-kilo-text-transform);
+    margin-bottom: calc(var(--spacer) * 1);
+    max-width: 600px;
+}
+.carousel-container.cast-container .detail-container .item .sub-header {
+    margin-bottom: calc(var(--spacer) * 2);
+    max-width: 600px;
+}
+.carousel-container.cast-container .detail-container .item .deck {
+    position: relative;
+    margin-top: calc(var(--spacer) * -1);
+    margin-bottom: calc(var(--spacer) * 2);
+}
+.carousel-container.cast-container .detail-container .item .deck:before,
+.carousel-container.cast-container .detail-container .item .deck:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: calc(var(--spacer) * 2);
+    margin-right: calc(var(--spacer) * 2);
+}
+.carousel-container.cast-container .detail-container .item .deck span:before,
+.carousel-container.cast-container .detail-container .item .deck span:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(var(--spacer) * 4);
+}
+.carousel-container.cast-container .detail-container .item .deck:before {
+    height: calc(var(--spacer) * 4);
+    top: 0;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) -10%, var(--color-ui-02));
+}
+.carousel-container.cast-container .detail-container .item .deck:after {
+    bottom: 0;
+    height: calc(var(--spacer) * 4);
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -10%, var(--color-ui-02));
+}
+.carousel-container.cast-container .detail-container .item .deck span {
+    max-height: 179px;
+    overflow-y: auto;
+    display: inline-block;
+    overflow-x: hidden;
+    margin-right: calc(var(--spacer) * 3);
+}
+.carousel-container.cast-container .detail-container .item .links {
+    margin-top: calc(var(--spacer) * 2);
+}
+.carousel-container.cast-container .detail-container .close-wrap {
+    position: absolute;
+    right: calc(var(--spacer) * 4);
+    top: calc(var(--spacer) * 4);
+    display: block;
+    cursor: pointer;
+    z-index: 3;
+}
+.carousel-container.cast-container .detail-container .icon-close {
+    position: relative;
+    color: var(--color-text-03);
+    opacity: 1;
+    transition: opacity .3s;
+    cursor: pointer;
+}
+/*
+.carousel-container.cast-container .detail-container .icon-close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.carousel-container.cast-container .detail-container .icon-close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.carousel-container.cast-container .detail-container .icon-close:before,
+.carousel-container.cast-container .detail-container .icon-close:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 3px;
+  background-color: currentColor;
+}
+*/
+.carousel-container.cast-container .detail-container .icon-search:before {
+    font-size: 30px;
+}
+@media (max-width: 640px) {
+    .carousel-container.cast-container .detail-container .item .header {
+        max-width: 200px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .carousel-container.cast-container .detail-container .item .media-wrap {
+        display: none;
+        float: none;
+    }
+    .carousel-container.cast-container .detail-container .item .meta-wrap {
+        padding-left: calc(var(--spacer) * 2);
+        padding-right: calc(var(--spacer) * 2);
+        width: auto;
+        float: none;
+    }
+    .carousel-container.cast-container .detail-container .item .deck span {
+        max-height: none;
+    }
+    .carousel-container.cast-container .items-container .item {
+        max-width: 200px;
+    }
+    .carousel-container.cast-container .flickity-prev-next-button {
+        top: 117px;
+    }
+
+
+}
+@media screen and (max-width: 660px) {
+    .carousel-container.cast-container .items-wrap {
+        margin-left: calc(var(--spacer) * 3);
+    }
+    .carousel-container.cast-container .detail-container .item {
+        padding-left: calc(var(--spacer) * 3);
+        padding-right: calc(var(--spacer) * 3);
+    }
+    .carousel-container.cast-container .items-container .item {
+        max-width: 165px;
+    }
+}
+/*******cast-container*******/

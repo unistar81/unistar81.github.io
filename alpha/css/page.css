@@ -1,0 +1,16 @@
+
+/******align footer bottom******/
+body { /* for react use #app instead of main since it wraps everything in #app after the body*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+/******align footer bottom******/
+
+.page-content section:last-child {
+    margin-bottom: var(--module-spacing);
+}

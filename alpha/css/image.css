@@ -1,0 +1,48 @@
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+.image_holder {
+    position: relative;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+.image_holder:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+.image-holder > img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade-in .2s ease-out;
+}
+.image-holder > .lazy {
+    filter: blur(5px);
+    overflow: hidden;
+}
+.image-holder--raw > img {
+    object-fit: contain;
+}
+.image_holder .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease-out 0s;
+    -moz-transition: opacity 0.2s ease-out 0s;
+    -o-transition: opacity 0.2s ease-out 0s;
+    transition: opacity 0.2s ease-out 0s;
+}
+.image_holder.deferred .image {
+    opacity: 0;
+}

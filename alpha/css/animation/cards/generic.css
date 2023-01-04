@@ -1,0 +1,32 @@
+/* SHADOW AND GROW */
+.module-container:not(.carousel-container) .item.full-ep,
+.module-container:not(.carousel-container) .item.article,
+.module-container:not(.carousel-container) .item.video,
+.module-container:not(.carousel-container) .item.poster,
+.module-container:not(.carousel-container) .item.app {
+    transform: perspective(1px) translateZ(0);
+    transition: all 0.2s;
+}
+
+.module-container:not(.carousel-container) .item.full-ep:hover,
+.module-container:not(.carousel-container) .item.full-ep:focus,
+.module-container:not(.carousel-container) .item.full-ep:active,
+
+.module-container:not(.carousel-container) .item.article:hover,
+.module-container:not(.carousel-container) .item.article:focus,
+.module-container:not(.carousel-container) .item.article:active,
+
+.module-container:not(.carousel-container) .item.video:hover,
+.module-container:not(.carousel-container) .item.video:focus,
+.module-container:not(.carousel-container) .item.video:active,
+
+.module-container:not(.carousel-container) .item.poster:hover,
+.module-container:not(.carousel-container) .item.poster:focus,
+.module-container:not(.carousel-container) .item.poster:active,
+
+.module-container:not(.carousel-container) .item.app:hover,
+.module-container:not(.carousel-container) .item.app:focus,
+.module-container:not(.carousel-container) .item.app:active {
+    box-shadow: 0 8px 22px -6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}

@@ -1,0 +1,97 @@
+.module-container.about-container {
+    display: block;
+    position: relative;
+    background-color: var(--color-ui-06);
+    color: var(--color-text-01);
+    margin-top: var(--module-spacing);
+}
+
+.module-container.about-container + .module-container.module-inverse {
+    margin-top: 0;
+}
+
+.about-container .item {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.about-container .item a {
+    color: inherit;
+}
+
+.about-container .item .meta-wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.about-container .item .meta-wrap > * {
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-container .item .meta-wrap > .header {
+    font: var(--font-kilo);
+    text-transform: var(--font-kilo-text-transform);
+    margin-bottom: calc(var(--spacer) * 3);
+    color: var(--color-text-01);
+}
+
+.about-container .item .meta-wrap .deck {
+    font: var(--font-p2);
+    margin-bottom: 0;
+}
+
+.about-container .item .meta-wrap .deck + .links {
+    margin-top: calc(var(--spacer) * 6);
+}
+
+.about-container .deck a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.about-container .deck a:hover {
+    color: #1a1a1a;
+    opacity: 0.7;
+}
+
+.about-container .deck i {
+    font-style: italic;
+}
+.about-container .deck b {
+    font-weight: 700;
+}
+.about-container .deck span {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+    display: block;
+}
+
+.about-container .item .meta-wrap .links .header {
+    font: var(--font-nano);
+    text-transform: var(--font-nano-text-transform);
+    color: var(--color-text-01);
+    margin-bottom: calc(var(--spacer) * 3);
+}
+
+.about-container .item .meta-wrap .deck p {
+    padding-top: calc(var(--spacer) * 2);
+    padding-bottom: calc(var(--spacer) * 2);
+}
+
+@media screen and (max-width: 980px) {
+    .about-container .item .meta-wrap > * {
+        /*at max width starts out at 50% of the width and goes to 100% to the smaller breakpoint value*/
+        /*font-size: calc(MinSizeinPX + (max size - min size) * (100vw - 320px) / (1600 - 320));*/
+        max-width: calc(949px + (459 - 949) * (100vw - 660px) / (990 - 660));
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .about-container .item .meta-wrap > * {
+        max-width: none;
+        width: 100%;
+    }
+}

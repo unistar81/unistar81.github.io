@@ -1,0 +1,12 @@
+.module-container.sponsorship-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--color-ui-06);
+}
+
+.module-container.sponsorship-container .item {
+    background-color: transparent;
+    box-shadow: none;
+}

@@ -1,0 +1,88 @@
+.homepage-template .massive-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.homepage-template .massive-container .container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (min-width: 1601px) {
+    .homepage-template .massive-container .item .media .item-container .content .image_holder {
+        top: calc(-1 * (((100vw * 9 / 16) - 438px) * .35));
+    }
+}
+
+.homepage-template .page-content .about-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.homepage-template .module-container.about-container {
+    margin-top: 0;
+}
+
+.homepage-template .ad-container {
+    background-color: var(--color-ui-04);
+}
+
+.homepage-template .ad-container > .ad {
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+
+/*
+
+.homepage-template .ad-container .ad {
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+
+.homepage-template .ad-container {
+    background-color: var(--color-ui-04);
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+*/
+
+/*promos-container under massive*/
+.homepage-template .promos-container {
+    background-color: var(--color-ui-04);
+}
+
+.homepage-template .promos-container .items-wrap {
+    justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
+    .homepage-template .promos-container .item .meta-wrap {
+        max-width: 100%;
+    }
+}
+
+/*grid*/
+.homepage-template .promos-container {
+    --grid-columns: 3;
+    --grid-columns-only-one-item: 3;
+    --grid-columns-only-two-items: 3;
+    --grid-columns-only-three-items: 3;
+}
+
+@media screen and (max-width: 980px) {
+    .homepage-template .promos-container {
+        --grid-columns: 2;
+        --grid-columns-only-one-item: 2;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .homepage-template .promos-container {
+        --grid-columns: 1;
+        --grid-columns-only-one-item: 1;
+        --grid-columns-only-two-items: 1;
+        --grid-columns-only-three-items: 1;
+    }
+}

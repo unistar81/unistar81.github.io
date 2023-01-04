@@ -1,0 +1,100 @@
+.module-container.dropdown-container {
+    padding-bottom: 0;
+}
+
+.module-container :not(.btn-group) > .dropdown-wrap {
+    line-height: normal;
+    text-align: center;
+    margin-bottom: calc(var(--spacer) * 4);
+}
+
+.dropdown:not(.no-list) .btn span:after {
+    font-family: 'global-icons';
+    content: var(--icon-chevron-down);
+    margin-left: calc(var(--spacer) * 2);
+    font-size: 12px;
+}
+
+.dropdown.no-list .btn {
+    cursor: default;
+    transition: none;
+}
+
+.dropdown.no-list .btn-secondary:before {
+    transition: none;
+}
+
+.dropdown.no-list .btn-secondary:hover:before {
+    opacity: var(--button-secondary-background-color-layer-opacity);
+    background-color: var(--button-secondary-background-color-layer);
+    transition: none;
+}
+
+.dropdown.no-list .btn-secondary:hover {
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-color);
+    transition: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    background-clip: padding-box;
+    /*display: none;*/
+    float: left;
+    left: 0;
+    list-style: outside none none;
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1;
+    font: var(--font-nano);
+    line-height: normal;
+    box-shadow: var(--ui-shadow-02);
+    background-color: var(--color-ui-02);
+    padding: calc(var(--spacer) * 2) calc(var(--spacer) * 3) calc(var(--spacer) * 3) calc(var(--spacer) * 3);
+}
+
+.dropdown-menu > li.active {
+    cursor: not-allowed;
+}
+
+.dropdown-menu > li > a, .dropdown-menu > li  {
+    clear: both;
+    display: block;
+    color: var(--color-text-04);
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+    white-space: nowrap;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: var(--color-brand-01);
+    text-decoration: none;
+}
+
+.dropdown-menu > li.image-link > a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.open > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-container.is-loading-season:after {
+    content: '';
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background: url("../../../public/png/loading.png") no-repeat center;
+    background-size: 75%;
+    animation: spin-loading .7s infinite linear;
+    display: block;
+    margin: auto;
+}

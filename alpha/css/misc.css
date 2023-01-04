@@ -1,0 +1,29 @@
+body.no-scroll {
+    overflow: hidden;
+}
+
+.screen_reader_text,
+.screen-reader-text {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+
+.no-select{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}

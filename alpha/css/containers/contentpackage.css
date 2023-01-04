@@ -1,0 +1,619 @@
+/* 1 item */
+.content-package-module-container .grid-container .item:first-child:last-child {
+    --grid-columns: 1;
+}
+/* 1 item */
+
+
+/* 2 items */
+.content-package-module-container .grid-container .item:first-child:nth-last-child(2):first-child,
+.content-package-module-container .grid-container .item:first-child:nth-last-child(2) ~ .item:first-child,
+.content-package-module-container .grid-container .item:first-child:nth-last-child(2):nth-child(2),
+.content-package-module-container .grid-container .item:first-child:nth-last-child(2) ~ .item:nth-child(2) {
+    --grid-columns: 2;
+}
+/* 2 items */
+
+
+/* 4 items */
+.content-package-module-container .grid-container .item:first-child:nth-last-child(4):first-child,
+.content-package-module-container .grid-container .item:first-child:nth-last-child(4) ~ .item:first-child {
+    --grid-columns: 1;
+}
+/* 4 items */
+
+/* 5 items */
+.content-package-module-container .grid-container .item:first-child:nth-last-child(5):nth-child(1),
+.content-package-module-container .grid-container .item:first-child:nth-last-child(5) ~ .item:nth-child(1),
+.content-package-module-container .grid-container .item:first-child:nth-last-child(5):nth-child(2),
+.content-package-module-container .grid-container .item:first-child:nth-last-child(5) ~ .item:nth-child(2) {
+    --grid-columns: 2;
+}
+/* 5 items */
+
+
+@media screen and (max-width: 980px) {
+    /* 5 items */
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5):nth-child(1),
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5) ~ .item:nth-child(1) {
+        --grid-columns: 1;
+    }
+    /* 5 items */
+
+    /* 4 items */
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(4):first-child,
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(4) ~ .item:first-child {
+        --grid-columns: 2;
+    }
+    /* 4 items */
+
+    /* 3 items */
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(3):first-child,
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(3) ~ .item:first-child {
+        --grid-columns: 1;
+    }
+    /* 3 items */
+
+}
+
+@media screen and (max-width: 660px) {
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5):nth-child(1),
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5) ~ .item:nth-child(1),
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5):nth-child(2),
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(5) ~ .item:nth-child(2) {
+        --grid-columns: 1;
+    }
+
+    /* 2 items */
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(2):first-child,
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(2) ~ .item:first-child,
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(2):nth-child(2),
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(2) ~ .item:nth-child(2) {
+        --grid-columns: 1;
+    }
+    /* 2 items */
+
+    /* 4 items */
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(4):first-child,
+    .content-package-module-container .grid-container .item:first-child:nth-last-child(4) ~ .item:first-child {
+        --grid-columns: 1;
+    }
+    /* 4 items */
+
+}
+
+
+
+.content-package-module-container .section-header h1,
+.content-package-module-container .section-header h2 {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(60% + 240px);
+}
+
+@media screen and (max-width: 980px) {
+    .content-package-module-container .section-header h1,
+    .content-package-module-container .section-header h2 {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .content-package-module-container .section-header h1,
+    .content-package-module-container .section-header h2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.content-package-module-container + .ad-container {
+    text-align: center;
+}
+
+.content-package-module-container + .ad-container:last-child {
+    display: none;
+}
+
+    /*override for first item wide for 1 or 4 items for desktop*/
+@media screen and (min-width: 981px) {
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child a,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child a,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child a,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child a {
+        display: inline;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap {
+        float: left;
+        width: 66.667%;
+        max-width: none;
+        overflow: hidden;
+        margin-left: 0;
+        height: 100%;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media {
+        height: 100%;
+        width: auto;
+        padding-top: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media .content,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media .content {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta-wrap {
+        float: left;
+        padding: calc(var(--spacer) * 8);
+        width: 33.333%;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .spr-header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .spr-header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .spr-header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .spr-header {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .header {
+        font: var(--font-kilo);
+        color: var(--color-text-03);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .header .date,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .header .date,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .header .date,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .header .date {
+        border-left: 2px solid var(--color-text-03);
+        margin-left: calc(var(--spacer) * 1);
+        padding-left: calc(var(--spacer) * 1);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .sub-header ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .sub-header,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .sub-header ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .sub-header {
+        font: var(--font-p2);
+        font-weight: 700;
+        color: var(--color-text-03);
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        text-overflow: ellipsis;
+        margin-bottom: calc(var(--spacer) * 1);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .deck {
+        max-height: calc(var(--font-p2-line-height) * var(--font-p2-size) * 6);
+        overflow: hidden;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .meta,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .meta,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: calc(var(--spacer) * 8);
+        margin-left: calc(var(--spacer) * 8);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media-wrap [class^="label"],
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap [class^="label"],
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media-wrap [class^="label"],
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap [class^="label"] {
+        top: 0;
+        left: var(--border-radius);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media-wrap .label-auth ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap .label-auth,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media-wrap .label-auth ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap .label-auth {
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        margin-bottom: calc(var(--spacer) * 3);
+        margin-right: calc(var(--spacer) * 3);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media-wrap .label-timestamp,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap .label-timestamp,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media-wrap .label-timestamp,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap .label-timestamp {
+        top: auto;
+        left: auto;
+        bottom: 0;
+        right: 0;
+        margin-right: calc(var(--spacer) * 3);
+        margin-bottom: calc(var(--spacer) * 3);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .btn-group,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .btn-group,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .btn-group,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .btn-group {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: calc(var(--spacer) * 6);
+        margin-left: calc(var(--spacer) * 6);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .btn-group .btn:last-child,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .btn-group .btn:last-child,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .btn-group .btn:last-child,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .btn-group .btn:last-child {
+        margin-right: 24px;
+    }
+    /* first item wide override*/
+
+
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 981px) {
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .media-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .media-wrap {
+        width: 60%;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta-wrap {
+        padding: calc(var(--spacer) * 5);
+        width: 40%;
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .meta ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .meta ,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .meta {
+        margin-bottom: calc(var(--spacer) * 5);
+        margin-left: calc(var(--spacer) * 5);
+    }
+
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(1) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4):first-child .deck,
+    .content-package-module-container .grid-container .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child:nth-last-child(4) ~ .item:not([class*="promo"]):not([class*="photo"]):not([class*="collection"]):first-child .deck {
+        max-height: calc(var(--font-p2-line-height) * var(--font-p2-size) * 4);
+    }
+}
+
+
+/* make promo cards 1x1 expand full flex height */
+.content-package-module-container .grid-container .item.collection .media-wrap,
+.content-package-module-container .grid-container .item.promo .media-wrap {
+    height: 100%;
+}
+
+.content-package-module-container .grid-container .item.collection .media,
+.content-package-module-container .grid-container .item.promo .media {
+    height: 100%;
+}
+
+.content-package-module-container .grid-container .item.collection .media .content,
+.content-package-module-container .grid-container .item.promo .media .content {
+    height: 100%;
+}
+
+.content-package-module-container .grid-container .item.collection .media .content img,
+.content-package-module-container .grid-container .item.promo .media .content img {
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 660px) {
+    .content-package-module-container .grid-container .item.collection .media,
+    .content-package-module-container .grid-container .item.promo .media {
+        height: auto;
+        /*padding-top: 100%;*/
+    }
+    .content-package-module-container .grid-container .item.collection .media .content img,
+    .content-package-module-container .grid-container .item.promo .media .content img {
+        height: 100%;
+    }
+}
+/* make promo cards 1x1 expand full flex height */
+
+
+
+
+
+@media screen and (min-width: 981px) {
+    /*override for first item promo and collection wide for 1 or 4 items for desktop*/
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media-wrap {
+        float: none;
+        width: 100%;
+        max-width: none;
+        overflow: hidden;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media {
+        height: 540px;
+        overflow: hidden;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media .content {
+        position: relative;
+        top: -135px;
+        width: 100%;
+        height: auto;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media .content img,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media .content img,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media .content img,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media .content img,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media .content img,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media .content img,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media .content img,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media .content img {
+        height: auto;
+        width: 100%;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .meta-wrap {
+        color: var(--color-text-01);
+        max-width: 40%;
+        padding: calc(var(--spacer) * 8);
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .header {
+        font: var(--font-mega);
+        text-transform: var(--font-mega-text-transform);
+    }
+
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .header {
+        margin-bottom: calc(var(--spacer) * 6);
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .deck {
+        color: var(--color-text-01);
+        display: inline-block;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .link-group :first-child {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 981px) {
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media .content,
+
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media .content {
+        top: calc(-1 * ((((100vw - (100vw * var(--grid-margin) * 2)) * 9 / 16) - 540px) * .5));
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 981px) {
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(4) ~ .item.promo:first-child .media .content,
+
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(4) ~ .item.collection:first-child .media .content{
+        position: relative;
+        /*calc(-1 * ((((100vw - (100vw * var(--grid-margin) * 2)) * 9 / 16) - 540px) * .5));*/
+        top: calc(-1 * (((1080px * 9 / 16) - 540px) * .5));
+        left: calc(-1 * (((608px * 16 / 9) - (100vw - (100vw * var(--grid-margin) * 2))) * .5));
+        width: 1080px;
+        height: 608px;
+    }
+}
+
+
+/* check -135px on collection and promo, do we need? */
+
+/* collections and promos wide for teblate for 1, 3, 5 item layout. */
+@media screen and (max-width: 980px) and (min-width: 659px)  {
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .media,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .media,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .media {
+        height: 540px;
+        overflow: hidden;
+        width: auto;
+        padding-top: 0;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .media .content,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .media .content,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .media .content{
+        position: relative;
+        top: calc(-1 * (((1080px * 9 / 16) - 540px) * .5));
+        left: calc(-1 * (((608px * 16 / 9) - (100vw - (100vw * var(--grid-margin) * 2))) * .5));
+        width: 1080px;
+        height: 608px;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .meta-wrap,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .meta-wrap {
+        color: var(--color-text-01);
+        max-width: 60%;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .header,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .header {
+        font: var(--font-mega);
+        text-transform: var(--font-mega-text-transform);
+    }
+
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .header,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .header {
+        margin-bottom: calc(var(--spacer) * 6);
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .deck,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .deck,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .deck {
+        color: var(--color-text-01);
+        display: inline-block;
+    }
+
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(1) ~ .item.promo:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(3) ~ .item.promo:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.promo:first-child:nth-last-child(5) ~ .item.promo:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(1) ~ .item.collection:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(3) ~ .item.collection:first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5):first-child .link-group :first-child,
+    .content-package-module-container .grid-container .item.collection:first-child:nth-last-child(5) ~ .item.collection:first-child .link-group :first-child {
+        margin-left: 0;
+    }
+}

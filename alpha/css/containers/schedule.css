@@ -1,0 +1,255 @@
+.tv-schedule-container {
+    width: 100%;
+    margin-bottom: var(--module-spacing);
+}
+.tv-schedule-container .schedule-header span:not(:first-child):before {
+    content: "•";
+    margin-left: var(--spacer);
+    margin-right: var(--spacer);
+}
+.tv-schedule-container .header-wrap {
+    padding-bottom: calc(var(--spacer) * 7);
+    position: relative;
+    z-index: 2;
+}
+.tv-schedule-container .schedule-header {
+    font: var(--font-kilo);
+    text-transform: var(--font-kilo-text-transform);
+    height: auto;
+}
+.tv-schedule-container .schedule-wrap .schedule-header {
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+.tv-schedule-container .schedule-item-wrap {
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.tv-schedule-container .schedule-item {
+    padding-top: calc(var(--spacer) * 7);
+    padding-bottom: calc(var(--spacer) * 7);
+}
+.tv-schedule-container .schedule-item .item{
+    box-shadow: none;
+}
+.tv-schedule-container .schedule-item-wrap .container {
+    position: relative;
+}
+.tv-schedule-container .schedule-item-wrap .item-header {
+    display: inline;
+    margin-right: 36px;
+}
+.tv-schedule-container .schedule-item-wrap .item-header .info {
+    display: inline-block;
+}
+.tv-schedule-container .schedule-item-wrap .item-header .cta {
+    float: right;
+    margin-right: calc(var(--spacer) * 8);
+}
+.tv-schedule-container .schedule-item-wrap .item-detail {
+    margin-left: 125px;
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .cta {
+    display: none;
+    margin-top: calc(var(--spacer) * 2);
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .deck {
+    margin-bottom: 0;
+    max-width: 70%;
+}
+.tv-schedule-container .schedule-item-wrap .header {
+    font: var(--font-micro);
+    text-transform: var(--font-micro-text-transform);
+    color: var(--color-text-04);
+}
+.tv-schedule-container .schedule-item-wrap .sub-header{
+    font: var(--font-nano);
+    text-transform: capitalize;
+    margin-top: var(--spacer);
+}
+.tv-schedule-container .tunein-info .time {
+    display: block;
+    font: var(--font-micro);
+    font-weight: 400;
+    color: var(--color-text-03);
+    margin-bottom: var(--spacer);
+}
+.tv-schedule-container .tunein-info .label {
+    display: inline-block;
+}
+.tv-schedule-container .tunein-info {
+    display: inline-block;
+    min-width: 125px;
+    vertical-align: top;
+}
+.tv-schedule-container .show-more-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: calc(var(--spacer) * 8.4);
+}
+.tv-schedule-container .display .show-more {
+    transform: rotate(180deg);
+}
+.tv-schedule-container .meta-info {
+    display: inline-block;
+    width: 100%;
+}
+.tv-schedule-container .arrow {
+    font: var(--font-mega);
+}
+.tv-schedule-container .schedule-nav > * {
+    display: inline-block;
+}
+.tv-schedule-container .filter-nav {
+    margin-top: calc(var(--spacer) * 4);
+}
+.tv-schedule-container .filter-nav .channel-lookup-container {
+    float: right;
+    z-index: 2;
+}
+.tv-schedule-container .nav-wrap .btn.arrow {
+    background-color: inherit;
+    padding: inherit;
+    color: var(--color-text-03);
+}
+.tv-schedule-container .nav-wrap .btn.arrow .icon-chevron-left:before {
+    content: var(--icon-chevron-left-24);
+}
+.tv-schedule-container .nav-wrap .btn.arrow .icon-chevron-right:before {
+    content: var(--icon-chevron-right-24);
+}
+.tv-schedule-container .nav-wrap .btn.arrow.disabled {
+    color: var(--color-text-02);
+}
+.tv-schedule-container .container .show-more {
+    color: var(--color-text-03);
+}
+.tv-schedule-container .container .show-more > * {
+    display: block;
+}
+.tv-schedule-container .container .show-more .icon-chevron-down:before {
+    content: var(--icon-chevron-down-24);
+}
+.schedule-item-wrap:nth-of-type(odd) {
+    background-color: var(--color-ui-02);
+}
+.schedule-item-wrap:nth-of-type(even) {
+    background-color: var(--color-ui-01);
+}
+.tv-schedule-container .nav-prev {
+    margin-right: calc(var(--spacer) * 2);
+}
+.tv-schedule-container .nav-next {
+    margin-left: calc(var(--spacer) * 2);
+}
+.tv-schedule-container .header-wrap .dropdown-wrap {
+    display: inline-block;
+}
+.tv-schedule-container .header-wrap .dropdown-menu {
+    min-width: fit-content;
+}
+.tv-schedule-container .schedule-item-wrap .meta-wrap {
+    font: var(--font-p2);
+    padding: 0;
+}
+.tv-schedule-container .schedule-item-wrap .meta-wrap .description {
+    color: var(--color-text-03);
+    line-height: calc(var(--spacer) * 4);
+    margin: calc(var(--spacer) * 2) 0 0;
+}
+.tv-schedule-container .full-episode .meta-wrap {
+    display: inline-block;
+    width: 50%;
+}
+.tv-schedule-container .schedule-item-wrap.display .item-detail {
+    margin-top: calc(var(--spacer) * 4);
+}
+.tv-schedule-container .schedule-item-wrap .item-detail {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.8s ease;
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .item {
+    background-color: transparent;
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .media-wrap {
+    float: left;
+    display: inline-block;
+    max-width: 289px;
+    margin-right: calc(var(--spacer) * 4);
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .media-wrap > * {
+    width: 100%;
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .meta-wrap .header {
+    font: var(--font-pico);
+    color: var(--color-brand-01);
+    display: inline-block;
+    vertical-align: top;
+}
+.tv-schedule-container .schedule-item-wrap .item-detail .meta-wrap .header span:not(:first-child):before {
+    content: "•";
+    margin-left: var(--spacer);
+    margin-right: var(--spacer);
+}
+.tv-schedule-container .schedule-item-wrap.display .item-detail,
+.tv-schedule-container .schedule-item-wrap.display-enter-active .item-detail {
+    opacity: 1;
+    max-height: 100%;
+}
+.tv-schedule-container .schedule-item-wrap.display-exit-done .item-detail {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: none;
+}
+@media screen and (max-width:980px) {
+    .tv-schedule-container .schedule-item-wrap .item-detail .deck {
+        max-width: none;
+    }
+}
+@media screen and (max-width:660px) {
+    .tv-schedule-container .schedule-item {
+        padding-top: calc(var(--spacer) * 6);
+        padding-bottom: calc(var(--spacer) * 6);
+    }
+    .tv-schedule-container .schedule-item-wrap .item-header {
+        display: inline-block;
+        width: calc(100% - 126px);
+    }
+    .tv-schedule-container .schedule-item-wrap.display .item-detail {
+        margin-top: calc(var(--spacer) * 3);
+    }
+    .tv-schedule-container .schedule-item-wrap .item-detail {
+        margin-left: 0;
+    }
+    .tv-schedule-container .schedule-item-wrap .meta-info .cta {
+        display: none;
+    }
+    .tv-schedule-container .schedule-item-wrap .item-detail .cta {
+        display: inline-block;
+        margin-top: calc(var(--spacer) * 3);
+    }
+    .tv-schedule-container .schedule-wrap .schedule-header {
+        padding-top: calc(var(--spacer) * 3);
+        padding-bottom: calc(var(--spacer) * 3);
+    }
+    .tv-schedule-container .schedule-item-wrap .item-detail .media-wrap {
+        float: none;
+        max-width: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: calc(var(--spacer) * 3);
+    }
+    .tv-schedule-container .tunein-info {
+        min-width: 90px;
+    }
+    .tv-schedule-container .header-wrap {
+        padding-bottom: calc(var(--spacer) * 6);
+    }
+}

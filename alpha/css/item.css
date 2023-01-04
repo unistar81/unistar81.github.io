@@ -1,0 +1,125 @@
+.item {
+    position: relative;
+    width: 100%;
+    /*margin-bottom: calc(var(--spacer) * 4);*/
+    vertical-align: top;
+}
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+.module-container:not(.grid-container) .item:first-child:last-child {
+    margin-bottom: 0;
+}
+*/
+
+.item .media-wrap {
+    position: relative;
+    /*height: 100%;*/
+}
+
+.item .media {
+    background-color: var(--color-ui-03);
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.module-inverse .item .media {
+    background-color: var(--color-ui-06);
+}
+
+.item .media > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item .media > .content > img,
+.item .media > .content > video {
+    width: 100%;
+}
+
+.item .media .volumetoggle {
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+/*---*/
+.item.postcard-left .media-wrap {
+    float: left;
+    margin-right: 12px;
+    height: 100%;
+}
+
+.item.postcard-right .media-wrap {
+    float: right;
+    margin-left: 12px;
+    height: 100%;
+}
+
+.item.postcard-left .media-wrap,
+.item.postcard-right .media-wrap {
+    max-width: 33.333%;
+}
+/*---*/
+
+.item .meta-wrap {
+    position: relative;
+}
+
+.item h1,
+.item h2,
+.item h3,
+.item h4,
+.item h5,
+.item h6,
+.item p,
+.item .deck span {
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+}
+
+.item .links .header {
+    display: block;
+}
+
+.item .links .link-group > * {
+    display: inline-block;
+    font-size: 0;
+    margin-right: calc(var(--spacer) * 4);
+}
+
+.item .links .link-group > *:last-child {
+    margin-right: 0;
+}
+
+.item a:hover .header,
+.item a:hover .sub-header,
+.item a:hover .deck {
+    text-decoration: none;
+}
+
+.item .btn-group {
+    display: inline-block;
+}
+
+@media screen and (max-width: 660px) {
+    .item .media .volumetoggle {
+        right: 15px;
+        bottom: 9px;
+    }
+}
+
+/***************item***************/

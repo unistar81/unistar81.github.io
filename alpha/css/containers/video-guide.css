@@ -1,0 +1,305 @@
+/***************videoguide***************/
+
+.module-container.dropdown-container + .video-guide-container {
+    padding-top: 0;
+}
+
+/*********full-episodes*********/
+
+
+/**
+.video-guide-container .full-episodes .item:last-child:nth-child(n+3) {
+    height: 172px;
+    box-shadow: none;
+    overflow:hidden;
+}
+
+.video-guide-container .full-episodes .item:last-child:nth-child(n+3):after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 172px;
+    pointer-events: none;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), #f3f5f6);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), #f3f5f6);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), #f3f5f6);
+    background: linear-gradient(rgba(0, 0, 0, 0), #f3f5f6);
+}
+
+.video-guide-container .full-episodes .item:last-child:nth-child(n+3) .meta,
+.video-guide-container .full-episodes .item:last-child:nth-child(n+3) .btn-group {
+    display: none;
+}
+*/
+
+.video-guide-container .expand-wrap {
+    text-align: center;
+}
+
+.video-guide-container .items-container,
+.video-guide-container .grid-container{
+    margin-bottom: var(--grid-row-spacing);
+}
+
+.video-guide-container .full-episodes .items-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* first item wide override*/
+.video-guide-container .grid-container .item.full-ep:first-child {
+    --grid-columns: 1;
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child a {
+    display: inline;
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media-wrap {
+    float: left;
+    width: 66.667%;
+    max-width: none;
+    overflow: hidden;
+    margin-left: 0;
+    height: 100%;
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media {
+    height: 100%;
+    width: auto;
+    padding-top: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media .content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .meta-wrap {
+    float: left;
+    padding: calc(var(--spacer) * 8);
+    width: 33.333%;
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .spr-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.video-guide-container .grid-container .item.full-ep:first-child .header {
+    font: var(--font-kilo);
+    color: var(--color-text-03);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .header .date {
+    border-left: 2px solid var(--color-text-03);
+    margin-left: calc(var(--spacer) * 1);
+    padding-left: calc(var(--spacer) * 1);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .sub-header {
+     font: var(--font-p2);
+     font-weight: 700;
+     color: var(--color-text-03);
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     margin-bottom: calc(var(--spacer) * 1);
+ }
+
+.video-guide-container .grid-container .item.full-ep:first-child .deck {
+    max-height: calc(var(--font-p2-line-height) * var(--font-p2-size) * 6);
+    overflow: hidden;
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: calc(var(--spacer) * 8);
+    margin-left: calc(var(--spacer) * 8);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media-wrap [class^="label"] {
+    top: 0;
+    left: var(--border-radius);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media-wrap .label-auth {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    margin-bottom: calc(var(--spacer) * 3);
+    margin-right: calc(var(--spacer) * 3);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .media-wrap .label-timestamp {
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    margin-right: calc(var(--spacer) * 3);
+    margin-bottom: calc(var(--spacer) * 3);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .btn-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: calc(var(--spacer) * 6);
+    margin-left: calc(var(--spacer) * 6);
+}
+
+.video-guide-container .grid-container .item.full-ep:first-child .btn-group .btn:last-child {
+    margin-right: 24px;
+}
+/* first item wide override*/
+
+
+@media screen and (max-width: 980px) {
+    .video-guide-container .filter-wrap:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 36px;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        right: 0;
+        background-image: linear-gradient(to right, var(--color-ui-01-transparent), var(--color-ui-01), var(--color-ui-01));
+        pointer-events: none;
+    }
+}
+
+/*
+@media screen and (max-width: 660px) {
+    .video-guide-container .full-episodes .item:last-child:nth-child(n+3) {
+        height: calc((100vw - 30px) * 0.5);
+    }
+}
+
+*/
+
+/***************loading-filter***************/
+.video-guide-container .items-container {
+    position: relative;
+    min-height: 70px;
+}
+.video-guide-container.is-loading-filter .items-container:after,
+.video-guide-container.is-loading-filter .grid-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background: url("../../../public/png/loading.png") no-repeat center;
+    background-size: 75%;
+    animation: spin-loading .7s infinite linear;
+    display: block;
+}
+.dropdown-container.is-loading-season:after {
+    content: '';
+    top: 0;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+    background: url("../../../public/png/loading.png") no-repeat center;
+    background-size: 75%;
+    animation: spin-loading .7s infinite linear;
+    display: block;
+    margin: auto;
+}
+.video-guide-container.is-loading-filter .items-wrap,
+.video-guide-container.is-loading-filter .expand-wrap {
+    visibility: hidden;
+}
+/***************loading-filter***************/
+
+/*video guide override for first item full ep wide*/
+
+@media screen and (max-width: 1200px) {
+    .video-guide-container .grid-container .item.full-ep:first-child .media-wrap {
+        width: 60%;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .meta-wrap {
+        padding: calc(var(--spacer) * 5);
+        width: 40%;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .meta {
+        margin-bottom: calc(var(--spacer) * 5);
+        margin-left: calc(var(--spacer) * 5);
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .deck {
+        max-height: calc(var(--font-p2-line-height) * var(--font-p2-size) * 4);
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .video-guide-container .grid-container .item.full-ep:first-child {
+        height: auto;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .media-wrap {
+        height: auto;
+        width: auto;
+        float: none;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .meta-wrap {
+        position: static;
+        padding: calc(var(--spacer) * 4);
+        width: auto;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .sub-header {
+        white-space: normal;
+        overflow: visible;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .deck {
+        max-height: none;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .btn-group {
+        display: inline;
+        position: static;
+        left: auto;
+        bottom: auto;
+    }
+
+    .video-guide-container .grid-container .item.full-ep:first-child .meta {
+        margin-bottom: 0;
+        margin-left: 0;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .video-guide-container .grid-container .item.full-ep:first-child .meta-wrap {
+        position: static;
+        padding: calc(var(--spacer) * 3);
+    }
+
+    .video-guide-container .full-episodes .items-wrap {
+        display: block;
+        flex-flow: row wrap;
+    }
+}
+
+/*video guide override for first item full ep wide*/

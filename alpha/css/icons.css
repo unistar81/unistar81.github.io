@@ -1,0 +1,258 @@
+[class*="icon-"] {
+    font-size: 0;
+}
+[class*="icon-"]:before {
+    font-family: 'global-icons' !important;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --icon-about-24: "\f101";
+    --icon-ad_choices: "\f102";
+    --icon-caret-down-12: "\f103";
+    --icon-cast-24: "\f104";
+    --icon-checkmark-12: "\f105";
+    --icon-chevron-down-24: "\f106";
+    --icon-chevron-down: "\f107";
+    --icon-chevron-left-24: "\f108";
+    --icon-chevron-right-12: "\f109";
+    --icon-chevron-right-24: "\f10a";
+    --icon-chevron-up-12: "\f10b";
+    --icon-chevron-up-24: "\f10c";
+    --icon-close-12: "\f10d";
+    --icon-close-24: "\f10e";
+    --icon-close: "\f10f";
+    --icon-email-24: "\f110";
+    --icon-embed: "\f111";
+    --icon-facebook-24: "\f112";
+    --icon-facebook-old: "\f113";
+    --icon-facebook: "\f114";
+    --icon-google-plus: "\f115";
+    --icon-instagram-24: "\f116";
+    --icon-instagram-old: "\f117";
+    --icon-instagram: "\f118";
+    --icon-lock-12: "\f119";
+    --icon-locked: "\f11a";
+    --icon-menu-16: "\f11b";
+    --icon-menu-24: "\f11c";
+    --icon-mtvlogo: "\f11d";
+    --icon-mute: "\f11e";
+    --icon-nav-logo: "\f11f";
+    --icon-news-24: "\f120";
+    --icon-photos-24: "\f121";
+    --icon-photos-36: "\f122";
+    --icon-pinterest: "\f123";
+    --icon-play-12: "\f124";
+    --icon-play: "\f125";
+    --icon-playlist-24: "\f126";
+    --icon-playlist-36: "\f127";
+    --icon-playlist: "\f128";
+    --icon-search-16: "\f129";
+    --icon-search-24: "\f12a";
+    --icon-search-lock: "\f12b";
+    --icon-search: "\f12c";
+    --icon-star: "\f12d";
+    --icon-tumblr-24: "\f12e";
+    --icon-tumblr-old: "\f12f";
+    --icon-tumblr: "\f130";
+    --icon-tvlandlogo: "\f131";
+    --icon-twitter-24: "\f132";
+    --icon-twitter-old: "\f133";
+    --icon-twitter: "\f134";
+    --icon-unmute: "\f135";
+    --icon-viacom: "\f136";
+    --icon-videos-24: "\f137";
+    --icon-vine-old: "\f138";
+    --icon-webplex-12: "\f139";
+    --icon-webplex: "\f13a";
+    --icon-youtube-24: "\f13b";
+    --icon-youtube: "\f13c";
+}
+
+.icon-about-24:before {
+    content: var(--icon-about-24);
+}
+.icon-ad_choices:before {
+    content: var(--icon-ad_choices);
+}
+.icon-caret-down-12:before {
+    content: var(--icon-caret-down-12);
+}
+.icon-cast-24:before {
+    content: var(--icon-cast-24);
+}
+.icon-checkmark-12:before {
+    content: var(--icon-checkmark-12);
+}
+.icon-chevron-down-24:before {
+    content: var(--icon-chevron-down-24);
+}
+.icon-chevron-down:before {
+    content: var(--icon-chevron-down);
+}
+.icon-chevron-left-24:before {
+    content: var(--icon-chevron-left-24);
+}
+.icon-chevron-right-12:before {
+    content: var(--icon-chevron-right-12);
+}
+.icon-chevron-right-24:before {
+    content: var(--icon-chevron-right-24);
+}
+.icon-chevron-up-12:before {
+    content: var(--icon-chevron-up-12);
+}
+.icon-chevron-up-24:before {
+    content: var(--icon-chevron-up-24);
+}
+.icon-close-12:before {
+    content: var(--icon-close-12);
+}
+.icon-close-24:before {
+    content: var(--icon-close-24);
+}
+.icon-close:before {
+    content: var(--icon-close);
+}
+.icon-email-24:before {
+    content: var(--icon-email-24);
+}
+.icon-embed:before {
+    content: var(--icon-embed);
+}
+.icon-facebook-24:before {
+    content: var(--icon-facebook-24);
+}
+.icon-facebook-old:before {
+    content: var(--icon-facebook-old);
+}
+.icon-facebook:before {
+    content: var(--icon-facebook);
+}
+.icon-google-plus:before {
+    content: var(--icon-google-plus);
+}
+.icon-instagram-24:before {
+    content: var(--icon-instagram-24);
+}
+.icon-instagram-old:before {
+    content: var(--icon-instagram-old);
+}
+.icon-instagram:before {
+    content: var(--icon-instagram);
+}
+.icon-lock-12:before {
+    content: var(--icon-lock-12);
+}
+.icon-locked:before {
+    content: var(--icon-locked);
+}
+.icon-menu-16:before {
+    content: var(--icon-menu-16);
+}
+.icon-menu-24:before {
+    content: var(--icon-menu-24);
+}
+.icon-mtvlogo:before {
+    content: var(--icon-mtvlogo);
+}
+.icon-mute:before {
+    content: var(--icon-mute);
+}
+.icon-nav-logo:before {
+    content: var(--icon-nav-logo);
+}
+.icon-news-24:before {
+    content: var(--icon-news-24);
+}
+.icon-photos-24:before {
+    content: var(--icon-photos-24);
+}
+.icon-photos-36:before {
+    content: var(--icon-photos-36);
+}
+.icon-pinterest:before {
+    content: var(--icon-pinterest);
+}
+.icon-play-12:before {
+    content: var(--icon-play-12);
+}
+.icon-play:before {
+    content: var(--icon-play);
+}
+.icon-playlist-24:before {
+    content: var(--icon-playlist-24);
+}
+.icon-playlist-36:before {
+    content: var(--icon-playlist-36);
+}
+.icon-playlist:before {
+    content: var(--icon-playlist);
+}
+.icon-search-16:before {
+    content: var(--icon-search-16);
+}
+.icon-search-24:before {
+    content: var(--icon-search-24);
+}
+.icon-search-lock:before {
+    content: var(--icon-search-lock);
+}
+.icon-search:before {
+    content: var(--icon-search);
+}
+.icon-star:before {
+    content: var(--icon-star);
+}
+.icon-tumblr-24:before {
+    content: var(--icon-tumblr-24);
+}
+.icon-tumblr-old:before {
+    content: var(--icon-tumblr-old);
+}
+.icon-tumblr:before {
+    content: var(--icon-tumblr);
+}
+.icon-tvlandlogo:before {
+    content: var(--icon-tvlandlogo);
+}
+.icon-twitter-24:before {
+    content: var(--icon-twitter-24);
+}
+.icon-twitter-old:before {
+    content: var(--icon-twitter-old);
+}
+.icon-twitter:before {
+    content: var(--icon-twitter);
+}
+.icon-unmute:before {
+    content: var(--icon-unmute);
+}
+.icon-viacom:before {
+    content: var(--icon-viacom);
+}
+.icon-videos-24:before {
+    content: var(--icon-videos-24);
+}
+.icon-vine-old:before {
+    content: var(--icon-vine-old);
+}
+.icon-webplex-12:before {
+    content: var(--icon-webplex-12);
+}
+.icon-webplex:before {
+    content: var(--icon-webplex);
+}
+.icon-youtube-24:before {
+    content: var(--icon-youtube-24);
+}
+.icon-youtube:before {
+    content: var(--icon-youtube);
+}

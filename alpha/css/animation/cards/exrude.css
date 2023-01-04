@@ -1,0 +1,88 @@
+/* EXTRUDE */
+
+:root {
+    --shadow-size: 10px;
+}
+
+.module-container:not(.carousel-container) .item.full-ep,
+.module-container:not(.carousel-container) .item.article,
+.module-container:not(.carousel-container) .item.video,
+.module-container:not(.carousel-container) .item.app {
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.module-container:not(.carousel-container) .item.full-ep:hover,
+.module-container:not(.carousel-container) .item.full-ep:focus,
+.module-container:not(.carousel-container) .item.full-ep:active,
+
+.module-container:not(.carousel-container) .item.article:hover,
+.module-container:not(.carousel-container) .item.article:focus,
+.module-container:not(.carousel-container) .item.article:active,
+
+.module-container:not(.carousel-container) .item.video:hover,
+.module-container:not(.carousel-container) .item.video:focus,
+.module-container:not(.carousel-container) .item.video:active,
+
+.module-container:not(.carousel-container) .item.app:hover,
+.module-container:not(.carousel-container) .item.app:focus,
+.module-container:not(.carousel-container) .item.app:active {
+    transform: translate(var(--shadow-size), calc(var(--shadow-size) * -1));
+}
+
+.module-container:not(.carousel-container) .item.full-ep:before,
+.module-container:not(.carousel-container) .item.article:before,
+.module-container:not(.carousel-container) .item.video:before,
+.module-container:not(.carousel-container) .item.app:before,
+
+.module-container:not(.carousel-container) .item.full-ep:after,
+.module-container:not(.carousel-container) .item.article:after,
+.module-container:not(.carousel-container) .item.video:after,
+.module-container:not(.carousel-container) .item.app:after {
+    position: absolute;
+    content: '';
+    transform-origin: top right;
+    background-color: var(--color-support-01);
+    transition: all 0.2s;
+}
+
+.module-container:not(.carousel-container) .item.full-ep:before,
+.module-container:not(.carousel-container) .item.article:before,
+.module-container:not(.carousel-container) .item.video:before,
+.module-container:not(.carousel-container) .item.app:before {
+    top: 0;
+    right: 0;
+    margin-right: 100%;
+    width: 0;
+    height: 100%;
+    transform: skewY(-45deg);
+    border-bottom: 1px solid inherit;
+    border-top: 1px solid inherit;
+}
+
+.module-container:not(.carousel-container) .item.full-ep:after,
+.module-container:not(.carousel-container) .item.article:after,
+.module-container:not(.carousel-container) .item.video:after,
+.module-container:not(.carousel-container) .item.app:after {
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    transform: skewX(-45deg);
+    border-left: 1px solid inherit;
+    border-right: 1px solid inherit;
+}
+
+.module-container:not(.carousel-container) .item.full-ep:hover:before,
+.module-container:not(.carousel-container) .item.article:hover:before,
+.module-container:not(.carousel-container) .item.video:hover:before,
+.module-container:not(.carousel-container) .item.app:hover:before {
+    width: var(--shadow-size);
+}
+
+.module-container:not(.carousel-container) .item.full-ep:hover:after,
+.module-container:not(.carousel-container) .item.article:hover:after,
+.module-container:not(.carousel-container) .item.video:hover:after,
+.module-container:not(.carousel-container) .item.app:hover:after {
+    height: var(--shadow-size);
+}

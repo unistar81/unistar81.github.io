@@ -1,0 +1,71 @@
+.ad-container{
+    text-align: center;
+}
+
+.ad-container > .ad[data-adsize~="300x250"] {
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.ad-container > .ad[data-size~="768x90"] {
+    min-width: 768px;
+    min-height: 90px;
+}
+
+body .ad-container.leaderboard-ad {
+    background-color: var(--header-leaderboard-background-color);
+}
+
+body .ad-container > .leaderboard-ad {
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+
+.seriesmain-template .massive-container + .ad-container .ad {
+    padding-top: calc(var(--spacer) * 4);
+}
+
+.grid-container .items-wrap .ad-container {
+    width:100%;
+}
+
+.grid-container .items-wrap .ad-container .ad {
+    padding-bottom: calc(var(--spacer) * 4);
+}
+
+.gallery-container .grid-container .items-wrap .ad-container {
+    width: auto;
+}
+
+.gallery-container .grid-container .items-wrap .ad-container .ad {
+    margin-left: calc(var(--grid-gutter) / 2);
+    margin-right: calc(var(--grid-gutter) / 2);
+    margin-bottom: calc(var(--spacer) * 3);
+    padding-bottom: 0;
+}
+
+.pswp .pswp__item .ad-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ad-container .ad {
+    display: inline-table;
+}
+.ad-container .ad.hasAdLabel::after {
+    content: attr(data-content);
+    display: block;
+    text-align: center;
+    font: var(--font-pico);
+    color: var(--color-support-05);
+    background-color: var(--color-support-06);
+    text-transform: uppercase;
+    padding: var(--label-padding);
+}
+
+.ad-container .leaderboard-ad:empty,
+.grid-container .items-wrap .ad-container .ad:empty,
+.seriesmain-template .massive-container + .ad-container .ad:empty {
+    display: none;
+}

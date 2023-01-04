@@ -1,0 +1,2868 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebPlex | DLS Documentation</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Design System Documentation">
+    <meta property="og:description" content="The default design system library that provides the foundational elements, components and guidelines for all subsequent brand libraries.">
+    <meta property="og:image" content="https://s3.amazonaws.com/uploads.hipchat.com/22279/5134511/uyqVSLy1lo7cpcJ/webplex-logo.png">
+    <meta property="og:url" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link href="../alpha/css/normalize.css" rel="stylesheet" />
+    <link href="../alpha/css/scaffolding.css" rel="stylesheet" />
+    <link href="../alpha/css/reset.css" rel="stylesheet" />
+    <link href="../alpha/css/misc.css" rel="stylesheet" />
+    <link href="../alpha/css/icons.css" rel="stylesheet" />
+    <link href="../alpha/css/page.css" rel="stylesheet" />
+
+    <link href="../alpha/css/container.css" rel="stylesheet" />
+
+    <link href="../alpha/css/grid.css" rel="stylesheet" />
+    <link href="../alpha/css/layout.css" rel="stylesheet" />
+
+    <link href="../alpha/css/components/header.css" rel="stylesheet" />
+    <link href="../alpha/css/components/footer.css" rel="stylesheet" />
+    <link href="../alpha/css/components/filters.css" rel="stylesheet" />
+
+    <link href="../alpha/css/headers.css" rel="stylesheet" />
+    <link href="../alpha/css/buttons.css" rel="stylesheet" />
+
+    <link href="../alpha/css/label.css" rel="stylesheet" />
+    <link href="../alpha/css/utility.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/dropdown.css" rel="stylesheet" />
+    <link href="../alpha/css/item.css" rel="stylesheet" />
+    <link href="../alpha/css/image.css" rel="stylesheet" />
+    <link href="../alpha/css/card.css" rel="stylesheet" />
+    <link href="../alpha/css/bala.css" rel="stylesheet" />
+    <link href="../alpha/css/borders.css" rel="stylesheet" />
+
+    <link href="../alpha/css/containers/grid-carousel.css" rel="stylesheet" />
+
+    <link href="../alpha/css/containers/massive.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/video-guide.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/news.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/photos.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/playlists.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/cast.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/about.css" rel="stylesheet" />
+    <link href="../alpha/css/containers/ad-container.css" rel="stylesheet" />
+
+    <link href="../alpha/css/static-build-only.css" rel="stylesheet" />
+
+
+<!--    <script type="text/javascript" src="../alpha/js/jquery-latest.min.js"> </script>-->
+    <script type="text/javascript" src="../alpha/js/transition.js"> </script>
+    <script type="text/javascript" src="../alpha/js/dropdown.js"> </script>
+    <script type="text/javascript" src="../alpha/js/tab.js"> </script>
+    <script type="text/javascript" src="../alpha/js/trimtofit.js"> </script>
+
+
+
+    <!-- ADDED LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css" />
+
+
+    <!-- DOCUMENT FILES -->
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/setup.css">
+
+
+    <!-- CONFIG FILES -->
+    <link href="../alpha/css/config/webplex.css" rel="stylesheet" />
+    <link href="../alpha/css/fonts/webplex.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-btn" for="menu-toggle"></label>
+
+
+    <nav>
+
+        <div class="nav-container">
+            <div class="logo">
+                <h2>WebPlex</h2>
+                <h1>Design System</h1>
+            </div>
+            <ul>
+                <li><span><a href="#colors">Colors</a></span>
+                    <ul class="subnav">
+                        <li><a href="#colors-swatch">Swatches</a></li>
+                        <li><a href="#colors-palette">Palettes</a></li>
+                        <li><a href="#colors-accessibility">Accessibility</a></li>
+                    </ul>
+                </li>
+                <li><span><a href="#grid">Grid</a></span>
+                    <ul class="subnav">
+                        <li><a href="#grid-overview">Overview</a></li>
+                        <li><a href="#grid-structure">Structure</a></li>
+                    </ul>
+                </li>
+                <li><span><a href="#typography">Typography</a></span>
+                    <ul class="subnav">
+                        <li><a href="#typography-overview">Overview</a></li>
+                        <li><a href="#typography-styles">Type Styles</a></li>
+                    </ul>
+                </li>
+                <li><span><a href="#icons">Icons</a></span>
+                </li>
+                <!--<li><span><a href="#components">Components</a></span>
+                    <ul class="subnav">
+                        <li><a href="#components-overview">Overview</a></li>
+                        <li><a href="#components-cards">Cards</a></li>
+                    </ul>
+                </li>-->
+                <li><span><a href="#htmltructure">HTML Structure</a></span>
+                    <ul class="subnav">
+                        <li><a href="#htmltructure-overview">Overview</a></li>
+                        <li><a href="#htmltructure-methology">Methodology</a></li>
+                        <li><a href="#htmltructure-pages">Pages</a></li>
+                        <li><a href="#htmltructure-templates">Templates</a></li>
+                        <li><a href="#htmltructure-linelist">LineList Component</a></li>
+                        <li><a href="#htmltructure-card">Card Components</a></li>
+                        <li><a href="#htmltructure-media">Media Component</a></li>
+                        <li><a href="#htmltructure-meta">Meta Component</a></li>
+    
+                        
+                    </ul>
+                </li>
+                <li><span><a href="#alpha">Alpha Build</a></span>
+                    <ul class="subnav">
+                        <li><a href="#alpha-templates">Templates</a></li>
+                    </ul>
+                </li>
+
+                <li><span><a class="wip" href="#sponsor">Sponsor Logos</a></span></li>
+                <li><span><a class="wip" href="#animations">Animations</a></span></li>
+                <li><span><a class="wip" href="#features">Extra Features</a></span></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dropdown-wrap">
+        <div class="dropdown">
+            <button type="button" class="btn btn-dropdown dropdown-toggle no-select" data-toggle="dropdown"><span>Select Brand</span></button>
+            <ul class="dropdown-menu brand-select">
+                <li><a href="#" data-brand="webplex">WebPlex</a></li>
+                <li><a href="#" data-brand="playplex">PlayPlex</a></li>
+                <li><a href="#" data-brand="tvland">TV Land</a></li>
+                <li><a href="#" data-brand="cc">Comedy Central</a></li>
+                <li><a href="#" data-brand="nick">Nick</a></li>
+                <li><a href="#" data-brand="paramount">Paramount</a></li>
+                <li><a href="#" data-brand="mtvINT">MTV Int.</a></li>
+                <li><a href="#" data-brand="kca">KCA 2019</a></li>
+                <li><a href="#" data-brand="vma19">VMA 2019</a></li>
+                <li><a href="#" data-brand="isleofmtv">Isle of MTV</a></li>
+                <li><a href="#" data-brand="spike">Spike</a></li>
+                <li><a href="#" data-brand="southpark">South Park</a></li>
+                <li><a href="#" data-brand="bet">BET</a></li>
+                <li><a href="#" data-brand="betplus-playplex">BET+ PlayPlex</a></li>
+                <li><a href="#" data-brand="gameone">Game1</a></li>
+                <li><a href="#" data-brand="jone">J-One</a></li>
+                <li><a href="#" data-brand="snowglobe">SnowGlobe</a></li>
+                <li><a href="#" data-brand="vidcon">VidCon</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="content-container">
+        <div class="content">
+            <section id="about">
+                <h1 class="title">WebPlex Design System</h1>
+                <hr>
+
+                <h2 class="title">About</h2>
+                <p>The Design Language System is the standardisation of all user interface and brand components across WebPlex. These elements have been abstracted from the core WebPlex code base so that they can be updated quickly and globally. This means that there will be no "special" or one-off element designs and that all colours are managed in a controlled way. </p>
+                <p>The design Language System features consistent, descriptive and symantically correct markup that can be reused across templates and compoenents.</p>
+                <p>The configuration relies on CSS4 Variable config that is used to customize and style multiple brands and templates with ease, providing a unique look and exeprience to every brand. The CSS structure and implementation removes a need for a post CSS processing for customization. It is framework independant and can be deployed to any framework with ease.</p>
+                <p>The system allows for fast deployment, modification and changes across a global infrastructure.</p>
+                
+                <h2 class="title">UX Principles</h2>
+                <p>Design does not occur in a vacuum. This is especially true in large companies where many different teams and departments are involved in turning design into a reality. Establishing design principles and aesthetic guidelines allows teams to start building products immediately, with limited intervention, which ultimately makes our sprints more efficient. Teams can also build with confidence that new products will fit into a larger vision for Content Platform.</p>
+
+                <h3 class="title">Clarity</h3>
+                <p>It is our responsibility to create products that are user-centric. These are products and experiences that are easy to understand by the primary users. Clarity in visual design is achieved by adhering to the principles balance, hierarchy and proximity. Clarity in language consists of short, descriptive sentences.</p>
+
+                <h3 class="title">Consistency</h3>
+                <p>We want users to feel familiarity across different products in Content Platform family so that they can spend their time more efficiently, instead of figuring out how the tool works. Users may be switching back and forth from different products in the same suite, so it important to be consistent in our use of navigation, UI elements and expected paradigms.</p>
+                <h3 class="title">Efficiency</h3>
+                <p>Our goal is to reuse design elements throughout different products. Reusing components, instead of designing them from scratch each time, will hopefully reduce iteration periods. We hope that these guidelines will be a self-service tools for engineers, so that they can start building their projects knowing that the design elements have been approved and agreed on.</p>
+
+                <h2 class="title">How to Use Design System</h2>
+                <p>Building software requires flexibility, collaboration and cooperation. We hope that these guidelines will help teams save time and energy when challenged with design decisions.</p>
+
+                <h3 class="title">InVision DSM</h3>
+
+                <p>The WebPlex Design System is the documentation of our UX and UI principles. The colors, components, etc. can be used in Sketch through the InVision DSM tool.</p>
+
+                <h3 class="title">Theming</h3>
+
+                <p>The DLS uses a configurable theme object that allow us to deliver a theme by brand, language, and region. The theme variables are merged into the configuration object, each inheriting or overriding the values from its parent the hierarchy. This means that only the variables that need to be overridden at a higher level should be included in the higher level theme config. The Base CSS is then generated and is included in the page via middleware route.<br><br>To view the different brand themes, select a brand from the dropdown available on every page.</p>
+
+
+            </section>
+
+            <section id="colors">
+                <h1 class="title">Colors</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+                <hr>
+
+                <h2 class="title" id="colors-swatch">Swatches</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+                <h3 class="title">Brand Colors</h3>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap colors-brand">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>brand-01</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-brand-01</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>brand-02</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-brand-02</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>brand-03</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-brand-03</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title">UI Colors</h3>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap colors-ui">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-01</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-01</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-02</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-02</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-03</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-03</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-04</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-04</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-05</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-05</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>ui-06</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-ui-06</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title">Text Colors</h3>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap colors-text">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>text-01</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-text-01</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>text-02</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-text-02</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>text-03</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-text-03</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>text-04</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-text-04</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title">Support Colors</h3>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap colors-support">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-01</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-01</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-02</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-02</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-03</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-03</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-04</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-04</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-05</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-05</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-06</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-06</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>support-07</h3>
+                                </div>
+                                <pre class="var-code"><code>--color-support-07</code></pre>
+                                <div class="sub-header">
+                                    <h4>hex value</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h2 class="title" id="colors-palette">Palettes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+
+
+                <div class="item-wrap">
+                    <div class="item item-standard palette-style">
+                        <div class="media-wrap primary">
+                            <h3 class="title">Primary Palettes</h3>
+                            <div class="layer-group">
+                                <div class="top-layer">
+                                    <div class="text-layer">
+                                        <div class="text-colors">
+                                            <h1>Text 03</h1>
+                                            <h1>Text 04</h1>
+                                        </div>
+                                        <div class="brand-colors">
+                                            <h1>Brand 01</h1>
+                                            <h1>Support 01</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="color-layer">
+                                        <div class="ui-colors"></div>
+                                        <div class="brand-colors"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media-wrap secondary">
+                            <h3 class="title">Secondary Palettes</h3>
+                            <div class="layer-group">
+                                <div class="top-layer">
+                                    <div class="text-layer">
+                                        <div class="text-colors">
+                                            <h1>Text 01</h1>
+                                            <h1>Text 02</h1>
+                                        </div>
+                                        <div class="brand-colors">
+                                            <h1>Brand 02</h1>
+                                            <h1>Support 02</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="color-layer">
+                                        <div class="ui-colors"></div>
+                                        <div class="brand-colors"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="title" id="colors-accessibility">Accessibility</h2>
+
+                <h3 class="title">Dolar Sit Amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+                <h3 class="title">Dolar Sit Amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+                <h3 class="title">Dolar Sit Amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+            </section>
+
+
+            <section id="grid">
+                <h1 class="title">Grid</h1>
+
+                <hr>
+
+                <h2 class="title" id="grid-overview">Overview</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.
+                    <a href="http://alwayson-design.s3.amazonaws.com/dls/breakpoint_grid/index.html" target="_blank" class="cta">View Grid</a>
+                </p>
+
+                <h2 class="title" id="grid-structure">Structure</h2>
+
+                <h3 class="title">Breakpoints</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+                <div class="item-wrap">
+                    <div class="item item-standard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Breakpoint</th>
+                                    <th>Columns</th>
+                                    <th>Gutters</th>
+                                    <th>Outer Margins</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Small</td>
+                                    <td>0px - 660px</td>
+                                    <td>12</td>
+                                    <td>12px</td>
+                                    <td>5% left, 5% right</td>
+                                </tr>
+                                <tr>
+                                    <td>Medium</td>
+                                    <td>661px - 980px</td>
+                                    <td>12</td>
+                                    <td>24px</td>
+                                    <td>5% left, 5% right</td>
+                                </tr>
+                                <tr>
+                                    <td>Large</td>
+                                    <td>981px - 1200px</td>
+                                    <td>12</td>
+                                    <td>24px</td>
+                                    <td>5% left, 5% right</td>
+                                </tr>
+                                <tr>
+                                    <td>X-Large</td>
+                                    <td>1201px - 1600px</td>
+                                    <td>12</td>
+                                    <td>24px</td>
+                                    <td>5% left, 5% right</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <h3 class="title">Spacing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+            </section>
+
+
+            <section id="typography">
+                <h1 class="title">Typography</h1>
+
+                <hr>
+
+                <h2 class="title" id="typography-overview">Overview</h2>
+                <h3 class="title">Using Typefaces in WebPlex</h3>
+                <p>For each brand Weplex supports up to two font families: a primary and secondary:</p>
+
+                <div class="item-wrap">
+                    <div class="item item-standard font-families">
+                        <div class="media-wrap text-media">
+                            <h1>Primary Font Family</h1>
+                        </div>
+                        <div class="media-wrap text-media">
+                            <h1>Secondary Font Family</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p>By design the primary family is for body copy and smaller headlines, while the secondary family is for display sizes and/or components with small character counts. If a brand uses a singular font, the primary and secondary are the same. It is strongly recommended that all font families have multiple weights with italic versions:</p>
+
+                <div class="item-wrap">
+                    <div class="item item-standard font-weights">
+                        <div class="media-wrap text-media">
+                            <h1>Normal 400</h1>
+                        </div>
+                        <div class="media-wrap text-media">
+                            <h1>Italic 400</h1>
+                        </div>
+                        <div class="media-wrap text-media">
+                            <h1>Bold 700</h1>
+                        </div>
+                        <div class="media-wrap text-media">
+                            <h1>Bold Italic 700</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title">Body Copy</h3>
+                <p>Weplex uses two sizes for body copy. The smaller size or p2 is used for maximizing screen real estate in smaller areas such as content descriptions while the larger size or p1 is used for long-form reading such as article text.</p>
+
+                <div class="item-wrap">
+                    <div class="item item-standard">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Type Style</th>
+                                    <th>px</th>
+                                    <th>rem</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>p1</td>
+                                    <td>16px</td>
+                                    <td>1.6rem</td>
+                                    <td>long-form reading</td>
+                                </tr>
+                                <tr>
+                                    <td>p2</td>
+                                    <td>14px</td>
+                                    <td>1.4rem</td>
+                                    <td>standard UI</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h2 class="title" id="typography-styles">Type Styles</h2>
+                <p>Using the primary and secondary font families, Weplex restricts typography to eleven, pre-configured type styles:</p>
+
+
+                <h3 class="title">Display Styles</h3>
+
+                <div class="item-wrap">
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-tera">Tera</h1>
+                            <pre class="var-code">
+                               <code>--font-tera</code>
+                            </pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-giga">Giga</h1>
+                            <pre class="var-code"><code>--font-giga</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="title">Header Styles</h3>
+
+                <div class="item-wrap">
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-mega">Mega</h1>
+                            <pre class="var-code"><code>--font-mega</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-kilo">Kilo</h1>
+                            <pre class="var-code"><code>--font-kilo</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-milli">Milli</h1>
+                            <pre class="var-code"><code>--font-milli</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-micro">Micro</h1>
+                            <pre class="var-code"><code>--font-micro</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-nano">Nano</h1>
+                            <pre class="var-code"><code>--font-nano</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-pico">Pico</h1>
+                            <pre class="var-code"><code>--font-pico</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="title">Body Copy Styles</h3>
+
+                <div class="item-wrap">
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-p1">p1</h1>
+                            <pre class="var-code"><code>--font-p1</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-p2">p2</h1>
+                            <pre class="var-code"><code>--font-p2</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item item-standard type-style">
+                        <div class="meta-wrap">
+                            <h1 class="font-caption">Caption</h1>
+                            <pre class="var-code"><code>--font-caption</code></pre>
+                            <p>Integer molestie diam lacus, eu consequat risus fermentum et. Mauris augue sem, semper vel orci non, maximus.</p>
+                        </div>
+                        <div class="media-wrap">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Font Family</td>
+                                        <td><span class="font-family">Merriweather, sans-serif</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Style</td>
+                                        <td><span class="font-style">normal</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Size</td>
+                                        <td><span class="font-size">54px</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Font Weight</td>
+                                        <td><span class="font-weight">700</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Line Height</td>
+                                        <td><span class="line-height">67.5px</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="icons">
+                <h1 class="title">Icons</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis. Integer maximus, lorem sit amet ullamcorper volutpat, sem velit posuere tortor, ut pretium nulla nisl suscipit tellus. In nec nulla viverra.</p>
+
+                <hr>
+
+                <h2 class="title" id="icons-logos">Logos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-viacom"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Viacom</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-viacom</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-paramountnetwork"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Paramount Network</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-paramountnetwork</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-nav-logo"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>WebPlex</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-nav-logo</code></pre>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title" id="icons-social">Social Icons</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-facebook"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Facebook</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-facebook</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-instagram"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Instagram</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-instagram</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-tumblr"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Tumblr</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-tumblr</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Twitter</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-twitter</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-youtube"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>YouTube</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-youtube</code></pre>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title" id="icons-ui">UI Icons</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+
+                <div class="grid-container doc-item-container">
+                    <div class="items-wrap">
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Search</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-search</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-checkmark-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Checkmark</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-chevron-right-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Chevron Right</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-caret-down-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Chevron Down</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-play-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Play</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-lock-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Lock</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-photos-24"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Photos 24</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-photos-36"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Photos 36</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-chevron-up-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Chevron Up</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-playlist-24"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Playlist 24</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-playlist-36"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Playlist 36</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-close-12"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Close 12</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                        <div class="item doc-item">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                        <span class="icon-close-24"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meta-wrap">
+                                <div class="header">
+                                    <h3>Close 24</h3>
+                                </div>
+                                <!--                                <pre class="var-code"><code>--icon-checkmark-12</code></pre>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+<!--
+            <section id="components" class="container">
+                <h1 class="title">Components (Under construction)</h1>
+
+                <hr>
+
+                <h2 class="title" id="typography-overview">Overview</h2>
+                <h3 class="title">This part of the site is under construction</h3>
+                <p><a data-page="../alpha/cards" href="#" target="_blank" class="alpha">Click here for card documentation</a></p>
+
+                <h2 class="title" id="typography-cards">Cards</h2>
+                
+                
+                <p>Below is a list of all the cards WebPlex currently supports:</p>
+                <ul class="block-list">
+                    <li><a href="">Full Episodes Wide</a></li>
+                    <li><a href="">Full Episodes Standard</a></li>
+                    <li><a href="">Videos Wide</a></li>
+                    <li><a href="">Videos Standard</a></li>
+                    <li><a href="">Articles Wide</a></li>
+                    <li><a href="">Articles Standard</a></li>
+                    <li><a href="">Collections Standard</a></li>
+                    <li><a href="">Promos Wide</a></li>
+                    <li><a href="">Promos Standard</a></li>
+                    <li><a href="">Promos Small</a></li>
+                    <li><a href="">Series</a></li>
+                    <li><a href="">Cast</a></li>
+                    <li><a href="">Apps</a></li>
+                </ul>
+
+                
+
+                <div class="component-card"></div>
+
+                
+                <h3 class="title">Full Episodes Wide</h3>
+                <div class="item-wrap">
+                    <div data-card-type="Full Episodes Wide" class="component-card"></div>
+                </div>
+
+
+
+                <h3 class="title">Full Episodes Standard</h3>
+                <div class="item-wrap">
+                    <div data-card-type="Full Episodes Standard" class="component-card"></div>
+                </div>
+
+               
+                <h3 class="title">Videos Wide</h3>
+                <div class="item-wrap">
+                    <div data-card-type="Videos Wide" class="component-card"></div>
+                </div>
+
+                <h3 class="title">Videos Standard</h3>
+                <div class="item-wrap">
+                    <div data-card-type="video-standard" class="component-card"></div>
+                    
+                </div>
+                <h3 class="title">Articles Wide</h3>
+                <div class="item-wrap">
+                    <div data-card-type="article-wide" class="component-card"></div>
+                    
+                </div>
+
+                <h3 class="title">Articles Standard</h3>
+                <div class="item-wrap">
+                    <div data-card-type="article-standard" class="component-card"></div>
+                   
+                </div>
+                <h3 class="title">Collections Standard</h3>
+                <div class="item-wrap">
+                    <div data-card-type="collection-standard" class="component-card"></div>
+                </div>
+
+                <h3 class="title">Promos Wide</h3>
+                <div class="item-wrap">
+                    <div data-card-type="promo-wide" class="component-card"></div>
+                   
+                </div>
+
+                <h3 class="title">Promos Standard</h3>
+                <div class="item-wrap">
+                    <div data-card-type="promo_small-standard" class="component-card"></div>
+                </div>
+                <h3 class="title">Promos Small</h3>
+                <div class="item-wrap">
+                    <div data-card-type="promo_small" class="component-card"></div>
+                    
+                </div>
+
+                <h3 class="title">Series</h3>
+                <div class="item-wrap">
+                    <div data-card-type="poster" class="component-card"></div>
+                   
+                </div>
+
+                <h3 class="title">Cast</h3>
+                <div class="item-wrap">
+                    <div data-card-type="cast" class="component-card"></div>
+                    
+                </div>
+
+                <h3 class="title">Apps</h3>
+                <div class="item-wrap">
+                    <div data-card-type="app" class="component-card"></div>
+                </div>
+
+            </section>
+-->
+
+            <section id="htmltructure">
+                <h1 class="title" id="htmltructure-overview">Overview</h1>
+                <p>The WebPlex Design Language System is intended to create standardized HTML markup and base CSS classes using Atomic Design methodology to provide a general, reusable structure for our markup within each component across our apps.  Class modifiers are then created using CSS and are applied to the parent containers to override how the markup is displayed to the end user.
+                <hr>
+
+                <h2 class="title" id="htmltructure-methology">Atomic Design Methodology</h2>
+                <p>WebPlex utilizes the idea of Atomic Design Methodology which breaks components into individual resources that can be reused to create larger structures. </p>
+                <br/><br/><img src="img/atomicdesign.jpg" width="500px"/>
+                <h2 class="title" id="htmltructure-pages">Pages</h2>
+                <p>Each Page consists of the following elements which are used to compose the user interface:</p>
+                <ul>
+                    <li><p><b>Templates</b>: Consist of one or more Organisms and can be defined by template class modifiers to determine how components display within the page template</p></li>
+                        <li><p><b>Header and Footer</b>: Unique Organisms that don't follow the structure of a LineList and are comprised of reusable Molecules and Atoms</p></li>
+                            <li> <p><b>LineList Components</b>: A Page is composed of LineList Organisms, each of which consists of one or more Card Organisms.  Each LineList receives one or more Class Modifiers which defines how the content will display</p></li>
+                                <li> <p><b>Cards</b>: An iterating group of items within a component comprised of Molecules and Atoms.  Each receives a data-driven "type" class which defines how the content within the item type will display</p></li>
+                                    <li> <p><b>Meta and Media</b>: Each card can have Meta and Media Molecules that are comprised of data-driven Atoms.  For instance, if meta information or media information are not defined, they will not render.  The same is true for Atoms within the meta or media components.</p></li>
+                </ul>
+                    <h2 class="title" id="htmltructure-templates">Templates</h2>
+                    <p>Page templates are containers to hold multiple module containers.  They can also contain class modifiers which define the display of modules within the page template.
+                    <br/>All modules within a page template are "LineList" components, with the exception of the Header, Footer, and Bala Notifier components.
+                    </p>
+                    <br/><br/><img src="img/templates.jpg" width="500px"/>
+
+                    <h2 class="title" id="htmltructure-linelist">LineList Component (Organism)</h2>
+
+                    <p>The LineList Component consists of multiple data-driven components and it's display is defined by class modifiers that are appended to the section node.</p>
+                    <p>The main components consist of:</p>
+                    <ul>
+                        <li><p>Module Container with modifier classes to define how the component itself will display</p></li>
+                        <li><p>Section Header (data-driven) that will display the title of the component</p></li>
+                        <li><p>Filter (data-driven) that will display a filter for the component</p></li>
+                        <li><p>Grid Container containing the iterative Cards</p></li>
+                        <li><p>Cards receive a {type} class in order to:</p></li>
+                        <li><p>Define how content within the item type will display</p></li>
+                        <li><p>Allow for a mixed grid container of items</p></li>
+                        <li><p>Load More (data-driven) component to control component pagination </p></li>
+                    </ul>
+                    <h2 class="title" id="htmltructure-card">Card Components (Organism)</h2>
+                    <p>Single items within a Grid Container are iterative and are also composed of standardized, data-driven components.  Display of items are controlled using a "type" class applied to each item which is data-driven.</p>
+                    <p>A Card consists of the following data-driven components: </p>
+                    <ul>
+                        <li><p>Media Component </p></li>
+                        <li><p>Meta Component </p></li>
+                     </ul>    <br/><img src="img/card.jpg" width="500px"/>
+
+
+                    <h2 class="title" id="htmltructure-media">Media Component (Molecule)</h2>
+                    <p> Within a Card Component, the Media Component consists of an Image or Video (depending on the data provided), as well as different labels and timestamps that are rendered if the data exists.</p>
+                    <ul class="block-list">
+                        <li><p>Picture or Video</p></li>
+                            <li><p>Alert Label (e.g., Video, Episode)</p></li>
+                                <li><p>Auth Label (e.g., Sign in to watch)</p></li>
+                                    <li><p>Timestamp Label (e.g., 20:13)</p></li>
+                    </ul><br/><img src="img/media.jpg" width="500px"/>
+
+                    <h2 class="title" id="htmltructure-meta">Meta Component (Molecule)(Organism)</h2>
+                    <p>Within a card component, the Meta Component consists of test data that describes the Media and calls to actions such as buttons and links.  These include:</p>
+                    <ul class="block-list">
+                    <li>Header</li>
+                    <li>Sub-header</li>
+                        <li>Deck</li>
+                            <li>Meta info</li>
+                                <li>Buttons</li>
+                                </ul>
+                                <br/><img src="img/meta.jpg" width="500px"/>
+
+            </section>
+
+            <section id="alpha">
+                <h1 class="title">Alpha Build</h1>
+                <p>Alpha Build is a platformless 1:1 HTML Master Markup reference build for all components and template providing a one place for all markup reference for a live site deployment.</p>
+
+                <hr>
+
+                <h2 class="title" id="alpha-templates">Card Components</h2>
+                <ul class="block-list">
+                    <li><a data-page="../alpha/cards" href="#" target="_blank" class="alpha">Cards</a></li>
+                </ul>
+                <h2 class="title" id="alpha-templates">Templates</h2>
+                <!--<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>-->
+                <ul class="block-list">
+                    <li><a data-page="../alpha/homepage-template" href="#" target="_blank" class="alpha">Homepage</a></li>
+                    <li><a data-page="../alpha/hybridhome-template" href="#" target="_blank" class="alpha">Hybrid Home</a></li>
+                    <li><a data-page="../alpha/contenthub-template" href="#" target="_blank" class="alpha">Content Hub</a></li>
+                    <li><a data-page="../alpha/seriesmain2-template" href="#" target="_blank" class="alpha">Series Main</a></li>
+                    <li><a data-page="../alpha/showshub-template" href="#" target="_blank" class="alpha">Shows Hub</a></li>
+                    <li><a data-page="../alpha/schedule-template" href="#" target="_blank" class="alpha">Schedule</a></li>
+                    <li><a data-page="../alpha/generictext-template" href="#" target="_blank" class="alpha">Generic Text</a></li>
+                    <li><a data-page="../alpha/gameshub-template" href="#" target="_blank" class="alpha">Games Hub</a></li>
+                    <li><a data-page="../alpha/appshub-template" href="#" target="_blank" class="alpha">Apps Hub</a></li>
+                    <li><a data-page="../alpha/episodehub-template" href="#" target="_blank" class="alpha">Episode Hub</a></li>
+                    <li><a data-page="../alpha/bumper-template" href="#" target="_blank" class="alpha">Bumper</a></li>
+                    <li><a data-page="../alpha/bumper-error-template" href="#" target="_blank" class="alpha">Bumper Error</a></li>
+                </ul>
+
+            </section>
+
+            <section id="sponsor">
+                <h1 class="title">Sponsor Logos</h1>
+                <p>Webplex supports the use of a Sponsor Logo Asset (SLA) within our templates. SLA’s can be used to sponsor pages, modules (content packages) and individual promo cards.</p>
+
+                <hr>
+
+
+                <h2 class="title">Specifications</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+                <h3 class="title">Page Sponsorship</h3>
+                <ul>
+                    <li>
+                        <a href="https://viacom.invisionapp.com/share/XQP4EGG59EV#/screens/331406534_SLA_Page_Placement_Desktop" target="_blank">Desktop</a> (102px x 93px)</li>
+                    <li><a href="#" target="_blank">Mobile</a> (spec)</li>
+                </ul>
+
+                <h3 class="title">Module Sponsorship</h3>
+                <ul>
+                    <li><a href="https://viacom.invisionapp.com/share/XQP4EGG59EV#/screens/331419655_SLA_Module_Placement_Desktop" target="_blank">Desktop</a> (82px x 75px)</li>
+                    <li><a href="#" target="_blank">Mobile</a> (spec)</li>
+                </ul>
+
+                <h3 class="title">Promo Card Sponsorship</h3>
+                <ul>
+                    <li><a href="https://viacom.invisionapp.com/share/XQP4EGG59EV#/screens/331421032_SLA_Card_Placement_Desktop" target="_blank">Desktop</a> (82px x 75px)</li>
+                    <li><a href="#" target="_blank">Mobile</a> (spec)</li>
+                </ul>
+
+                <h3 class="title">Examples</h3>
+                <ul>
+                    <li><a href="#" target="_blank">Content Hub</a></li>
+                    <li><a href="#" target="_blank">Video Player</a></li>
+                    <li><a href="#" target="_blank">Photo Gallery</a></li>
+                </ul>
+
+                <h2 class="title">What’s New: SVGs</h2>
+
+                <p>SLA’s should be submitted as a Scalable Vector Graphics or SVGs. This allows for a number of improvements:</p>
+
+                <ul class="block-list">
+                    <li>Logo sizes are defined by the objects that house them</li>
+                    <li>If logo placement sizes change no update needed for SLA template</li>
+                    <li>Clear viewability on devices with retina displays</li>
+                    <li>Generally smaller file sizes</li>
+                </ul>
+
+                <h2 class="title">Logo Requirements</h2>
+                <p>When creating a SLA you first need the sponsor’s logo with the following requirements:</p>
+                <ul class="block-list">
+                    <li>The original file must be in a vector format (.ai or .eps)</li>
+                    <li>Although it can be color, logos must be a version for use on dark backgrounds according to the sponsor’s brand guidelines</li>
+                    <li>Typography must be converted to outlines</li>
+                    <li>Artboards must be the same size as logo</li>
+                </ul>
+
+
+                <h2 class="title">Video</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+                <video controls src="assets/creating_SLA.qt"></video>
+                <h2 class="title">Downloads</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+                <div class="item-wrap">
+                    <button type="button" class="btn btn-download"><span><a href="../assets/SLA_template.zip" target="_blank">Download SLA Template</a></span></button>
+                </div>
+            </section>
+
+
+            <section id="animations">
+                <h1 class="title">Animations</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra rutrum ante, sit amet bibendum augue ultricies convallis.</p>
+
+                <hr>
+
+                <h2 class="title">Global Animations</h2>
+                <p>These animations are applied globally, regardless of brand. They are used on carousel cards, as well as promos and collections.</p>
+
+                <h3 class="title">Promos</h3>
+                <p>Promo hover states animate the text due to the background being a full image.</p>
+                <div class="grid-container">
+                    <div class="items-wrap">
+                        <div class="item item-wide promo text-hover">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sponsor-bug"><img src="../alpha/img/ad/sponsor-logo.svg"></div>
+                            <div class="meta-wrap">
+                                <div class="spr-header"><span>Promo Superheader</span></div>
+                                <div class="header">
+                                    <h3>Promo Title Lorem Ipsum Dolor</h3>
+                                </div>
+                                <div class="deck">
+                                    <p>Sub headline lorem ipsum dolor sit amet</p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="#">Call to Action</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item promo text-hover">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="spr-header"><span>Promo Superheader</span></div>
+                                <div class="header">
+                                    <h3>Promo Title Lorem Ipsum Dolor</h3>
+                                </div>
+                                <div class="deck">
+                                    <p>Promo description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="#">Call to Action</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item promo text-hover">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="spr-header"><span>Promo Superheader</span></div>
+                                <div class="header">
+                                    <h3>Promo Title Lorem Ipsum Dolor</h3>
+                                </div>
+                                <div class="deck">
+                                    <p>Promo description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="#">Call to Action</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item promo text-hover">
+                            <div class="media-wrap">
+                                <div class="media">
+                                    <div class="content">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="meta-wrap">
+                                <div class="spr-header"><span>Promo Superheader</span></div>
+                                <div class="header">
+                                    <h3>Promo Title Lorem Ipsum Dolor</h3>
+                                </div>
+                                <div class="deck">
+                                    <p>Promo description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="link-group">
+                                    <a href="#">Call to Action</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h3 class="title">Collections</h3>
+                <p>Collection cards get the same treatment as promos.</p>
+                <div class="grid-container collections-container">
+                    <div class="items-wrap">
+                        <div class="item collection playlist text-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span class="icon"></span></div>
+                                    <div class="header">
+                                        <h3>Video Playlist Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="meta"># Items</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item collection videos text-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span class="icon"></span></div>
+                                    <div class="header">
+                                        <h3>Music Playlist Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="meta"># Items</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item collection photos text-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span class="icon"></span></div>
+                                    <div class="header">
+                                        <h3>Photo Gallery Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="meta"># Items</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title">Posters</h3>
+                <p>Poster cards that are packaged in a carousel get a global animation.</p>
+                <div class="grid-container poster-container">
+                    <div class="items-wrap">
+                        <div class="item poster generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title">Cast</h3>
+                <p>Cast cards are packaged in a carousel.</p>
+                <div class="grid-container cast-container">
+                    <div class="items-wrap">
+                        <div class="item cast generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item cast generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item cast generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item cast generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item cast generic-hover">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item cast generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Actor Name</h3>
+                                    </div>
+                                    <div class="sub-header">
+                                        <h4>Character Name</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title">Carousel Cards</h3>
+                <p>Cards that are packaged in a carousel follow the same animation as poster and cast cards</p>
+                <div class="grid-container carousel-cards">
+                    <div class="items-wrap">
+                        <div class="item article generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item article generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item article generic-hover">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="title">Card Animations</h2>
+                <p>Animations for card hover may vary per brand. Default hover is "Grow and Shadow," however, that can change based on the brand's needs.
+                    <a href="#" data-page="http://alwayson-design.s3.amazonaws.com/dls/hover-test/hover-wip" target="_blank" class="cta alpha">View Hover Examples</a></p>
+                <h3 class="title">Grow and Shadow</h3>
+                <p><a href="#" data-page="http://alwayson-design.s3.amazonaws.com/dls/hover-test/seriesmain-shadow" target="_blank" class="cta alpha">View Demo</a></p>
+
+                <div class="grid-container">
+                    <div class="items-wrap">
+                        <div class="item full-ep item-wide shadow">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="meta">00/00/00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item full-ep shadow">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item article shadow">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item video shadow">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">new</div>
+                                    <div class="label-timestamp">00:00</div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Show Name</span><span>Descriptor</span><span>S# E#</span></div>
+                                    <div class="header">
+                                        <h3>Video Title Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container poster-container">
+                    <div class="items-wrap poster-container">
+                        <div class="item poster shadow">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster shadow">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster shadow">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster shadow">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title">Extrude</h3>
+                <p>Extrusion size can be changed depending on brand guidelines<a href="#" data-page="http://alwayson-design.s3.amazonaws.com/dls/hover-test/seriesmain-extrude" target="_blank" class="cta alpha">View Demo</a></p>
+                <div class="grid-container">
+                    <div class="items-wrap">
+                        <div class="item full-ep item-wide extrude">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title Lorem Ipsum Dolor Sit Amet</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="meta">00/00/00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item full-ep extrude">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item article extrude">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item video extrude">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">new</div>
+                                    <div class="label-timestamp">00:00</div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Show Name</span><span>Descriptor</span><span>S# E#</span></div>
+                                    <div class="header">
+                                        <h3>Video Title Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container poster-container">
+                    <div class="items-wrap poster-container">
+                        <div class="item poster extrude">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster extrude">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster extrude">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster extrude">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title">Wobble</h3>
+                <p><a href="#" data-page="http://alwayson-design.s3.amazonaws.com/dls/hover-test/seriesmain-wobble" target="_blank" class="cta alpha">View Demo</a></p>
+                <div class="grid-container">
+                    <div class="items-wrap">
+                        <div class="item full-ep item-wide wobble">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title Lorem Ipsum Dolor Sit Amet</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+
+                                    <div class="meta">00/00/00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item full-ep wobble">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">Latest Episode</div>
+                                    <div class="label-auth">sign in to watch</div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="spr-header" title="Show Name">Show Name</div>
+                                    <div class="header"><span>S#</span><span>E#</span></div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Episode Title</h4>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Episode description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item article wobble">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Category</span></div>
+                                    <div class="header">
+                                        <h3>Article Headline Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Sub headline lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="meta"><span>by Author Name</span><span># ago</span></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item video wobble">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                    <div class="label-alert">new</div>
+                                    <div class="label-timestamp">00:00</div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="spr-header"><span>Show Name</span><span>Descriptor</span><span>S# E#</span></div>
+                                    <div class="header">
+                                        <h3>Video Title Lorem Ipsum Dolor</h3>
+                                    </div>
+                                    <div class="deck">
+                                        <p>Video description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="meta"><span>00/00/00</span></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container poster-container">
+                    <div class="items-wrap poster-container">
+                        <div class="item poster wobble">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster wobble">
+                            <a href="http://alwayson-design.s3.amazonaws.com/">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster wobble">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item poster wobble">
+                            <a href="#">
+                                <div class="media-wrap">
+                                    <div class="media">
+                                        <div class="content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="meta-wrap">
+                                    <div class="header">
+                                        <h3>Show Name</h3>
+                                    </div>
+                                    <div class="sub-header" title="Episode Title Lorem Ipsum Dolor Sit Amet">
+                                        <h4>Tune In</h4>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="features">
+                <h1 class="title">Extra Features</h1>
+                <hr>
+                <h2 class="title">Page Background</h2>
+                <p>WebPlex can support many types of backgrounds other than the default UI color.</p>
+
+                <h3 class="title">Gradients</h3>
+                <p>Gradients can be applied to the page background by modifying the <code class="var-code inline">--page-background</code> variable with a gradient</p>
+
+                <h3 class="title">Images</h3>
+                <p>Images can be added to the page background by modifying the <code class="var-code inline">--page-background</code> variable with an image path. The image can be in any format, and can also be used with a gradient as well.</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

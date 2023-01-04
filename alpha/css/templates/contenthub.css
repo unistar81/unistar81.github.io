@@ -1,0 +1,52 @@
+.contenthub-template .content-package-module-container:first-child:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background-color: var(--color-ui-04);
+    top: 0;
+}
+
+
+.contenthub-template .content-package-module-container:first-child .section-header > *:first-child {
+    font: var(--font-giga);
+    font-weight: var(--font-giga-weight);
+    line-height: var(--font-giga-line-height);
+    letter-spacing: normal;
+    text-transform: var(--font-giga-text-transform);
+
+}
+
+.contenthub-template .content-package-module-container:first-child .section-header {
+    margin-top: calc(var(--spacer) * 3);
+    color: var(--color-text-01);
+}
+
+
+.contenthub-template .flex-promo .item {
+    --grid-columns: 1;
+    margin-bottom: 0;
+}
+
+.contenthub-template .flex-promo .item .media {
+    padding-top: 0
+}
+
+.contenthub-template .flex-promo .item .media .content {
+    position: relative;
+}
+
+.contenthub-template .flex-promo .media .content {
+    padding-top: 0
+}
+
+
+@media screen and (max-width: 660px) {
+    .contenthub-template .content-package-module-container:first-child:before {
+        height: 85%;
+    }
+    .contenthub-template .content-package-module-container:first-child .section-header {
+        margin-top: calc(var(--spacer) * 2);
+    }
+}

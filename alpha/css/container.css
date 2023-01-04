@@ -1,0 +1,46 @@
+.module-container {
+    position: relative;
+    padding-bottom: var(--module-inner-spacing);
+    padding-top: var(--module-inner-spacing);
+
+    margin-bottom: var(--module-outer-spacing);
+    margin-top: var(--module-outer-spacing);
+}
+
+.module-container.module-inverse {
+    --module-outer-spacing: var(--module-spacing);
+    background-color: var(--color-ui-04);
+    color: var(--color-text-01);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(100% - var(--grid-margin) * 2 * 100%);
+    min-width: var(--grid-min-width);
+    max-width: var(--grid-max-width);
+}
+
+.module-stretch .container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*
+.container .items-wrap:before,
+.container .items-wrap:after{
+    content: " ";
+    display: table;
+}
+
+.container .items-wrap:after {
+    clear: both;
+}
+*/
+
+@media screen and (max-width: 660px) {
+    .module-container {
+        --module-inner-spacing: calc(var(--spacer) * 4);
+    }
+}

@@ -1,0 +1,84 @@
+/*****************************************grid*****************************************/
+:root {
+    --grid-gutter: calc(var(--spacer) * 4);
+    --grid-row-spacing: calc(var(--spacer) * 4);
+}
+
+.grid-container {
+    position: relative;
+}
+
+.grid-container .items-wrap {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    /*
+    --grid-gutter: calc(var(--spacer) * 4);
+    --grid-row-spacing: calc(var(--spacer) * 4);
+    */
+
+    margin-left: calc(-1 * var(--grid-gutter) / 2);
+    margin-right: calc(-1 * var(--grid-gutter) / 2);
+
+
+    margin-bottom: calc(var(--grid-row-spacing) * -1);
+}
+
+.grid-container .item {
+    /*min-height: 1px;*/
+    margin-left: calc(var(--grid-gutter) / 2);
+    margin-right: calc(var(--grid-gutter) / 2);
+
+    width: calc(100% / 3 - 5%);
+    width: calc(100% / var(--grid-columns) - var(--grid-gutter));
+
+    /*??????*/
+    /*min-width: 240px;*/
+    margin-bottom: var(--grid-row-spacing);
+    display: inline-block;
+}
+
+/*only one item*/
+.grid-container .item:first-child:nth-last-child(1) {
+    --grid-columns: var(--grid-columns-only-one-item);
+}
+/*only two items*/
+.grid-container .item:first-child:nth-last-child(2),
+.grid-container .item:first-child:nth-last-child(2) ~ .item {
+    --grid-columns: var(--grid-columns-only-two-items);
+}
+/*only three items*/
+.grid-container .item:first-child:nth-last-child(3),
+.grid-container .item:first-child:nth-last-child(3) ~ .item {
+    --grid-columns: var(--grid-columns-only-three-items);
+}
+
+/*****************************************grid*****************************************/
+
+@media screen and (max-width: 980px) {
+    :root {
+        --grid-columns: 2;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    :root {
+        --grid-columns: 1;
+        --grid-row-spacing: calc(var(--spacer) * 2);
+        --module-inner-spacing: calc(var(--spacer) * 3);
+        --grid-gutter: calc(var(--spacer) * 2);
+    }
+
+    .grid-container .item {
+        margin-bottom: calc(var(--spacer) * 3);
+    }
+}
+
+
+.module-container .grid-container + .expand-wrap {
+    margin-top: var(--grid-row-spacing);
+}
+
+

@@ -1,0 +1,368 @@
+:root {
+    /********************* dls *********************/
+    --color-brand-01: #40F273;
+    --color-brand-02: #40F273;
+    --color-brand-03: #5DF3F4;
+
+    --color-text-01: #ffffff;
+    --color-text-02: #DDD0E2;
+    --color-text-03: #ffffff;
+    --color-text-04: #ffffff;
+
+    /*--color-ui-01: linear-gradient(to bottom, var(--color-support-02), var(--color-brand-01));*/
+    --color-ui-01: #372363;
+    --color-ui-01-transparent: rgba(86, 23, 134, 0);
+    --color-ui-02: #0F0B39;
+    --color-ui-03: #160F56;
+    --color-ui-04: #0F0B39;
+    --color-ui-05: #160F56;
+    --color-ui-06: #120C44;
+
+    --color-support-01: #5DF3F4;
+    --color-support-02: #140E4E;
+    --color-support-03: #5AA700;
+    --color-support-04: #CE3336;
+    --color-support-05: #FFFFFF;
+    --color-support-06: #000000;
+    --color-support-07: #F6F6F6;
+
+    --ui-shadow-01: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    --ui-shadow-02: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    --ui-shadow-03: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+
+
+    --page-background: url(../../img/brand-images/kca/page-background.png) no-repeat center center fixed, linear-gradient(to bottom, #110A3D, #713881, #F28BD0) fixed;;
+
+
+    /*   
+    --page-background: linear-gradient(to bottom, #110A3D, #713881, #F28BD0) fixed;;
+    --page-background: url(../img/city.png) fixed bottom center;
+    --page-background: linear-gradient(to bottom, #3B2270, #301C6A, #F28BD0);;
+    --page-background: linear-gradient(to bottom, var(--color-support-02), var(--color-brand-01));;
+    */
+
+
+       /************ logo ************/
+
+    /***sample****/
+
+    /* font logo
+    --header-logo-font: 'global-icons';
+    --header-logo-image: none;
+    --header-logo-image-mobile: none;
+
+    --header-logo-content: var(--icon-nav-logo);
+    --header-logo-content-mobile: var(--icon-nav-logo);
+    --header-logo-font-size: 38px;
+    --header-logo-font-size-mobile: 20px;
+
+    --header-logo-width: auto;
+    --header-logo-height: auto;
+    --header-logo-width-mobile: auto;
+    --header-logo-height-mobile: auto;
+
+    --header-logo-background-color: transparent;
+    */
+
+    /* image logo
+    --header-logo-image: url(../../img/KCA-horizontal.png);
+    --header-logo-image-mobile: url(../../img/KCA-horizontal.png);
+    --header-logo-width: 240px;
+    --header-logo-height: 40px;
+    --header-logo-width-mobile: 140px;
+    --header-logo-height-mobile: 25px;
+
+    --header-logo-content: '';
+    --header-logo-content-mobile: '';
+    --header-logo-font-size: 0;
+    --header-logo-font-size-mobile: 0;
+    --header-logo-background-color: transparent;
+    */
+    /***sample****/
+
+
+    /*font logo*/
+    --header-logo-image: url(../../img/brand-images/kca/logo.png);
+    --header-logo-image-mobile: url(../../img/brand-images/kca/logo-mobile.png);
+    --header-logo-width: 134px;
+    --header-logo-height: 167px;
+    --header-logo-width-mobile: 190px;
+    --header-logo-height-mobile: 28px;
+
+    --header-logo-content: '';
+    --header-logo-content-mobile: '';
+    --header-logo-font-size: 0;
+    --header-logo-font-size-mobile: 0;
+    --header-logo-background-color: transparent;
+
+    /************ logo ************/
+
+
+    --header-logo-container-height: 239px;
+    --header-logo-color: var(--color-text-01);
+
+    --massive-header-image-height: 75px;
+    --massive-header-image-height-mobile: 50px;
+
+    --spacer: 6px;
+
+    --border-radius: 0px;
+    /********************* dls *********************/
+
+    /********************* fonts config *********************/
+    --font-family-primary: 'Galano', sans-serif;
+    --font-family-secondary: 'Galano', sans-serif;
+
+    --font-tera-family: 'Galano', sans-serif;
+    --font-tera-size: 5.4rem;
+    --font-tera-weight: 900;
+    --font-tera-style: normal;
+    --font-tera-line-height: 1;
+    --font-tera-text-transform: uppercase;
+
+    --font-tera: var(--font-tera-style) var(--font-tera-weight) var(--font-tera-size)/var(--font-tera-line-height) var(--font-tera-family);
+
+    --font-giga-family: 'Galano', sans-serif;
+    --font-giga-size: 4.2rem;
+    --font-giga-weight: 900;
+    --font-giga-style: normal;
+    --font-giga-line-height: 1;
+    --font-giga-text-transform: uppercase;
+
+    --font-giga: var(--font-giga-style) var(--font-giga-weight) var(--font-giga-size)/var(--font-giga-line-height) var(--font-giga-family);
+
+    --font-mega-family: 'Galano', sans-serif;
+    --font-mega-size: 2.8rem;
+    --font-mega-weight: 900;
+    --font-mega-style: normal;
+    --font-mega-line-height: 1;
+    --font-mega-text-transform: uppercase;
+
+    --font-mega: var(--font-mega-style) var(--font-mega-weight) var(--font-mega-size)/var(--font-mega-line-height) var(--font-mega-family);
+
+    --font-kilo-family: 'Galano', sans-serif;
+    --font-kilo-size: 2.4rem;
+    --font-kilo-weight: 900;
+    --font-kilo-style: normal;
+    --font-kilo-line-height: 1;
+    --font-kilo-text-transform: uppercase;
+
+    --font-kilo: var(--font-kilo-style) var(--font-kilo-weight) var(--font-kilo-size)/var(--font-kilo-line-height) var(--font-kilo-family);
+
+    --font-milli-family: 'Galano', sans-serif;
+    --font-milli-size: 2.4rem;
+    --font-milli-weight: 900;
+    --font-milli-style: normal;
+    --font-milli-line-height: 1;
+    --font-milli-text-transform: uppercase;
+
+    --font-milli: var(--font-milli-style) var(--font-milli-weight) var(--font-milli-size)/var(--font-milli-line-height) var(--font-milli-family);
+
+    --font-micro-family: 'Galano', sans-serif;
+    --font-micro-size: 1.8rem;
+    --font-micro-weight: 900;
+    --font-micro-style: normal;
+    --font-micro-line-height: 1;
+    --font-micro-text-transform: uppercase;
+
+    --font-micro: var(--font-micro-style) var(--font-micro-weight) var(--font-micro-size)/var(--font-micro-line-height) var(--font-micro-family);
+
+    --font-nano-family: 'Galano', sans-serif;
+    --font-nano-size: 1.4rem;
+    --font-nano-weight: 700;
+    --font-nano-style: normal;
+    --font-nano-line-height: 1;
+    --font-nano-text-transform: uppercase;
+
+    --font-nano: var(--font-nano-style) var(--font-nano-weight) var(--font-nano-size)/var(--font-nano-line-height) var(--font-nano-family);
+
+    --font-pico-family: 'Galano', sans-serif;
+    --font-pico-size: 1.2rem;
+    --font-pico-weight: 700;
+    --font-pico-style: normal;
+    --font-pico-line-height: 1;
+    --font-pico-text-transform: uppercase;
+
+    --font-pico: var(--font-pico-style) var(--font-pico-weight) var(--font-pico-size)/var(--font-pico-line-height) var(--font-pico-family);
+
+    --font-p1-family: 'Galano', sans-serif;
+    --font-p1-size: 1.6rem;
+    --font-p1-weight: 400;
+    --font-p1-style: normal;
+    --font-p1-line-height: 1.5;
+    --font-p1-text-transform: none;
+
+    --font-p1: var(--font-p1-style) var(--font-p1-weight) var(--font-p1-size)/var(--font-p1-line-height) var(--font-p1-family);
+
+    --font-p2-family: 'Galano', sans-serif;
+    --font-p2-size: 1.4rem;
+    --font-p2-weight: 400;
+    --font-p2-style: normal;
+    --font-p2-line-height: 1.5;
+    --font-p2-text-transform: none;
+
+    --font-p2: var(--font-p2-style) var(--font-p2-weight) var(--font-p2-size)/var(--font-p2-line-height) var(--font-p2-family);
+
+    --font-caption-family: 'Galano', sans-serif;
+    --font-caption-size: 1.2rem;
+    --font-caption-weight: 400;
+    --font-caption-style: normal;
+    --font-caption-line-height: 1.5;
+    --font-caption-text-transform: none;
+
+    --font-caption: var(--font-caption-style) var(--font-caption-weight) var(--font-caption-size)/var(--font-caption-line-height) var(--font-caption-family);
+
+    /********************* fonts config *********************/
+
+
+
+    /***************************************** grid config *****************************************/
+    --grid-columns: 3;
+    --grid-columns-only-one-item: var(--grid-columns);
+    --grid-columns-only-two-items: var(--grid-columns);
+    --grid-columns-only-three-items: var(--grid-columns);
+
+    /*--grid-margin: 5%;*/
+    --grid-margin: .05;
+    /* expressed as unitless decimal percent */
+    --grid-min-width: 288px;
+    --grid-max-width: 1440px;
+
+    --module-spacing: calc(var(--spacer) * 6);
+    --module-inner-spacing: calc(var(--spacer) * 6);
+    --module-outer-spacing: 0;
+    /***************************************** grid config *****************************************/
+
+
+    /***************************************** section headers config *****************************************/
+    --section-header-font: var(--font-giga);
+    --section-header-weight: 800;
+    --section-header-color: var(--color-text-01);
+    --section-header-line-height: normal;
+    --section-header-text-transform: uppercase;
+    --section-header-letter-spacing: 0px;
+    /***************************************** section headers config *****************************************/
+
+
+    /***************************************** buttons config *****************************************/
+
+    --button-font: var(--font-nano);
+    --button-line-height: normal;
+    --button-text-transform: uppercase;
+    --button-padding: 0.91428em 1.14285em 0.92857em 1.14285em;
+
+    --button-hover-transition-duration: 0.6s;
+
+
+      /******* primary button *******/
+    --button-color: var(--color-ui-02);
+    --button-background-color: var(--color-brand-02);
+    --button-color-hover: var(--color-ui-02);
+    --button-background-color-hover: var(--color-brand-02);
+
+    --button-background-color-hover-layer: var(--color-support-06);
+    --button-background-color-hover-layer-opacity: .18;
+
+    /******* secondary button *******/
+    --button-secondary-color: var(--color-ui-02);
+    --button-secondary-background-color: var(--color-brand-02);
+    --button-secondary-color-hover: var(--color-ui-02);
+    --button-secondary-background-color-hover: var(--color-brand-02);
+
+    --button-secondary-background-color-hover-layer: var(--color-support-06);
+    --button-secondary-background-color-hover-layer-opacity: .18;
+
+    /******* inverse secondary button *******/
+    --button-secondary-color-inverse: var(--color-text-01);
+    --button-secondary-background-color-inverse: var(--color-ui-06);
+    --button-secondary-color-hover-inverse: var(--color-text-01);
+    --button-secondary-background-color-hover-inverse: var(--color-ui-05);
+
+    --button-secondary-background-color-hover-layer-inverse: var(--color-support-05);
+    --button-secondary-background-color-hover-layer-opacity-inverse: .05;
+
+    /***************************************** buttons config *****************************************/
+
+
+    /***************************************** header config *****************************************/
+    --header-leaderboard-background-color: var(--color-ui-05);
+    --header-background: linear-gradient(45deg, #110A3D 0%, var(--color-brand-01) 100%);
+
+    --header-title-text-color: var(--color-brand-02);
+    --header-text-color: var(--color-text-01);
+    --header-text-color-hover: var(--color-brand-02);
+    --header-sub-nav-background-color: var(--color-ui-05);
+    --header-sub-nav-text-color: var(--color-text-01);
+    --header-divider-color: var(--color-ui-06);
+    /***************************************** header config *****************************************/
+
+
+    /***************************************** label config *****************************************/
+    --label-line-height: normal;
+    --label-text-transform: uppercase;
+    --label-letter-spacing: normal;
+    --label-padding: 2px 5px 2px 5px;
+
+    --label-color: var(--color-text-01);
+    --label-category-color: var(--color-ui-02);
+    --label-alert-color: var(--color-ui-02);
+    --label-tag-color: var(--color-text-01);
+    /***************************************** label config *****************************************/
+}
+
+@media screen and (max-width: 660px) {
+
+    /********************* fonts *********************/
+    :root {
+        --font-tera-family: 'Galano', sans-serif;
+        --font-tera-size: 3.6rem;
+        --font-tera-weight: 900;
+        --font-tera-style: normal;
+        --font-tera-line-height: 1;
+        --font-tera-text-transform: uppercase;
+
+        --font-giga-family: 'Galano', sans-serif;
+        --font-giga-size: 2.8rem;
+        --font-giga-weight: 900;
+        --font-giga-style: normal;
+        --font-giga-line-height: 1;
+        --font-giga-text-transform: uppercase;
+
+        --font-mega-family: 'Galano', sans-serif;
+        --font-mega-size: 2.4rem;
+        --font-mega-weight: 900;
+        --font-mega-style: normal;
+        --font-mega-line-height: 1;
+        --font-mega-text-transform: uppercase;
+
+        --font-kilo-family: 'Galano', sans-serif;
+        --font-kilo-size: 2.0rem;
+        --font-kilo-weight: 900;
+        --font-kilo-style: normal;
+        --font-kilo-line-height: 1;
+        --font-kilo-text-transform: uppercase;
+
+        --font-milli-family: 'Galano', sans-serif;
+        --font-milli-size: 2.0rem;
+        --font-milli-weight: 900;
+        --font-milli-style: normal;
+        --font-milli-line-height: 1;
+        --font-milli-text-transform: uppercase;
+
+        --font-micro-family: 'Galano', sans-serif;
+        --font-micro-size: 1.8rem;
+        --font-micro-weight: 900;
+        --font-micro-style: normal;
+        --font-micro-line-height: 1;
+        --font-micro-text-transform: uppercase;
+
+        --font-nano-family: 'Galano', sans-serif;
+        --font-nano-size: 1.2rem;
+        --font-nano-weight: 700;
+        --font-nano-style: normal;
+        --font-nano-line-height: 1;
+        --font-nano-text-transform: uppercase;
+    }
+
+    /********************* fonts *********************/
+}

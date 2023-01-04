@@ -1,0 +1,234 @@
+/*********************  page overlay *********************/
+.page-overlay {
+    z-index: 10000001;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 400 16px "Sailec", sans-serif;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.no-scroll .page-overlay {
+    height: 100%;
+    padding: calc(var(--spacer) * 3);
+}
+.page-overlay.shown {
+    display: flex;
+}
+.page-overlay.animate {
+    opacity: 1;
+}
+.page-overlay.embed .page-overlay_wrapper {
+    max-width: 500px;
+}
+.page-overlay.embed .page-overlay_copy {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 5px 10px;
+    color: #ffffff;
+    background-color: #343737;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+}
+.page-overlay_wrapper {
+    position: relative;
+    display: flex;
+    max-width: 786px;
+    max-height: 564px;
+    width: 100%;
+    flex-direction: column;
+}
+.page-overlay_body {
+    padding: 15px 20px 20px;
+    background-color: #141414;
+    overflow-y: auto;
+}
+.page-overlay_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #666b6d;
+    border: none;
+}
+.page-overlay_close:before,
+.page-overlay_close:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    background-color: currentColor;
+}
+.page-overlay_close:before {
+    transform: rotate(45deg);
+}
+.page-overlay_close:after {
+    transform: rotate(-45deg);
+}
+.page-overlay_header {
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    min-height: 50px;
+    padding: 5px 50px 5px 10px;
+    background-color: #666b6d;
+}
+.page-overlay_header:before {
+    content: "\e627";
+    margin-right: 10px;
+    font: normal 40px/1 'mtv';
+    vertical-align: middle;
+}
+.page-overlay_headline {
+    font: 700 20px "Sailec", sans-serif;
+    text-transform: uppercase;
+}
+.page-overlay h2 {
+    margin: 0;
+}
+.page-overlay_description {
+    font-size: 15px;
+    text-transform: initial;
+    margin-bottom: 10px;
+    color: #666666;
+}
+.page-overlay_copy {
+    font-size: 16px;
+}
+.page-overlay .btn {
+    float: right;
+    margin-top: calc(var(--spacer) * 3);
+}
+.page-overlay_notification {
+    opacity: 0;
+    text-transform: initial;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+}
+.page-overlay_notification-enter {
+    opacity: 0;
+    transform: translate(-50%, -75%);
+}
+.page-overlay_notification-enter-active,
+.page-overlay_notification-exit {
+    opacity: .8;
+    transform: translate(-50%, -50%);
+}
+.page-overlay_notification-enter-active {
+    transition: all 800ms linear;
+}
+.page-overlay_notification-exit-active {
+    opacity: 0;
+    transform: translate(-50%, -15%);
+    transition: all 800ms linear;
+}
+.page-overlay_header:before {
+    display: none;
+}
+/*********************  page overlay *********************/
+
+
+/*********************  bala *********************/
+.module-container-bala .page-overlay_close {
+    display: inline;
+    color: var(--color-text-02);
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    margin-right: calc(var(--spacer) * 3);
+    margin-top: calc(var(--spacer) * 3);
+    width: auto;
+    height: auto;
+}
+
+.module-container-bala .page-overlay_close:after {
+    display: none;
+}
+
+.module-container-bala .page-overlay_close:before {
+    background-color: transparent;
+    position: relative;
+    font-family: 'global-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: var(--icon-close);
+    font-size: 24px;
+    transform: none;
+}
+
+.module-container-bala .page-overlay_body {
+    padding: 0;
+    background-color: var(--color-ui-01);
+}
+.page-overlay.module-container-bala.shown.animate {
+    background-color: transparent;
+}
+.module-container-bala .page-overlay_wrapper {
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+}
+.module-container-bala .generic-text-wrap {
+    font: var(--font-p2);
+    color: var(--color-text-03);
+    vertical-align: middle;
+    text-align: center;
+
+    padding: calc(var(--spacer) * 3) calc(var(--spacer) * 6) calc(var(--spacer) * 3) calc(var(--spacer) * 3);
+}
+
+.module-container-bala .generic-text-copy {
+    margin-right: auto;
+    margin-left: auto;
+    width: calc(100% - var(--grid-margin) * 2 * 100%);
+    min-width: var(--grid-min-width);
+    max-width: var(--grid-max-width);
+}
+
+.module-container-bala .generic-text-wrap a {
+    color: var(--color-brand-01);
+    text-decoration: underline;
+}
+
+.module-container-bala.page-overlay {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+}
+
+/*********************  bala *********************/
+/********************* GDPR *********************/
+
+/* style links in evidon banner */
+.evidon-banner-message a {
+    color: white;
+    text-decoration: underline !important;
+    font-weight: bold;
+}

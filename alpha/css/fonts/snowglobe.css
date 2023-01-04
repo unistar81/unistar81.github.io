@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'global-icons';
+    font-family: "global-icons";
+    src: url("../../fonts/icon/global-icons.woff2") format("woff2"),
+    url("../../fonts/icon/global-icons.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/snowglobe/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../fonts/snowglobe/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tokyo';
+    src: url('../../fonts/snowglobe/TokyoRegular-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

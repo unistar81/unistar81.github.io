@@ -1,0 +1,24 @@
+.showshub-template .grid-container {
+    --grid-columns: 4;
+    --grid-columns-only-one-item: 4;
+    --grid-columns-only-two-items: 4;
+    --grid-columns-only-three-items: 4;
+}
+
+@media screen and (max-width: 980px) {
+    .showshub-template .grid-container {
+        --grid-columns: 3;
+        --grid-columns-only-one-item: 3;
+        --grid-columns-only-two-items: 3;
+        --grid-columns-only-three-items: 3;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .showshub-template .grid-container  {
+        --grid-columns: 2;
+        --grid-columns-only-one-item: 2;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}

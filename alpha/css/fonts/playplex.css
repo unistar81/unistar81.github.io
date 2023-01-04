@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "global-icons";
+    src: url("../../fonts/icon/global-icons.woff2") format("woff2"),
+    url("../../fonts/icon/global-icons.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Eina';
+    src: url('../../fonts/playplex/Eina01_LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}

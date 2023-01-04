@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'global-icons';
+    src:  url('../../fonts/icon/global-icons.woff2?9bef24f907cc54424b2811fd9af434bf1') format('woff2'),
+    url('../../fonts/icon/global-icons.woff?9bef24f907cc54424b2811fd9af434bf1') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************** webplex fonts ***************/
+@font-face {
+    font-family: 'FuturaMTV';
+    src: url('../../fonts/isleofmtv/FuturaMTV DemiBoldItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../fonts/isleofmtv/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'FuturaMTV';
+    src: url('../../fonts/isleofmtv/FuturaMTV BoldItalic_CAPS_ONLY.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+}
+

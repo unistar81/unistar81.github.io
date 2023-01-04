@@ -1,0 +1,8 @@
+.legal-template .generic-text-wrap a {
+    font: var(--font-p1);
+    color: var(--color-brand-01);
+}
+
+.legal-template .generic-text-wrap a:hover {
+    color: var(--color-text-04);
+}

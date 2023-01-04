@@ -1,0 +1,79 @@
+#page-footer {
+    background-color: var(--color-ui-04);
+    text-align: center;
+    padding-top: var(--module-inner-spacing);
+    padding-bottom: var(--module-inner-spacing);
+}
+
+#page-footer .legal-links-wrap {
+    text-align: center;
+    margin-bottom: calc(var(--spacer) * 6);
+}
+
+#page-footer .legal-links-wrap li {
+    display: inline-block;
+    font: var(--font-pico);
+    text-transform: var(--font-pico-text-transform);
+
+    color: var(--color-text-04);
+    margin-left: calc(var(--spacer) * 2);
+    margin-right: calc(var(--spacer) * 2);
+}
+
+#page-footer .legal-links-wrap li a {
+    color: inherit;
+}
+
+#page-footer .sub-links-wrap {
+    margin-bottom: calc(var(--spacer) * 6);
+}
+
+#page-footer .links .header {
+    display: inline-block;
+    font: var(--font-nano);
+    text-transform: var(--font-nano-text-transform);
+    color: var(--color-text-04);
+    margin-bottom: calc(var(--spacer) * 3);
+}
+
+#page-footer .links .link-group > * {
+    display: inline-block;
+    font-size: 0;
+    margin-right: calc(var(--spacer) * 4);
+    color: var(--color-text-04);
+}
+
+#page-footer .links .link-group > *:hover,
+#page-footer .legal-links-wrap a:hover {
+    color: var(--color-brand-02);
+}
+
+#page-footer .links .link-group > *:last-child {
+    margin-right: 0;
+}
+
+/*
+#page-footer .logo-wrap {
+    background: url(../../img/viacom_logo.png) no-repeat;
+    display: inline-block;
+    height: 11px;
+    width: 65px;
+    margin-right: 5px;
+    background-size: 65px 11px;
+}
+*/
+
+#page-footer .copyright-wrap {
+    display: inline-block;
+    font: var(--font-pico);
+    text-transform: var(--font-pico-text-transform);
+    font-weight: normal;
+    color: var(--color-text-04);
+}
+
+#page-footer .ad_choices::after {
+    font-family: 'global-icons';
+    color: #0BADCC;
+    content: var(--icon-ad_choices);
+    margin-left: var(--spacer);
+}

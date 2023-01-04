@@ -1,0 +1,91 @@
+.hybridhome-template .content-package-module-container:first-child:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background-color: var(--color-ui-04);
+    top: 0;
+}
+
+.hybridhome-template .content-package-module-container:first-child .section-header > *:first-child {
+    font: var(--font-giga);
+    font-weight: var(--font-giga-weight);
+    line-height: var(--font-giga-line-height);
+    letter-spacing: normal;
+    text-transform: var(--font-giga-text-transform);
+
+}
+
+.hybridhome-template .content-package-module-container:first-child .section-header {
+    margin-top: calc(var(--spacer) * 3);
+    color: var(--color-text-01);
+}
+
+@media screen and (max-width: 660px) {
+    .hybridhome-template .content-package-module-container:first-child:before {
+        height: 85%;
+    }
+    .hybridhome-template .content-package-module-container:first-child .section-header {
+        margin-top: calc(var(--spacer) * 2);
+    }
+}
+
+.hybridhome-template .page-content .about-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hybridhome-template .module-container.about-container {
+    margin-top: 0;
+}
+
+.hybridhome-template .ad-container {
+    background-color: var(--color-ui-04);
+}
+
+.hybridhome-template .ad-container > .ad {
+    padding-top: calc(var(--spacer) * 4);
+    padding-bottom: calc(var(--spacer) * 4);
+}
+
+/*promos-container under massive*/
+.hybridhome-template .promos-container {
+    background-color: var(--color-ui-04);
+}
+
+.hybridhome-template .promos-container .items-wrap {
+    justify-content: center;
+}
+
+@media screen and (max-width: 660px) {
+    .hybridhome-template .promos-container .item .meta-wrap {
+        max-width: 100%;
+    }
+}
+
+
+.hybridhome-template .posters-container .items-container {
+    --grid-columns: 6;
+    --grid-columns-only-one-item: 3;
+    --grid-columns-only-two-items: 3;
+    --grid-columns-only-three-items: 3;
+}
+
+@media screen and (max-width: 980px) {
+    .hybridhome-template .posters-container .items-container .item {
+        --grid-columns: 4;
+        --grid-columns-only-one-item: 1;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .hybridhome-template .posters-container .items-container .item {
+        --grid-columns: 2;
+        --grid-columns-only-one-item: 1;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}

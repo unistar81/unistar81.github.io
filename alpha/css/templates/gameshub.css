@@ -1,0 +1,39 @@
+.gameshub-template .grid-container {
+    --grid-columns: 4;
+    --grid-columns-only-one-item: 4;
+    --grid-columns-only-two-items: 4;
+    --grid-columns-only-three-items: 4;
+}
+
+@media screen and (max-width: 980px) {
+    .gameshub-template .grid-container {
+        --grid-columns: 2;
+        --grid-columns-only-one-item: 2;
+        --grid-columns-only-two-items: 2;
+        --grid-columns-only-three-items: 2;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .gameshub-template .grid-container  {
+        --grid-columns: 1;
+        --grid-columns-only-one-item: 1;
+        --grid-columns-only-two-items: 1;
+        --grid-columns-only-three-items: 1;
+    }
+}
+
+.gameshub-template .page-content:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 504px;
+    background-color: var(--color-ui-04);
+}
+
+@media screen and (max-width: 660px) {
+    .gameshub-template .page-content:before {
+        height: 370px;
+    }
+}
