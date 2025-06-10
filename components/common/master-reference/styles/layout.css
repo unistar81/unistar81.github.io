@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+a { 
+    font-size: 12px; 
+    text-decoration: underline; 
+    color: #333;
+}
+
+.component-variation {
+    font-size: 12px; 
+    border-top-style: solid;
+    border-bottom: none; 
+    border-color: #ddd;
+    padding-top: 6px; 
+    border-top-width: 4px; 
+    padding-bottom: 6px; 
+    margin-top: 30px; 
+    margin-bottom:20px;
+ 
+    padding-left: 0; 
+    position: relative;
+}
+    
+.component-variation .variation { 
+    color: #666;
+}
+
+.comp-wrap{
+    padding: 20px;
+}
+.comp-info{
+    padding: 25px 7px;
+}
+.comp-info h1 {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0; 
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}

@@ -1,0 +1,79 @@
+:root {
+
+
+/*
+
+    --color-primary-100: rgb(255, 205, 164);
+    --color-primary-200: rgb(255, 158, 80);
+    --color-primary-300: rgb(252, 99, 0);
+    --color-primary-400: rgb(207, 72, 0);
+    --color-primary-500: rgb(159, 53, 0);
+    --color-primary-600: rgb(111, 36, 0);
+    --color-primary-700: rgb(101, 33, 0); 
+    --color-primary-800: rgb(91, 30, 0);
+    --color-primary-900: rgb(82, 27, 0);
+
+*/
+
+    --color-primary-100: rgb(211, 214, 223);
+    --color-primary-200: rgb(176, 181, 197);
+    --color-primary-300: rgb(140, 148, 171);
+    --color-primary-400: rgb(107, 117, 147);
+    --color-primary-500: rgb(76, 88, 124);
+    --color-primary-600: rgb(45, 60, 102);
+    --color-primary-700: rgb(38, 53, 97); 
+    --color-primary-800: rgb(32, 47, 92);
+    --color-primary-900: rgb(26, 42, 87);
+
+    --color-secondary-50: #FFFFFF;
+    --color-secondary-100: #FEFEFE;
+    --color-secondary-200: #F3F3F3;
+    --color-secondary-300: #e1e1e1;
+    --color-secondary-400: #CCCCCC;
+    --color-secondary-500: #BCBCBC;
+    --color-secondary-600: #929292;
+    --color-secondary-700: #7F7F7F;
+    --color-secondary-800: #666666;
+    --color-secondary-900: #000000;
+
+    --font-size-25: .75rem;
+    --font-size-50: .79rem;
+    --font-size-75: .89rem;
+    --font-size-100: 1rem;
+    --font-size-125: 1.13rem;
+    --font-size-150: 1.38rem;
+    --font-size-200: 1.6rem;
+    --font-size-250: 2rem;
+    --font-size-300: 2.57rem;
+    --font-size-400: 4.11rem;
+    --font-size-500: 6.58rem;
+    
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+    --font-weight-700: 700;
+
+    --font-line-height-1: 1rem;
+    --font-line-height-2: 1.25rem;
+    --font-line-height-3: 1.5rem;
+    --font-line-height-4: 1.75rem;
+    --font-line-height-5: 2rem;
+    --font-line-height-6: 2.5rem;
+    --font-line-height-7: 3rem;
+
+
+
+
+    --spacer: 2px;
+    
+    --element-stroke-width: 3px;
+
+    --focus-outline-offset: 3px;
+    --focus-outline-width: 3px;
+    --focus-outline-style: solid;
+    --focus-outline-color: var(--color-primary-900);
+
+
+
+
+}

@@ -1,0 +1,183 @@
+<html lang="en">
+    <head>
+        <title>Progress Indicator</title>
+        <link rel="stylesheet" href="../../common/master-reference/styles/layout.css"/>
+        
+
+        <link rel="stylesheet" href="../../common/styles/global.css"/>
+        <link rel="stylesheet" href="../../common/styles/tokens.css"/>
+        <link rel="stylesheet" href="../../common/styles/icons.css"/>
+
+        <link rel="stylesheet" href="../../icon/master-reference/style.css"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="comp-wrap">
+            <div class="comp-info">
+            <h1>PROGRESS INDICATOR COMPONENT</h1>
+        </div>
+
+
+    <div class="component-variation">Variation: Inactive</div>
+
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step">
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Inactive Step</span>
+        </div>
+    </div>
+    
+    <div class="component-variation">Variation: Active</div>
+
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-current>
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(active step) </span>Active Step<span class="visually-hidden">, 1 of l</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: Complete</div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div  role="listitem" class="progress-indicator_step" data-completed>
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Completed Step<span class="visually-hidden">, 1 of l</span></span>
+        </div>
+    </div>
+
+
+    <div class="component-variation">Variation: Inactive (2 Steps)</div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step">
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 1 of 2</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 2 of 2</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: Active + Inactive</div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-current>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 1 of 2</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 2 of 2</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: Active + Complete</div>
+
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-completed>
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 2</span></span>
+        </div>
+        <div role="listitem" class="progress-indicator_step" data-current>
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(active step)</span>Label<span class="visually-hidden">, 2 of 2</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: Complete + Active + Inactive</div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-current>
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(active step)</span>Label<span class="visually-hidden">, 2 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 2 of 3</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: 2 Complete + Active + Inactive</div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-current>
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(active step)</span>Label<span class="visually-hidden">, 2 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 2 of 3</span></span>
+        </div>
+    </div>
+
+    <div class="component-variation">Variation: 4 Complete + Active </div>
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-completed>
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(completed step) </span>Label<span class="visually-hidden">, 1 of 3</span></span>
+        </div><div role="listitem" class="progress-indicator_step" data-current>
+            <div class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label"><span class="visually-hidden">(active step)</span>Label<span class="visually-hidden">, 2 of 3</span></span>
+        </div>
+    </div>
+
+    <!--
+    <div class="component-variation">Variation: 5 steps</div>
+
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step">
+            <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 1 of 5</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 2 of 5</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 3 of 5</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 4 of 5</span></span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+            <span class="progress-indicator_step-label">Label<span class="visually-hidden">, 5 of 5</span></span>
+        </div>
+    </div>
+-->
+    <div class="component-variation">Variation: Real World Example</div>
+
+    <div class="progress-indicator" role="list" tabindex="-1">
+        <div role="listitem" class="progress-indicator_step">
+            <div  class="progress-indicator_step-icon"></div>
+        <span class="progress-indicator_step-label">Agreement</span>
+        </div><div role="listitern" class="progress-indicator_step">
+            <div  class="progress-indicator_step-icon"></div>
+        <span class="progress-indicator_step-label">Plan Selection</span>
+        </div><div role="listitem" class="progress-indicator_step">
+            <div  class="progress-indicator_step-icon"></div>
+        <span class="progress-indicator_step-label">Benefits Election</span>
+            </div><div role="listitern" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+            <span  class="progress-indicator_step-label">Dependants</span>
+        </div><div role="listitern" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+        <span  class="progress-indicator_step-label">Extra Options</span>
+        </div><div role="listitem" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+        <span  class="progress-indicator_step-label">Final Steps</span>
+        </div><div role="listitern" class="progress-indicator_step">
+        <div  class="progress-indicator_step-icon"></div>
+        <span class="progress-indicator_step-label">Checkout</span>
+        </div>
+    </div>
+
