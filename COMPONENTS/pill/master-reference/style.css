@@ -1,0 +1,143 @@
+.pill {
+    --pill-font-family: Arial, sans-serif;
+    --pill-font-size: var(--font-size-100);
+    --pill-font-weight: var(--font-weight-400);
+    --pill-font-style: normal;
+    --pill-font-line-height: var(--font-line-height-3);
+    --pill-font-text-transform: none;
+    
+    --pill-font: var(--pill-font-style) var(--pill-font-weight) var(--pill-font-size)/var(--pill-font-line-height) var(--pill-font-family);
+    
+    --pill-background-color: var(--color-secondary-50);
+    --pill-border-radius: 15px;
+    --pill-border-width: var(--element-stroke-width);
+    --pill-border-color: var(--color-secondary-400);
+    
+    --pill-hover-color: var(--color-secondary-900);
+    --pill-hover-background-color: var(--color-secondary-400);
+    --pill-hover-border-color: none;
+    
+    --pill-icon: var(--icon-check);
+    --pill-icon-color: var(--color-primary-500);
+    --pill-label-color: var(--color-secondary-900);
+    
+    display: inline-block; 
+
+    margin-top: .25rem; 
+    margin-right: .25rem; 
+    margin-bottom: .25rem; 
+    margin-left: .25rem;
+}
+    
+.pill:focus .pill_label,
+.pill:focus-within .pill_label { 
+    outline-style: var(--focus-outline-style);
+    outline-offset: var(--focus-outline-offset);
+    outline-width: var(--focus-outline-width);
+    outline-color: var(--focus-outline-color);
+}
+
+.pill:hover {
+    --pill-background-color: var(--pill-hover-background-color);
+    --pill-border-color: var(--color-secondary-700);
+}
+
+.pill label { 
+    position: relative; 
+    display: block; 
+    white-space: normal;
+}
+
+.pill .pill_label {
+    position: relative;
+    display: inline-block; 
+    vertical-align: middle;
+    font: var(--pill-font);    
+
+    border-style: solid;
+    border-radius: var(--pill-border-radius); 
+    border-width: var(--pill-border-width); 
+    border-color: var(--pill-border-color);
+    background-color:  var(--pill-background-color);
+
+    color: var(--pill-label-color); 
+    padding-right: .75rem;
+    padding-left: .75rem; 
+    padding-top: .25rem; 
+    padding-bottom: .25rem; 
+    word-break: break-word;
+}
+
+.pill .pill_checkbox { 
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%); 
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pill .pill_checkbox:checked { 
+    position: absolute;
+    left: 1rem; 
+    width: 1rem; 
+    height: 1rem; 
+    z-index: 2;
+}
+
+.pill .pill_checkbox:checked + .pill_label { 
+    padding-left: calc(2rem + 6px);
+    --pill-border-color: var(--color-primary-500);
+    --pill-background-color: var(--color-primary-100);
+    --pill-label-color: var(--color-primary-500);
+}
+
+.pill:hover .pill_checkbox:checked + .pill_label {
+    --pill-border-color: var(--color-primary-400);
+    --pill-background-color: var(--color-primary-400);
+    --pill-label-color: var(--color-secondary-50);
+}
+
+.pill:hover .pill_checkbox:checked::before {
+	--pill-icon-color: var(--color-secondary-50);
+}
+
+.pill .pill_checkbox::before { 
+    content: " ";
+    display: inline-block;
+    width: var(--font-size-100); 
+    height: var(--font-size-100); 
+    mask-image: var(--pill-icon); 
+    mask-size: 100%;
+    background-color:  var(--pill-icon-color);
+}
+
+.pill .pill_checkbox::before { 
+    content: " ";
+    display: inline-block;
+    width: var(--font-size-100); 
+    height: var(--font-size-100); 
+    mask-image: var(--pill-icon); 
+    mask-size: 100%;
+    background-color: var(--pill-icon-color);
+    -webkit-mask-image:  var(--pill-icon);
+    -webkit-mask-size: 100%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+}
+    
+.pill .pill_checkbox:checked::before {
+    transform: translate(-50%,-50%) scale(1);
+}
+    
+@media (forced-colors: active) {
+    .pill .pill_checkbox:before{ 
+        forced-color-adjust: none;
+    	background-color: var(--color-secondary-50);
+    }
+}
+        
