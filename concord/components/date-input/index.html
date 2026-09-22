@@ -1,0 +1,957 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Date Input component documentation for Concord Design System."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>Date Input · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<link rel="stylesheet" href="/concord/_astro/_id_.CU4HBNFr.css"></head> <body> <a class="skip-link" href="#main-content">Skip to main content</a> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/">Foundations</a> <a aria-current="page" href="/concord/components/">Components</a> <a href="/concord/layout/">Layout</a> <a href="/concord/patterns/">Patterns</a> <a href="/concord/templates/">Templates</a> <a href="/concord/resources/">Resources</a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <div class="docs-shell"> <aside class="context-sidebar" aria-label="components navigation"> <p class="sidebar-title">components</p> <section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-actions" data-sidebar-toggle> <span>Actions</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-actions" hidden data-sidebar-panel> <li> <a href="/concord/components/button/"> Button </a> </li><li> <a href="/concord/components/link/"> Link </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-selection-controls" data-sidebar-toggle> <span>Selection controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-selection-controls" hidden data-sidebar-panel> <li> <a href="/concord/components/checkbox/"> Checkbox </a> </li><li> <a href="/concord/components/radio/"> Radio </a> </li><li> <a href="/concord/components/toggle/"> Toggle </a> </li><li> <a href="/concord/components/pill/"> Selectable Pill </a> </li><li> <a href="/concord/components/select/"> Select </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="true" aria-controls="sidebar-form-controls" data-sidebar-toggle> <span>Form controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-controls" data-sidebar-panel> <li> <a href="/concord/components/input/"> Input </a> </li><li> <a href="/concord/components/textarea/"> Textarea </a> </li><li> <a aria-current="page" href="/concord/components/date-input/"> Date Input </a> </li><li> <a href="/concord/components/slider/"> Slider </a> </li><li> <a href="/concord/components/stepper/"> Number Stepper </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-form-structure" data-sidebar-toggle> <span>Form structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/label/"> Form Label </a> </li><li> <a href="/concord/components/field/"> Form Field Group </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-layout-structure" data-sidebar-toggle> <span>Layout &amp; structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-layout-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/divider/"> Divider </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-navigation-disclosure" data-sidebar-toggle> <span>Navigation &amp; disclosure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-navigation-disclosure" hidden data-sidebar-panel> <li> <a href="/concord/components/breadcrumb/"> Breadcrumb </a> </li><li> <a href="/concord/components/pagination/"> Pagination </a> </li><li> <a href="/concord/components/accordion/"> Accordion </a> </li><li> <a href="/concord/components/tabs/"> Tabs </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-content-media" data-sidebar-toggle> <span>Content &amp; media</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-content-media" hidden data-sidebar-panel> <li> <a href="/concord/components/media/"> Media </a> </li><li> <a href="/concord/components/list-item/"> List Item </a> </li><li> <a href="/concord/components/card/"> Card </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-feedback-status" data-sidebar-toggle> <span>Feedback &amp; status</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-feedback-status" hidden data-sidebar-panel> <li> <a href="/concord/components/tag/"> Tag </a> </li><li> <a href="/concord/components/alert/"> Alert </a> </li><li> <a href="/concord/components/loading-indicator/"> Loading Indicator </a> </li><li> <a href="/concord/components/progress-indicator/"> Progress Indicator </a> </li><li> <a href="/concord/components/progress-steps/"> Progress Steps </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-overlays" data-sidebar-toggle> <span>Overlays</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-overlays" hidden data-sidebar-panel> <li> <a href="/concord/components/tooltip/"> Tooltip </a> </li><li> <a href="/concord/components/menu/"> Menu </a> </li><li> <a href="/concord/components/popover/"> Popover </a> </li><li> <a href="/concord/components/modal/"> Modal </a> </li> </ul> </section>  <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1 --> <aside class="sidebar-card" aria-label="Concord architecture signature"> <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1.2 --> <div class="sidebar-card__identity"> <span class="sidebar-card__mark sidebar-card__signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-sidebar-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-sidebar-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-sidebar-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-sidebar-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-sidebar-mark-clip)" stroke="url(#concord-sidebar-mark-motion)"></path> </svg> </span> <p class="sidebar-card__eyebrow">Concord architecture</p> </div> <strong class="sidebar-card__title">Web-native. Framework-agnostic.</strong> <p class="sidebar-card__summary">
+Semantic HTML · External CSS · Platform-neutral tokens · Web Components · Framework
+      adapters
+</p> <p class="sidebar-card__credit">Designed &amp; engineered by Oleg Ivanov</p> <a class="sidebar-card__link" href="https://github.com/unistar81/concord-design-system"> <span>View source on GitHub</span> <span class="sidebar-card__arrow" aria-hidden="true">→</span> </a> </aside> </aside> <main id="main-content" class="docs-main"> <header class="component-heading"> <div class="component-utility-row"> <p class="eyebrow">Components / Form controls</p> <nav class="heading-actions" aria-label="Date Input resources"> <a href="http://localhost:6006/?path=/story/components-date-input--canonical" aria-label="Open Date Input in Storybook">Storybook ↗</a> <a href="/concord/react/date-input/" aria-label="Open Date Input React demo">
+React demo ↗
+</a> </nav> </div> <div class="component-introduction"> <h1>Date Input</h1> <p class="summary">A native date input that delegates locale display and picker behavior to the browser.</p> <div class="badges" aria-label="Component status and accessibility" data-component-status="stable">  <span class="dsl-tag docs-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> </div> </header> <div class="examples"> <details class="example-card" open data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 01</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Native date input</h2> </div> <p>The machine value remains ISO-formatted while presentation follows native browser and locale behavior. Form Label and supporting text are composed separately.</p>  </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Native date input preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="dsl-input">
+  <input id="start-date-default" name="start-date" type="date" aria-label="Start date" />
+</div> </div> </div> </div> </section> <script type="module">function e(){document.querySelectorAll('[data-design-system-preview] input[type="checkbox"][data-indeterminate]').forEach(t=>{t.indeterminate=!0})}e();document.addEventListener("astro:page-load",e);</script> <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="date-input-default-html-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-default-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="date-input-default-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-default-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="date-input-default-react-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-default-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="date-input-default-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="date-input-default-implementation-panels" class="code-drawer-panels"> <section id="date-input-default-html-panel" role="tabpanel" aria-labelledby="date-input-default-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/date-input/date-input.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;dsl-input&#34;>
+  <input id=&#34;start-date&#34; name=&#34;start-date&#34; type=&#34;date&#34; aria-label=&#34;Start date&#34; />
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">input</span><span style="color:#023B95"> id</span><span style="color:#0E1116">=</span><span style="color:#032563">"start-date"</span><span style="color:#023B95"> name</span><span style="color:#0E1116">=</span><span style="color:#032563">"start-date"</span><span style="color:#023B95"> type</span><span style="color:#0E1116">=</span><span style="color:#032563">"date"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Start date"</span><span style="color:#0E1116"> /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="date-input-default-lit-panel" role="tabpanel" aria-labelledby="date-input-default-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/date-input/dsl-date-input.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-date-input
+  input-id=&#34;start-date&#34;
+  name=&#34;start-date&#34;
+  accessible-label=&#34;Start date&#34;
+></dsl-date-input>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">date</span><span style="color:#A0111F">-</span><span style="color:#0E1116">input</span></span>
+<span class="line"><span style="color:#0E1116">  input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"start-date"</span></span>
+<span class="line"><span style="color:#0E1116">  name</span><span style="color:#A0111F">=</span><span style="color:#032563">"start-date"</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Start date"</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">date</span><span style="color:#0E1116">-</span><span style="color:#702C00">input</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="date-input-default-react-panel" role="tabpanel" aria-labelledby="date-input-default-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<DateInput
+  inputId=&#34;start-date&#34;
+  name=&#34;start-date&#34;
+  accessibleLabel=&#34;Start date&#34;
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">DateInput</span></span>
+<span class="line"><span style="color:#023B95">  inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"start-date"</span></span>
+<span class="line"><span style="color:#023B95">  name</span><span style="color:#A0111F">=</span><span style="color:#032563">"start-date"</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Start date"</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 02</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Minimum and maximum</h2> </div> <p>Native min and max constraints define the accepted date interval without adding Date Input-owned guidance markup.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>min=&quot;2026-01-01&quot;</code><code>max=&quot;2027-12-31&quot;</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Minimum and maximum preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="dsl-input">
+  <input
+    id="travel-date-range"
+    name="travel-date"
+    type="date"
+    min="2026-01-01"
+    max="2027-12-31"
+    aria-label="Travel date"
+  />
+</div> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="date-input-range-html-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-range-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="date-input-range-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-range-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="date-input-range-react-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-range-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="date-input-range-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="date-input-range-implementation-panels" class="code-drawer-panels"> <section id="date-input-range-html-panel" role="tabpanel" aria-labelledby="date-input-range-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/date-input/snippets/range.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;dsl-input&#34;>
+  <input
+    id=&#34;travel-date&#34;
+    name=&#34;travel-date&#34;
+    type=&#34;date&#34;
+    min=&#34;2026-01-01&#34;
+    max=&#34;2027-12-31&#34;
+    aria-label=&#34;Travel date&#34;
+  />
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">    id</span><span style="color:#0E1116">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#023B95">    name</span><span style="color:#0E1116">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#023B95">    type</span><span style="color:#0E1116">=</span><span style="color:#032563">"date"</span></span>
+<span class="line"><span style="color:#023B95">    min</span><span style="color:#0E1116">=</span><span style="color:#032563">"2026-01-01"</span></span>
+<span class="line"><span style="color:#023B95">    max</span><span style="color:#0E1116">=</span><span style="color:#032563">"2027-12-31"</span></span>
+<span class="line"><span style="color:#023B95">    aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Travel date"</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="date-input-range-lit-panel" role="tabpanel" aria-labelledby="date-input-range-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/date-input/dsl-date-input.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-date-input
+  input-id=&#34;travel-date&#34;
+  name=&#34;travel-date&#34;
+  accessible-label=&#34;Travel date&#34;
+  minimum=&#34;2026-01-01&#34;
+  maximum=&#34;2027-12-31&#34;
+></dsl-date-input>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">date</span><span style="color:#A0111F">-</span><span style="color:#0E1116">input</span></span>
+<span class="line"><span style="color:#0E1116">  input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#0E1116">  name</span><span style="color:#A0111F">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Travel date"</span></span>
+<span class="line"><span style="color:#0E1116">  minimum</span><span style="color:#A0111F">=</span><span style="color:#032563">"2026-01-01"</span></span>
+<span class="line"><span style="color:#0E1116">  maximum</span><span style="color:#A0111F">=</span><span style="color:#032563">"2027-12-31"</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">date</span><span style="color:#0E1116">-</span><span style="color:#702C00">input</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="date-input-range-react-panel" role="tabpanel" aria-labelledby="date-input-range-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<DateInput
+  inputId=&#34;travel-date&#34;
+  name=&#34;travel-date&#34;
+  accessibleLabel=&#34;Travel date&#34;
+  minimum=&#34;2026-01-01&#34;
+  maximum=&#34;2027-12-31&#34;
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">DateInput</span></span>
+<span class="line"><span style="color:#023B95">  inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#023B95">  name</span><span style="color:#A0111F">=</span><span style="color:#032563">"travel-date"</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Travel date"</span></span>
+<span class="line"><span style="color:#023B95">  minimum</span><span style="color:#A0111F">=</span><span style="color:#032563">"2026-01-01"</span></span>
+<span class="line"><span style="color:#023B95">  maximum</span><span style="color:#A0111F">=</span><span style="color:#032563">"2027-12-31"</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 03</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Invalid and disabled</h2> </div> <p>Compares native invalid and disabled states without treating external labels or validation messaging as Date Input anatomy.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>aria-invalid=&quot;true&quot;</code><code>disabled</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Invalid and disabled preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="docs-date-input-specimens">
+  <div class="docs-date-input-specimen">
+    <span class="docs-date-input-specimen-caption">Invalid</span>
+
+    <div class="dsl-input">
+  <input id="invalid-date-states" type="date" aria-label="Invalid date" aria-invalid="true" />
+</div>
+  </div>
+
+  <div class="docs-date-input-specimen">
+    <span class="docs-date-input-specimen-caption">Disabled</span>
+
+    <div class="dsl-input">
+  <input id="disabled-date-states" type="date" aria-label="Disabled date" disabled="" />
+</div>
+  </div>
+</div> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="date-input-states-html-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-states-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="date-input-states-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-states-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="date-input-states-react-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-states-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="date-input-states-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="date-input-states-implementation-panels" class="code-drawer-panels"> <section id="date-input-states-html-panel" role="tabpanel" aria-labelledby="date-input-states-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/date-input/snippets/states.html, packages/html/src/components/date-input/snippets/states-2.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;docs-date-input-specimens&#34;>
+  <div class=&#34;docs-date-input-specimen&#34;>
+    <span class=&#34;docs-date-input-specimen-caption&#34;>Invalid</span>
+
+    <div class=&#34;dsl-input&#34;>
+  <input id=&#34;invalid-date&#34; type=&#34;date&#34; aria-label=&#34;Invalid date&#34; aria-invalid=&#34;true&#34; />
+</div>
+  </div>
+
+  <div class=&#34;docs-date-input-specimen&#34;>
+    <span class=&#34;docs-date-input-specimen-caption&#34;>Disabled</span>
+
+    <div class=&#34;dsl-input&#34;>
+  <input id=&#34;disabled-date&#34; type=&#34;date&#34; aria-label=&#34;Disabled date&#34; disabled=&#34;&#34; />
+</div>
+  </div>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-date-input-specimens"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-date-input-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-date-input-specimen-caption"</span><span style="color:#0E1116">>Invalid&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">input</span><span style="color:#023B95"> id</span><span style="color:#0E1116">=</span><span style="color:#032563">"invalid-date"</span><span style="color:#023B95"> type</span><span style="color:#0E1116">=</span><span style="color:#032563">"date"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Invalid date"</span><span style="color:#023B95"> aria-invalid</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116"> /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-date-input-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-date-input-specimen-caption"</span><span style="color:#0E1116">>Disabled&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">input</span><span style="color:#023B95"> id</span><span style="color:#0E1116">=</span><span style="color:#032563">"disabled-date"</span><span style="color:#023B95"> type</span><span style="color:#0E1116">=</span><span style="color:#032563">"date"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Disabled date"</span><span style="color:#023B95"> disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116"> /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="date-input-states-lit-panel" role="tabpanel" aria-labelledby="date-input-states-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/date-input/dsl-date-input.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div>
+  <dsl-date-input
+    input-id=&#34;invalid-date&#34;
+    accessible-label=&#34;Invalid date&#34;
+    invalid
+  ></dsl-date-input>
+
+  <dsl-date-input
+    input-id=&#34;disabled-date&#34;
+    accessible-label=&#34;Disabled date&#34;
+    disabled
+  ></dsl-date-input>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#702C00">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">date</span><span style="color:#A0111F">-</span><span style="color:#0E1116">input</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"invalid-date"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Invalid date"</span></span>
+<span class="line"><span style="color:#0E1116">    invalid</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">date</span><span style="color:#0E1116">-</span><span style="color:#702C00">input</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">date</span><span style="color:#A0111F">-</span><span style="color:#0E1116">input</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"disabled-date"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Disabled date"</span></span>
+<span class="line"><span style="color:#0E1116">    disabled</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">date</span><span style="color:#0E1116">-</span><span style="color:#702C00">input</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">&#x3C;/</span><span style="color:#0E1116">div</span><span style="color:#A0111F">></span></span></code></pre> </div> </section><section id="date-input-states-react-panel" role="tabpanel" aria-labelledby="date-input-states-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<>
+  <DateInput
+    inputId=&#34;invalid-date&#34;
+    accessibleLabel=&#34;Invalid date&#34;
+    invalid
+  />
+
+  <DateInput
+    inputId=&#34;disabled-date&#34;
+    accessibleLabel=&#34;Disabled date&#34;
+    disabled
+  />
+</>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">DateInput</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"invalid-date"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Invalid date"</span></span>
+<span class="line"><span style="color:#023B95">    invalid</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">DateInput</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"disabled-date"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Disabled date"</span></span>
+<span class="line"><span style="color:#023B95">    disabled</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/></span></span></code></pre> </div> </section> </div> </div>  </div> </details> </div> <section class="component-reference" data-component-reference aria-labelledby="date-input-component-implementation"> <div class="component-reference-heading"> <p class="component-reference-eyebrow">Component reference</p> <h2 id="date-input-component-implementation">Component implementation</h2> </div> <div class="component-reference-surface" data-component-reference-tabs> <div class="component-reference-tablist" role="tablist" aria-label="Component implementation reference"> <button id="date-input-reference-css-tab" type="button" role="tab" aria-selected="true" aria-controls="date-input-reference-css-panel" tabindex="0" data-reference-tab="css"> CSS </button><button id="date-input-reference-custom-properties-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-reference-custom-properties-panel" tabindex="-1" data-reference-tab="custom-properties"> CSS Custom Properties </button><button id="date-input-reference-token-map-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-reference-token-map-panel" tabindex="-1" data-reference-tab="token-map"> Token Map </button><button id="date-input-reference-token-json-tab" type="button" role="tab" aria-selected="false" aria-controls="date-input-reference-token-json-panel" tabindex="-1" data-reference-tab="token-json"> Source JSON </button> </div> <section id="date-input-reference-css-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="date-input-reference-css-tab" data-reference-panel="css"> <header class="code-panel-header"> <span>packages/css/src/components/input.css</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source=".dsl-input {
+  --_dsl-input-background: var(
+    --dsl-input-background,
+    var(--dsl-component-input-surface-background-default)
+  );
+  --_dsl-input-border-color: var(
+    --dsl-input-border-color,
+    var(--dsl-component-input-border-color-default)
+  );
+  --_dsl-input-color: var(
+    --dsl-input-color,
+    var(--dsl-component-input-content-color-default)
+  );
+  --_dsl-input-placeholder-color: var(
+    --dsl-input-placeholder-color,
+    var(--dsl-component-input-content-color-placeholder)
+  );
+
+  --_dsl-input-font-size: var(
+    --dsl-input-font-size,
+    var(--dsl-component-input-size-medium-typography-size)
+  );
+  --_dsl-input-line-height: var(
+    --dsl-input-line-height,
+    var(--dsl-component-input-size-medium-typography-line-height)
+  );
+
+  --_dsl-input-padding-block: var(
+    --dsl-input-padding-block,
+    var(--dsl-component-input-spacing-padding-block)
+  );
+  --_dsl-input-padding-inline: var(
+    --dsl-input-padding-inline,
+    var(--dsl-component-input-spacing-padding-inline)
+  );
+  --_dsl-input-gap: var(--dsl-input-gap, var(--dsl-component-input-spacing-gap));
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+
+  inline-size: var(--dsl-input-width, auto);
+  max-inline-size: 100%;
+  block-size: var(--dsl-input-height, auto);
+  min-block-size: calc(
+    (var(--dsl-component-input-border-width) * 2) +
+      (var(--_dsl-input-padding-block) * 2) + var(--_dsl-input-line-height)
+  );
+
+  padding-block: var(--_dsl-input-padding-block);
+  padding-inline: var(--_dsl-input-padding-inline);
+
+  vertical-align: middle;
+
+  border: var(--dsl-component-input-border-width) solid var(--_dsl-input-border-color);
+  border-radius: var(--dsl-component-input-border-radius);
+
+  background: var(--_dsl-input-background);
+  color: var(--_dsl-input-color);
+
+  font-family: var(--dsl-component-input-typography-family);
+  font-size: var(--_dsl-input-font-size);
+  font-weight: var(--dsl-component-input-typography-weight);
+  line-height: var(--_dsl-input-line-height);
+
+  text-align: start;
+  white-space: nowrap;
+
+  cursor: text;
+
+  > input,
+  > .content > input {
+    box-sizing: border-box;
+
+    display: inline-block;
+    flex: 1 1 auto;
+
+    min-inline-size: 0;
+    inline-size: auto;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: middle;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+    color: var(--_dsl-input-color);
+
+    font-family: inherit;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: inherit;
+
+    text-align: start;
+    text-transform: none;
+
+    cursor: inherit;
+  }
+
+  > input::placeholder,
+  > .content > input::placeholder {
+    color: var(--_dsl-input-placeholder-color);
+    opacity: 1;
+  }
+
+  /*
+   * Browser autofill owns value provenance, not Concord's visual language.
+   * Keep native autofill behavior while painting the native control with the
+   * current token-driven Input surface instead of user-agent blue/yellow.
+   */
+  > input:is(:autofill, :-webkit-autofill),
+  > .content > input:is(:autofill, :-webkit-autofill) {
+    -webkit-text-fill-color: var(--_dsl-input-color);
+    caret-color: var(--_dsl-input-color);
+    -webkit-box-shadow: 0 0 0 1000px var(--_dsl-input-background) inset;
+    box-shadow: 0 0 0 1000px var(--_dsl-input-background) inset;
+  }
+
+  > .glyph,
+  > .dsl-icon,
+  > .content > .glyph,
+  > .content > .dsl-icon {
+    display: inline-block;
+    flex: 0 0 auto;
+
+    vertical-align: middle;
+
+    color: var(--_dsl-input-color);
+
+    font: inherit;
+
+    pointer-events: none;
+  }
+
+  > .dsl-icon,
+  > .content > .dsl-icon {
+    --dsl-icon-size: 1em;
+  }
+
+  /*
+   * Preserve the original sibling-spacing technique instead of
+   * replacing it with a new layout model.
+   */
+  > :not(.content):not(:last-child),
+  > .content > :not(:last-child) {
+    margin-inline-end: var(--_dsl-input-gap);
+  }
+
+  &#38;[data-size='small'] {
+    --_dsl-input-font-size: var(--dsl-component-input-size-small-typography-size);
+    --_dsl-input-line-height: var(
+      --dsl-component-input-size-small-typography-line-height
+    );
+  }
+
+  &#38;[data-size='large'] {
+    --_dsl-input-font-size: var(--dsl-component-input-size-large-typography-size);
+    --_dsl-input-line-height: var(
+      --dsl-component-input-size-large-typography-line-height
+    );
+  }
+
+  &#38;[data-align='center'] > input,
+  &#38;[data-align='center'] > .content > input {
+    text-align: center;
+  }
+
+  &#38;[data-align='end'] > input,
+  &#38;[data-align='end'] > .content > input {
+    text-align: end;
+  }
+
+  /*
+   * Inputs with a separate trailing action use a content region so the native
+   * text-entry surface and the action surface can respond independently.
+   *
+   * The outer .dsl-input still owns border/focus-ring geometry.
+   */
+  > .content {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    min-inline-size: 0;
+    padding-block: var(--_dsl-input-padding-block);
+    padding-inline: var(--_dsl-input-padding-inline);
+    border-start-start-radius: max(
+      0px,
+      calc(
+        var(--dsl-component-input-border-radius) - var(--dsl-component-input-border-width)
+      )
+    );
+    border-end-start-radius: max(
+      0px,
+      calc(
+        var(--dsl-component-input-border-radius) - var(--dsl-component-input-border-width)
+      )
+    );
+    background-color: transparent;
+    cursor: inherit;
+  }
+
+  &#38;:has(> .content + .action) {
+    align-items: stretch;
+    padding: 0;
+  }
+
+  > .action {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    min-inline-size: 24px;
+    min-block-size: 24px;
+    margin-block: calc(-1 * var(--_dsl-input-padding-block));
+    margin-inline-end: calc(-1 * var(--_dsl-input-padding-inline));
+    padding: 0 var(--_dsl-input-padding-inline);
+    border: 0;
+    border-inline-start: var(--dsl-component-input-border-width) solid
+      var(--_dsl-input-border-color);
+    border-start-end-radius: max(
+      0px,
+      calc(
+        var(--dsl-component-input-border-radius) - var(--dsl-component-input-border-width)
+      )
+    );
+    border-end-end-radius: max(
+      0px,
+      calc(
+        var(--dsl-component-input-border-radius) - var(--dsl-component-input-border-width)
+      )
+    );
+    background-color: transparent;
+    color: var(--_dsl-input-color);
+    font: inherit;
+    cursor: pointer;
+
+    > .dsl-icon {
+      --dsl-icon-size: 1.125rem;
+
+      flex: 0 0 auto;
+    }
+
+    &#38;:is(:hover, :focus-visible):not(:disabled) {
+      background-color: var(
+        --dsl-component-input-action-surface-interactive,
+        var(--dsl-semantic-color-surface-subtle)
+      );
+    }
+
+    &#38;:focus-visible {
+      outline: 0;
+    }
+
+    &#38;:disabled {
+      background-color: transparent;
+      cursor: not-allowed;
+    }
+  }
+
+  > .content + .action {
+    margin-block: 0;
+    margin-inline-end: 0;
+  }
+
+  &#38;:hover:not(:has(> input:disabled, > .content > input:disabled)) {
+    --_dsl-input-border-color: var(--dsl-component-input-border-color-hover);
+  }
+
+  /*
+   * Normal Inputs have one visual surface, so the root may own the focus
+   * surface. Action-bearing Inputs are segmented: the outer root owns only the
+   * border/focus ring, the .content region owns native-input focus surface, and
+   * .action owns only its own hover/focus surface.
+   */
+  &#38;:has(> input:focus-visible),
+  &#38;:has(> .action:focus-visible):not(:has(> .content)),
+  &#38;:has(> .content > input:focus-visible),
+  &#38;:has(> .content + .action:focus-visible) {
+    --_dsl-input-border-color: var(--dsl-component-input-border-color-focus);
+
+    outline: var(--dsl-component-input-focus-width) var(--dsl-component-input-focus-style)
+      var(--dsl-component-input-focus-color);
+    outline-offset: var(--dsl-component-input-focus-offset);
+  }
+
+  &#38;:has(> input:focus-visible),
+  &#38;:has(> .action:focus-visible):not(:has(> .content)) {
+    --_dsl-input-background: var(--dsl-component-input-surface-background-focus);
+  }
+
+  &#38;:has(> .content > input:focus-visible) > .content {
+    background-color: var(--dsl-component-input-surface-background-focus);
+  }
+
+  &#38;:has(
+    > input[aria-invalid]:not([aria-invalid='false']),
+    > .content > input[aria-invalid]:not([aria-invalid='false'])
+  ) {
+    --_dsl-input-border-color: var(--dsl-component-input-border-color-invalid);
+  }
+
+  &#38;:has(> input[readonly], > .content > input[readonly]) {
+    --_dsl-input-background: var(--dsl-component-input-surface-background-readonly);
+  }
+
+  &#38;:has(> input:disabled, > .content > input:disabled) {
+    --_dsl-input-background: var(--dsl-component-input-surface-background-disabled);
+    --_dsl-input-border-color: var(--dsl-component-input-border-color-disabled);
+    --_dsl-input-color: var(--dsl-component-input-content-color-disabled);
+    --_dsl-input-placeholder-color: var(--dsl-component-input-content-color-disabled);
+
+    cursor: not-allowed;
+  }
+
+  &#38;:has(> input:disabled, > .content > input:disabled) > input,
+  &#38;:has(> input:disabled, > .content > input:disabled) > .content > input {
+    -webkit-text-fill-color: var(--_dsl-input-color);
+    opacity: 1;
+  }
+}
+
+@media (forced-colors: active) {
+  .dsl-input {
+    border-color: ButtonText;
+    background: Field;
+    color: FieldText;
+
+    > input,
+    > .content > input {
+      color: FieldText;
+    }
+
+    > input:is(:autofill, :-webkit-autofill),
+    > .content > input:is(:autofill, :-webkit-autofill) {
+      -webkit-text-fill-color: FieldText;
+      caret-color: FieldText;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    &#38;:has(
+      > input:focus-visible,
+      > .content > input:focus-visible,
+      > .action:focus-visible
+    ) {
+      border-color: Highlight;
+      outline-color: Highlight;
+    }
+
+    &#38;:has(
+      > input[aria-invalid]:not([aria-invalid='false']),
+      > .content > input[aria-invalid]:not([aria-invalid='false'])
+    ) {
+      border-color: Mark;
+    }
+
+    &#38;:has(> input:disabled, > .content > input:disabled) {
+      border-color: GrayText;
+      background: Field;
+      color: GrayText;
+    }
+
+    &#38;:has(> input:disabled, > .content > input:disabled) > input,
+    &#38;:has(> input:disabled, > .content > input:disabled) > .content > input {
+      color: GrayText;
+      -webkit-text-fill-color: GrayText;
+    }
+  }
+}
+"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.dsl-input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-surface-background-default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-color-default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-content-color-default</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-placeholder-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-placeholder-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-content-color-placeholder</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-size-medium-typography-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-size-medium-typography-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-spacing-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-spacing-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-input-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-input-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-spacing-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  box-sizing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">border-box</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-input-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  max-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-input-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  min-block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    (</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">*</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) +</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      (</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) * </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) + </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  vertical-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">middle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  border</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">solid</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-typography-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-typography-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  text-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">start</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  white-space</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">nowrap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">text</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  > </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  > .</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> > </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    box-sizing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">border-box</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    vertical-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">middle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    outline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">transparent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-style</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">normal</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    text-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">start</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    text-transform</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">::placeholder</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">::placeholder</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-placeholder-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    opacity</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * Browser autofill owns value provenance, not Concord's visual language.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * Keep native autofill behavior while painting the native control with the</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * current token-driven Input surface instead of user-agent blue/yellow.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   */</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:is</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(:autofill, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:-webkit-autofill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:is</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(:autofill, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:-webkit-autofill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    -webkit-text-fill-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    caret-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    -webkit-box-shadow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1000</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    box-shadow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1000</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .glyph</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-icon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .glyph</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-icon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    vertical-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">middle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    pointer-events</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-icon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-icon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-icon-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">em</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * Preserve the original sibling-spacing technique instead of</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * replacing it with a new layout model.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   */</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> :not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:last-child</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> :not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:last-child</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-inline-end</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-size</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'small'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-size-small-typography-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      --dsl-component-input-size-small-typography-line-height</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-size</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'large'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-size-large-typography-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      --dsl-component-input-size-large-typography-line-height</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-align</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'center'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-align</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'center'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    text-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-align</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'end'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">data-align</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'end'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    text-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">end</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * Inputs with a separate trailing action use a content region so the native</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * text-entry surface and the action surface can respond independently.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   *</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * The outer .dsl-input still owns border/focus-ring geometry.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   */</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    box-sizing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">border-box</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-start-start-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">max</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      )</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-end-start-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">max</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      )</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">transparent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">stretch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    box-sizing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">border-box</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    justify-content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-self</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">stretch</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">24</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">24</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">-1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-inline-end</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">-1</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> *</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">));</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-padding-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-inline-start</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">solid</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-start-end-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">max</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      )</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-end-end-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">max</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      0</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">px</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      calc</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-radius</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">-</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      )</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    );</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">transparent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inherit</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">pointer</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    > .</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">dsl-icon</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">      --dsl-icon-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1.125</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">rem</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:is</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:hover</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      background-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">        --dsl-component-input-action-surface-interactive</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">        var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-semantic-color-surface-subtle</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      );</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      outline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      background-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">transparent</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">not-allowed</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-inline-end</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:hover:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-color-hover</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">  /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * Normal Inputs have one visual surface, so the root may own the focus</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * surface. Action-bearing Inputs are segmented: the outer root owns only the</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * border/focus ring, the .content region owns native-input focus surface, and</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   * .action owns only its own hover/focus surface.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">   */</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)),</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-color-focus</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    outline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-focus-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-focus-style</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-focus-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    outline-offset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-focus-offset</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-surface-background-focus</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-surface-background-focus</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'false'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]),</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'false'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">])</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  ) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-color-invalid</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">readonly</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">], </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">readonly</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-surface-background-readonly</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-surface-background-disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-color-disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-content-color-disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --_dsl-input-placeholder-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-content-color-disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    cursor</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">not-allowed</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    -webkit-text-fill-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-input-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    opacity</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@media</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (forced-colors: active) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .dsl-input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">ButtonText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: Field;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: FieldText;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    > </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    > .</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> > </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: FieldText;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:is</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(:autofill, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:-webkit-autofill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">),</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">    ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:is</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(:autofill, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:-webkit-autofill</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      -webkit-text-fill-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: FieldText;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      caret-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: FieldText;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      -webkit-box-shadow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      box-shadow</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:focus-visible</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .action:focus-visible</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">Highlight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      outline-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">Highlight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'false'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]),</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">      ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:not</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">([</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">aria-invalid</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'false'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">])</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    ) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: Mark;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">GrayText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: Field;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">GrayText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    &#x26;</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:has</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">:disabled</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">GrayText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      -webkit-text-fill-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#6E011A;--shiki-light-font-style:italic;--shiki-dark:#FFB1AF;--shiki-dark-font-style:italic">GrayText</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <section id="date-input-reference-custom-properties-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="date-input-reference-custom-properties-tab" data-reference-panel="custom-properties" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div> <p class="component-reference-empty" data-copy-source="/* No generated component custom properties. */">
+No generated component custom properties.
+</p> </section> <section id="date-input-reference-token-map-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="date-input-reference-token-map-tab" data-reference-panel="token-map" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div>  <div class="component-reference-table-heading component-reference-token-heading" aria-hidden="true"> <span>Token</span> <span>Reference / authored value</span> <span>Resolved value</span> </div> <div class="component-reference-token-scroll" data-copy-source="component.input.border.color.default → semantic.color.border.default → #cccccc"> <div class="component-reference-token-map"> <div class="component-reference-token-row"> <code class="component-reference-token-source">component.input.border.color.default</code> <code class="component-reference-token-target">semantic.color.border.default</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-input-border-color-default" data-fallback-value="#cccccc"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>#cccccc</code> </span> </div> </div> </div>  </section> <section id="date-input-reference-token-json-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="date-input-reference-token-json-tab" data-reference-panel="token-json" hidden> <header class="code-panel-header"> <span>packages/tokens/src/base.tokens.json</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source="{
+  &#34;component&#34;: {}
+}"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "component"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {}</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <span class="component-reference-runtime-resolver" data-component-reference-runtime-resolver data-design-system-preview aria-hidden="true"></span> </div> </section> <section class="component-accessibility" data-component-accessibility aria-labelledby="date-input-accessibility-heading"> <div class="component-reference-heading component-accessibility-heading"> <div> <p class="component-reference-eyebrow">Component contract</p> <h2 id="date-input-accessibility-heading">Accessibility</h2> </div> <span class="dsl-tag docs-badge target-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> <div class="accessibility-reference-grid"> <section class="accessibility-reference-group"> <h3>Native semantics</h3> <ul class="accessibility-list"> <li>Uses a native input type=&quot;date&quot; so picker behavior, keyboard interaction, locale presentation, constraint validation, and form participation remain browser-owned.</li><li>Uses the shared Input wrapper only for visual presentation.</li><li>Form Label, supporting/help text, and validation-message markup are external field composition rather than Date Input anatomy.</li> </ul> </section> <section class="accessibility-reference-group"> <h3>Requirements</h3> <ul class="accessibility-list"> <li>Every date input requires an accessible name supplied by a visible external label, aria-labelledby, or aria-label.</li><li>Do not replace the native date input with a scripted text field when native date semantics satisfy the requirement.</li><li>Use min and max on the native date input when the accepted interval is constrained.</li><li>Set aria-invalid when an entered or selected value is known to be invalid.</li><li>Use the native disabled attribute to prevent interaction rather than a styling-only state.</li><li>When external date guidance or validation messaging applies, associate it with the native input using aria-describedby.</li><li>Do not assume the visible date format; browser and locale presentation may differ while the machine value remains YYYY-MM-DD.</li> </ul> </section>  </div> </section> </main>  </div>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CNwjPPH5.js"></script> </body> </html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Breadcrumb component documentation for Concord Design System."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>Breadcrumb · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<link rel="stylesheet" href="/concord/_astro/_id_.CU4HBNFr.css"></head> <body> <a class="skip-link" href="#main-content">Skip to main content</a> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/">Foundations</a> <a aria-current="page" href="/concord/components/">Components</a> <a href="/concord/layout/">Layout</a> <a href="/concord/patterns/">Patterns</a> <a href="/concord/templates/">Templates</a> <a href="/concord/resources/">Resources</a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <div class="docs-shell"> <aside class="context-sidebar" aria-label="components navigation"> <p class="sidebar-title">components</p> <section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-actions" data-sidebar-toggle> <span>Actions</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-actions" hidden data-sidebar-panel> <li> <a href="/concord/components/button/"> Button </a> </li><li> <a href="/concord/components/link/"> Link </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-selection-controls" data-sidebar-toggle> <span>Selection controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-selection-controls" hidden data-sidebar-panel> <li> <a href="/concord/components/checkbox/"> Checkbox </a> </li><li> <a href="/concord/components/radio/"> Radio </a> </li><li> <a href="/concord/components/toggle/"> Toggle </a> </li><li> <a href="/concord/components/pill/"> Selectable Pill </a> </li><li> <a href="/concord/components/select/"> Select </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-form-controls" data-sidebar-toggle> <span>Form controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-controls" hidden data-sidebar-panel> <li> <a href="/concord/components/input/"> Input </a> </li><li> <a href="/concord/components/textarea/"> Textarea </a> </li><li> <a href="/concord/components/date-input/"> Date Input </a> </li><li> <a href="/concord/components/slider/"> Slider </a> </li><li> <a href="/concord/components/stepper/"> Number Stepper </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-form-structure" data-sidebar-toggle> <span>Form structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/label/"> Form Label </a> </li><li> <a href="/concord/components/field/"> Form Field Group </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-layout-structure" data-sidebar-toggle> <span>Layout &amp; structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-layout-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/divider/"> Divider </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="true" aria-controls="sidebar-navigation-disclosure" data-sidebar-toggle> <span>Navigation &amp; disclosure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-navigation-disclosure" data-sidebar-panel> <li> <a aria-current="page" href="/concord/components/breadcrumb/"> Breadcrumb </a> </li><li> <a href="/concord/components/pagination/"> Pagination </a> </li><li> <a href="/concord/components/accordion/"> Accordion </a> </li><li> <a href="/concord/components/tabs/"> Tabs </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-content-media" data-sidebar-toggle> <span>Content &amp; media</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-content-media" hidden data-sidebar-panel> <li> <a href="/concord/components/media/"> Media </a> </li><li> <a href="/concord/components/list-item/"> List Item </a> </li><li> <a href="/concord/components/card/"> Card </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-feedback-status" data-sidebar-toggle> <span>Feedback &amp; status</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-feedback-status" hidden data-sidebar-panel> <li> <a href="/concord/components/tag/"> Tag </a> </li><li> <a href="/concord/components/alert/"> Alert </a> </li><li> <a href="/concord/components/loading-indicator/"> Loading Indicator </a> </li><li> <a href="/concord/components/progress-indicator/"> Progress Indicator </a> </li><li> <a href="/concord/components/progress-steps/"> Progress Steps </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-overlays" data-sidebar-toggle> <span>Overlays</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-overlays" hidden data-sidebar-panel> <li> <a href="/concord/components/tooltip/"> Tooltip </a> </li><li> <a href="/concord/components/menu/"> Menu </a> </li><li> <a href="/concord/components/popover/"> Popover </a> </li><li> <a href="/concord/components/modal/"> Modal </a> </li> </ul> </section>  <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1 --> <aside class="sidebar-card" aria-label="Concord architecture signature"> <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1.2 --> <div class="sidebar-card__identity"> <span class="sidebar-card__mark sidebar-card__signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-sidebar-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-sidebar-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-sidebar-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-sidebar-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-sidebar-mark-clip)" stroke="url(#concord-sidebar-mark-motion)"></path> </svg> </span> <p class="sidebar-card__eyebrow">Concord architecture</p> </div> <strong class="sidebar-card__title">Web-native. Framework-agnostic.</strong> <p class="sidebar-card__summary">
+Semantic HTML · External CSS · Platform-neutral tokens · Web Components · Framework
+      adapters
+</p> <p class="sidebar-card__credit">Designed &amp; engineered by Oleg Ivanov</p> <a class="sidebar-card__link" href="https://github.com/unistar81/concord-design-system"> <span>View source on GitHub</span> <span class="sidebar-card__arrow" aria-hidden="true">→</span> </a> </aside> </aside> <main id="main-content" class="docs-main"> <header class="component-heading"> <div class="component-utility-row"> <p class="eyebrow">Components / Navigation &amp; disclosure</p> <nav class="heading-actions" aria-label="Breadcrumb resources"> <a href="http://localhost:6006/?path=/story/components-breadcrumb--canonical" aria-label="Open Breadcrumb in Storybook">Storybook ↗</a> <a href="/concord/react/breadcrumb/" aria-label="Open Breadcrumb React demo">
+React demo ↗
+</a> </nav> </div> <div class="component-introduction"> <h1>Breadcrumb</h1> <p class="summary">A native breadcrumb navigation trail that composes Link for navigable ancestors and identifies the current page without making it an unnecessary self-link.</p> <div class="badges" aria-label="Component status and accessibility" data-component-status="stable">  <span class="dsl-tag docs-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> </div> </header> <div class="examples"> <details class="example-card" open data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 01</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Default trail</h2> </div> <p>Uses a native navigation landmark and ordered list while composing the existing Link component for navigable ancestors.</p>  </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Default trail preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <nav class="dsl-breadcrumb" aria-label="Breadcrumb">
+  <ol class="list">
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-home">
+          <span class="content-text">Home</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-components">
+          <span class="content-text">Components</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="current" aria-current="page">Breadcrumb</span>
+    </li>
+  </ol>
+</nav> </div> </div> </div> </section> <script type="module">function e(){document.querySelectorAll('[data-design-system-preview] input[type="checkbox"][data-indeterminate]').forEach(t=>{t.indeterminate=!0})}e();document.addEventListener("astro:page-load",e);</script> <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="breadcrumb-default-html-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-default-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="breadcrumb-default-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-default-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="breadcrumb-default-react-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-default-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="breadcrumb-default-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="breadcrumb-default-implementation-panels" class="code-drawer-panels"> <section id="breadcrumb-default-html-panel" role="tabpanel" aria-labelledby="breadcrumb-default-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/breadcrumb/breadcrumb.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<nav class=&#34;dsl-breadcrumb&#34; aria-label=&#34;Breadcrumb&#34;>
+  <ol class=&#34;list&#34;>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-home&#34;>
+          <span class=&#34;content-text&#34;>Home</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-components&#34;>
+          <span class=&#34;content-text&#34;>Components</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;current&#34; aria-current=&#34;page&#34;>Breadcrumb</span>
+    </li>
+  </ol>
+</nav>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">nav</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-breadcrumb"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Breadcrumb"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">ol</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"list"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-home"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Home&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-components"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Components&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"current"</span><span style="color:#023B95"> aria-current</span><span style="color:#0E1116">=</span><span style="color:#032563">"page"</span><span style="color:#0E1116">>Breadcrumb&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">ol</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">nav</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-default-lit-panel" role="tabpanel" aria-labelledby="breadcrumb-default-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/breadcrumb/dsl-breadcrumb.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-breadcrumb
+  .items=${[
+    { label: 'Home', href: '#breadcrumb-home' },
+    { label: 'Components', href: '#breadcrumb-components' },
+    { label: 'Breadcrumb' },
+  ]}
+  accessible-label=&#34;Breadcrumb&#34;
+></dsl-breadcrumb>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">breadcrumb</span></span>
+<span class="line"><span style="color:#0E1116">  .items</span><span style="color:#A0111F">=</span><span style="color:#0E1116">${[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Components'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-components'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Breadcrumb'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]}</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Breadcrumb"</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">breadcrumb</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-default-react-panel" role="tabpanel" aria-labelledby="breadcrumb-default-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<Breadcrumb
+  items={[
+    { label: 'Home', href: '#breadcrumb-home' },
+    { label: 'Components', href: '#breadcrumb-components' },
+    { label: 'Breadcrumb' },
+  ]}
+  accessibleLabel=&#34;Breadcrumb&#34;
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">Breadcrumb</span></span>
+<span class="line"><span style="color:#023B95">  items</span><span style="color:#A0111F">={</span><span style="color:#0E1116">[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Components'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-components'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Breadcrumb'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Breadcrumb"</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div> <details class="accessibility-notes"> <summary>Accessibility notes</summary> <ul> <li>The nav landmark is named with aria-label=&quot;Breadcrumb&quot;.</li><li>The ordered list communicates the hierarchical sequence.</li><li>The final item is non-interactive and identified with aria-current=&quot;page&quot;.</li><li>Visual separators are generated by CSS and are not authored as breadcrumb content.</li> </ul> </details> </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 02</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Long hierarchy</h2> </div> <p>Shows a deeper information hierarchy without turning trail depth into a component variant.</p>  </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Long hierarchy preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <nav class="dsl-breadcrumb" aria-label="Breadcrumb">
+  <ol class="list">
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-long-home">
+          <span class="content-text">Home</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-long-products">
+          <span class="content-text">Products</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-long-design-system">
+          <span class="content-text">Design system</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-long-navigation">
+          <span class="content-text">Navigation</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="current" aria-current="page">Breadcrumb guidance</span>
+    </li>
+  </ol>
+</nav> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="breadcrumb-long-trail-html-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-long-trail-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="breadcrumb-long-trail-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-long-trail-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="breadcrumb-long-trail-react-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-long-trail-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="breadcrumb-long-trail-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="breadcrumb-long-trail-implementation-panels" class="code-drawer-panels"> <section id="breadcrumb-long-trail-html-panel" role="tabpanel" aria-labelledby="breadcrumb-long-trail-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/breadcrumb/snippets/long-trail.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<nav class=&#34;dsl-breadcrumb&#34; aria-label=&#34;Breadcrumb&#34;>
+  <ol class=&#34;list&#34;>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-long-home&#34;>
+          <span class=&#34;content-text&#34;>Home</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-long-products&#34;>
+          <span class=&#34;content-text&#34;>Products</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-long-design-system&#34;>
+          <span class=&#34;content-text&#34;>Design system</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-long-navigation&#34;>
+          <span class=&#34;content-text&#34;>Navigation</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;current&#34; aria-current=&#34;page&#34;>Breadcrumb guidance</span>
+    </li>
+  </ol>
+</nav>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">nav</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-breadcrumb"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Breadcrumb"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">ol</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"list"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-long-home"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Home&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-long-products"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Products&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-long-design-system"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Design system&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-long-navigation"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Navigation&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"current"</span><span style="color:#023B95"> aria-current</span><span style="color:#0E1116">=</span><span style="color:#032563">"page"</span><span style="color:#0E1116">>Breadcrumb guidance&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">ol</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">nav</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-long-trail-lit-panel" role="tabpanel" aria-labelledby="breadcrumb-long-trail-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/breadcrumb/dsl-breadcrumb.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-breadcrumb
+  .items=${[
+    { label: 'Home', href: '#breadcrumb-long-home' },
+    { label: 'Products', href: '#breadcrumb-long-products' },
+    { label: 'Design system', href: '#breadcrumb-long-design-system' },
+    { label: 'Navigation', href: '#breadcrumb-long-navigation' },
+    { label: 'Breadcrumb guidance' },
+  ]}
+></dsl-breadcrumb>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">breadcrumb</span></span>
+<span class="line"><span style="color:#0E1116">  .items</span><span style="color:#A0111F">=</span><span style="color:#0E1116">${[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Products'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-products'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Design system'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-design-system'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Navigation'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-navigation'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Breadcrumb guidance'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]}</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">breadcrumb</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-long-trail-react-panel" role="tabpanel" aria-labelledby="breadcrumb-long-trail-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<Breadcrumb
+  items={[
+    { label: 'Home', href: '#breadcrumb-long-home' },
+    { label: 'Products', href: '#breadcrumb-long-products' },
+    { label: 'Design system', href: '#breadcrumb-long-design-system' },
+    { label: 'Navigation', href: '#breadcrumb-long-navigation' },
+    { label: 'Breadcrumb guidance' },
+  ]}
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">Breadcrumb</span></span>
+<span class="line"><span style="color:#023B95">  items</span><span style="color:#A0111F">={</span><span style="color:#0E1116">[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Products'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-products'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Design system'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-design-system'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Navigation'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-long-navigation'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Breadcrumb guidance'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 03</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Accessible landmark label</h2> </div> <p>Uses a context-specific accessible name when the page contains more than one navigation landmark that needs disambiguation.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>aria-label=&quot;Project breadcrumb&quot;</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Accessible landmark label preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <nav class="dsl-breadcrumb" aria-label="Project breadcrumb">
+  <ol class="list">
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-projects">
+          <span class="content-text">Projects</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-project-design-system">
+          <span class="content-text">Design system</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="current" aria-current="page">Component audit</span>
+    </li>
+  </ol>
+</nav> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="breadcrumb-custom-label-html-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-custom-label-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="breadcrumb-custom-label-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-custom-label-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="breadcrumb-custom-label-react-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-custom-label-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="breadcrumb-custom-label-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="breadcrumb-custom-label-implementation-panels" class="code-drawer-panels"> <section id="breadcrumb-custom-label-html-panel" role="tabpanel" aria-labelledby="breadcrumb-custom-label-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/breadcrumb/snippets/custom-label.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<nav class=&#34;dsl-breadcrumb&#34; aria-label=&#34;Project breadcrumb&#34;>
+  <ol class=&#34;list&#34;>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-projects&#34;>
+          <span class=&#34;content-text&#34;>Projects</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-project-design-system&#34;>
+          <span class=&#34;content-text&#34;>Design system</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;current&#34; aria-current=&#34;page&#34;>Component audit</span>
+    </li>
+  </ol>
+</nav>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">nav</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-breadcrumb"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Project breadcrumb"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">ol</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"list"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-projects"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Projects&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-project-design-system"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Design system&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"current"</span><span style="color:#023B95"> aria-current</span><span style="color:#0E1116">=</span><span style="color:#032563">"page"</span><span style="color:#0E1116">>Component audit&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">ol</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">nav</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-custom-label-lit-panel" role="tabpanel" aria-labelledby="breadcrumb-custom-label-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/breadcrumb/dsl-breadcrumb.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-breadcrumb
+  .items=${[
+    { label: 'Projects', href: '#breadcrumb-projects' },
+    { label: 'Design system', href: '#breadcrumb-project-design-system' },
+    { label: 'Component audit' },
+  ]}
+  accessible-label=&#34;Project breadcrumb&#34;
+></dsl-breadcrumb>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">breadcrumb</span></span>
+<span class="line"><span style="color:#0E1116">  .items</span><span style="color:#A0111F">=</span><span style="color:#0E1116">${[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Projects'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-projects'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Design system'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-project-design-system'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Component audit'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]}</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Project breadcrumb"</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">breadcrumb</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-custom-label-react-panel" role="tabpanel" aria-labelledby="breadcrumb-custom-label-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<Breadcrumb
+  items={[
+    { label: 'Projects', href: '#breadcrumb-projects' },
+    { label: 'Design system', href: '#breadcrumb-project-design-system' },
+    { label: 'Component audit' },
+  ]}
+  accessibleLabel=&#34;Project breadcrumb&#34;
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">Breadcrumb</span></span>
+<span class="line"><span style="color:#023B95">  items</span><span style="color:#A0111F">={</span><span style="color:#0E1116">[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Projects'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-projects'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Design system'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-project-design-system'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Component audit'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Project breadcrumb"</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card resilience-card" data-initial-preview-width="320"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 04</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Content resilience</h2> </div> <p>Allows long breadcrumb labels to wrap within narrow available width without a viewport-specific collapse mode.</p>  </div> <span class="example-summary-status"> <span class="dsl-tag docs-badge pass-badge"> <span class="label">Pass</span> </span> <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Content resilience preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame resilience-preview" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <nav class="dsl-breadcrumb" aria-label="Breadcrumb">
+  <ol class="list">
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-resilience-home">
+          <span class="content-text">Home</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="dsl-link">
+        <a class="content" href="#breadcrumb-resilience-accessibility">
+          <span class="content-text">Accessibility and inclusive design guidance</span>
+        </a>
+      </span>
+    </li>
+    <li class="item">
+      <span class="current" aria-current="page"
+        >Keyboard interaction requirements and content resilience</span
+      >
+    </li>
+  </ol>
+</nav> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="breadcrumb-content-resilience-html-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-content-resilience-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="breadcrumb-content-resilience-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-content-resilience-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="breadcrumb-content-resilience-react-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-content-resilience-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="breadcrumb-content-resilience-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="breadcrumb-content-resilience-implementation-panels" class="code-drawer-panels"> <section id="breadcrumb-content-resilience-html-panel" role="tabpanel" aria-labelledby="breadcrumb-content-resilience-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/breadcrumb/snippets/content-resilience.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<nav class=&#34;dsl-breadcrumb&#34; aria-label=&#34;Breadcrumb&#34;>
+  <ol class=&#34;list&#34;>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-resilience-home&#34;>
+          <span class=&#34;content-text&#34;>Home</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;dsl-link&#34;>
+        <a class=&#34;content&#34; href=&#34;#breadcrumb-resilience-accessibility&#34;>
+          <span class=&#34;content-text&#34;>Accessibility and inclusive design guidance</span>
+        </a>
+      </span>
+    </li>
+    <li class=&#34;item&#34;>
+      <span class=&#34;current&#34; aria-current=&#34;page&#34;
+        >Keyboard interaction requirements and content resilience</span
+      >
+    </li>
+  </ol>
+</nav>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">nav</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-breadcrumb"</span><span style="color:#023B95"> aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Breadcrumb"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">ol</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"list"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-resilience-home"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Home&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-link"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;</span><span style="color:#024C1A">a</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content"</span><span style="color:#023B95"> href</span><span style="color:#0E1116">=</span><span style="color:#032563">"#breadcrumb-resilience-accessibility"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">          &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"content-text"</span><span style="color:#0E1116">>Accessibility and inclusive design guidance&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">        &#x3C;/</span><span style="color:#024C1A">a</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">li</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"item"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"current"</span><span style="color:#023B95"> aria-current</span><span style="color:#0E1116">=</span><span style="color:#032563">"page"</span></span>
+<span class="line"><span style="color:#0E1116">        >Keyboard interaction requirements and content resilience&#x3C;/</span><span style="color:#024C1A">span</span></span>
+<span class="line"><span style="color:#0E1116">      ></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">li</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">ol</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">nav</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-content-resilience-lit-panel" role="tabpanel" aria-labelledby="breadcrumb-content-resilience-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/breadcrumb/dsl-breadcrumb.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-breadcrumb
+  .items=${[
+    { label: 'Home', href: '#breadcrumb-resilience-home' },
+    { label: 'Accessibility and inclusive design guidance', href: '#breadcrumb-resilience-accessibility' },
+    { label: 'Keyboard interaction requirements and content resilience' },
+  ]}
+></dsl-breadcrumb>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">breadcrumb</span></span>
+<span class="line"><span style="color:#0E1116">  .items</span><span style="color:#A0111F">=</span><span style="color:#0E1116">${[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-resilience-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Accessibility and inclusive design guidance'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-resilience-accessibility'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Keyboard interaction requirements and content resilience'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]}</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#702C00">breadcrumb</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="breadcrumb-content-resilience-react-panel" role="tabpanel" aria-labelledby="breadcrumb-content-resilience-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<Breadcrumb
+  items={[
+    { label: 'Home', href: '#breadcrumb-resilience-home' },
+    { label: 'Accessibility and inclusive design guidance', href: '#breadcrumb-resilience-accessibility' },
+    { label: 'Keyboard interaction requirements and content resilience' },
+  ]}
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">Breadcrumb</span></span>
+<span class="line"><span style="color:#023B95">  items</span><span style="color:#A0111F">={</span><span style="color:#0E1116">[</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Home'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-resilience-home'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Accessibility and inclusive design guidance'</span><span style="color:#0E1116">, href: </span><span style="color:#032563">'#breadcrumb-resilience-accessibility'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">    { label: </span><span style="color:#032563">'Keyboard interaction requirements and content resilience'</span><span style="color:#0E1116"> },</span></span>
+<span class="line"><span style="color:#0E1116">  ]</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details> </div> <section class="component-reference" data-component-reference aria-labelledby="breadcrumb-component-implementation"> <div class="component-reference-heading"> <p class="component-reference-eyebrow">Component reference</p> <h2 id="breadcrumb-component-implementation">Component implementation</h2> </div> <div class="component-reference-surface" data-component-reference-tabs> <div class="component-reference-tablist" role="tablist" aria-label="Component implementation reference"> <button id="breadcrumb-reference-css-tab" type="button" role="tab" aria-selected="true" aria-controls="breadcrumb-reference-css-panel" tabindex="0" data-reference-tab="css"> CSS </button><button id="breadcrumb-reference-custom-properties-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-reference-custom-properties-panel" tabindex="-1" data-reference-tab="custom-properties"> CSS Custom Properties </button><button id="breadcrumb-reference-token-map-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-reference-token-map-panel" tabindex="-1" data-reference-tab="token-map"> Token Map </button><button id="breadcrumb-reference-token-json-tab" type="button" role="tab" aria-selected="false" aria-controls="breadcrumb-reference-token-json-panel" tabindex="-1" data-reference-tab="token-json"> Source JSON </button> </div> <section id="breadcrumb-reference-css-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="breadcrumb-reference-css-tab" data-reference-panel="css"> <header class="code-panel-header"> <span>packages/css/src/components/breadcrumb.css</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source=".dsl-breadcrumb {
+  --_dsl-breadcrumb-separator-color: var(
+    --dsl-breadcrumb-separator-color,
+    var(--dsl-component-breadcrumb-separator-color)
+  );
+  --_dsl-breadcrumb-separator-thickness: var(
+    --dsl-breadcrumb-separator-thickness,
+    var(--dsl-component-breadcrumb-separator-thickness)
+  );
+  --_dsl-breadcrumb-separator-block-size: var(
+    --dsl-breadcrumb-separator-block-size,
+    var(--dsl-component-breadcrumb-separator-size-block)
+  );
+  --_dsl-breadcrumb-separator-gap: var(
+    --dsl-breadcrumb-separator-gap,
+    var(--dsl-component-breadcrumb-spacing-separator-gap)
+  );
+  --_dsl-breadcrumb-row-gap: var(
+    --dsl-breadcrumb-row-gap,
+    var(--dsl-component-breadcrumb-spacing-row-gap)
+  );
+  --_dsl-breadcrumb-current-color: var(
+    --dsl-breadcrumb-current-color,
+    var(--dsl-component-breadcrumb-current-color)
+  );
+  --_dsl-breadcrumb-current-font-family: var(
+    --dsl-breadcrumb-current-font-family,
+    var(--dsl-component-breadcrumb-current-typography-family)
+  );
+  --_dsl-breadcrumb-current-font-size: var(
+    --dsl-breadcrumb-current-font-size,
+    var(--dsl-component-breadcrumb-current-typography-size)
+  );
+  --_dsl-breadcrumb-current-font-weight: var(
+    --dsl-breadcrumb-current-font-weight,
+    var(--dsl-component-breadcrumb-current-typography-weight)
+  );
+  --_dsl-breadcrumb-current-line-height: var(
+    --dsl-breadcrumb-current-line-height,
+    var(--dsl-component-breadcrumb-current-typography-line-height)
+  );
+
+  display: block;
+  min-inline-size: 0;
+
+  > .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: var(--_dsl-breadcrumb-row-gap);
+    min-inline-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  > .list > .item {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+
+  > .list > .item + .item::before {
+    content: '';
+    flex: none;
+    inline-size: 0;
+    block-size: var(--_dsl-breadcrumb-separator-block-size);
+    margin-inline: var(--_dsl-breadcrumb-separator-gap);
+    border-inline-start: var(--_dsl-breadcrumb-separator-thickness) solid
+      var(--_dsl-breadcrumb-separator-color);
+    transform: rotate(15deg);
+  }
+
+  > .list > .item > .dsl-link,
+  > .list > .item > .current {
+    flex: 0 1 auto;
+    min-inline-size: 0;
+  }
+
+  .dsl-link,
+  .dsl-link > .content {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+
+  .current {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    color: var(--_dsl-breadcrumb-current-color);
+    font-family: var(--_dsl-breadcrumb-current-font-family);
+    font-size: var(--_dsl-breadcrumb-current-font-size);
+    font-weight: var(--_dsl-breadcrumb-current-font-weight);
+    line-height: var(--_dsl-breadcrumb-current-line-height);
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (forced-colors: active) {
+  .dsl-breadcrumb > .list > .item + .item::before {
+    border-color: CanvasText;
+  }
+}
+"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">.dsl-breadcrumb</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-separator-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-separator-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-separator-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-separator-thickness</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-separator-thickness</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-separator-thickness</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-separator-block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-separator-block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-separator-size-block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-separator-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-separator-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-spacing-separator-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-row-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-row-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-spacing-row-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-current-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-current-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-current-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-current-font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-current-font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-current-typography-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-current-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-current-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-current-typography-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-current-font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-current-font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-current-typography-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">  --_dsl-breadcrumb-current-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-breadcrumb-current-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-breadcrumb-current-typography-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">)</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  );</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">block</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  > .</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">list</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex-wrap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">wrap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    row-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-row-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    list-style</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .list</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    max-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .list</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item::before</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">''</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-separator-block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-separator-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-inline-start</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-separator-thickness</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">) </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">solid</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">      var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-separator-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    transform</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">rotate</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">15</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">deg</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .list</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-link</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .list</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .current</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .dsl-link</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .dsl-link</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .content</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    max-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .current</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    max-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-current-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-current-font-family</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-current-font-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-current-font-weight</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--_dsl-breadcrumb-current-line-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    overflow-wrap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: anywhere;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@media</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (forced-colors: active) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .dsl-breadcrumb</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .list</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> +</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .item::before</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: CanvasText;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <section id="breadcrumb-reference-custom-properties-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="breadcrumb-reference-custom-properties-tab" data-reference-panel="custom-properties" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div>  <div class="component-reference-table-heading component-reference-property-heading" aria-hidden="true"> <span>Custom property</span> <span>Assigned value</span> <span>Resolved value</span> </div> <dl class="component-reference-properties" data-copy-source="--dsl-component-breadcrumb-separator-color: var(--dsl-semantic-color-text-muted);
+--dsl-component-breadcrumb-separator-thickness: var(--dsl-foundation-stroke-width-thin);
+--dsl-component-breadcrumb-separator-size-block: var(--dsl-system-typography-size-control);
+--dsl-component-breadcrumb-spacing-separator-gap: var(--dsl-foundation-space-100);
+--dsl-component-breadcrumb-spacing-row-gap: var(--dsl-foundation-space-100);
+--dsl-component-breadcrumb-current-color: var(--dsl-semantic-color-text-strong);
+--dsl-component-breadcrumb-current-typography-family: var(--dsl-component-link-typography-family);
+--dsl-component-breadcrumb-current-typography-size: var(--dsl-component-link-typography-size);
+--dsl-component-breadcrumb-current-typography-weight: var(--dsl-system-typography-weight-semibold);
+--dsl-component-breadcrumb-current-typography-line-height: var(--dsl-component-link-typography-line-height);"> <div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-separator-color</code> </dt> <dd> <code>var(--dsl-semantic-color-text-muted)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-color" data-fallback-value="var(--dsl-semantic-color-text-muted)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-semantic-color-text-muted)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-separator-thickness</code> </dt> <dd> <code>var(--dsl-foundation-stroke-width-thin)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-thickness" data-fallback-value="var(--dsl-foundation-stroke-width-thin)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-foundation-stroke-width-thin)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-separator-size-block</code> </dt> <dd> <code>var(--dsl-system-typography-size-control)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-size-block" data-fallback-value="var(--dsl-system-typography-size-control)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-system-typography-size-control)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-spacing-separator-gap</code> </dt> <dd> <code>var(--dsl-foundation-space-100)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-spacing-separator-gap" data-fallback-value="var(--dsl-foundation-space-100)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-foundation-space-100)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-spacing-row-gap</code> </dt> <dd> <code>var(--dsl-foundation-space-100)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-spacing-row-gap" data-fallback-value="var(--dsl-foundation-space-100)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-foundation-space-100)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-current-color</code> </dt> <dd> <code>var(--dsl-semantic-color-text-strong)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-color" data-fallback-value="var(--dsl-semantic-color-text-strong)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-semantic-color-text-strong)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-current-typography-family</code> </dt> <dd> <code>var(--dsl-component-link-typography-family)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-family" data-fallback-value="var(--dsl-component-link-typography-family)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-component-link-typography-family)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-current-typography-size</code> </dt> <dd> <code>var(--dsl-component-link-typography-size)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-size" data-fallback-value="var(--dsl-component-link-typography-size)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-component-link-typography-size)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-current-typography-weight</code> </dt> <dd> <code>var(--dsl-system-typography-weight-semibold)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-weight" data-fallback-value="var(--dsl-system-typography-weight-semibold)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-system-typography-weight-semibold)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-breadcrumb-current-typography-line-height</code> </dt> <dd> <code>var(--dsl-component-link-typography-line-height)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-line-height" data-fallback-value="var(--dsl-component-link-typography-line-height)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-component-link-typography-line-height)</code> </dd> </div> </dl>  </section> <section id="breadcrumb-reference-token-map-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="breadcrumb-reference-token-map-tab" data-reference-panel="token-map" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div>  <div class="component-reference-table-heading component-reference-token-heading" aria-hidden="true"> <span>Token</span> <span>Reference / authored value</span> <span>Resolved value</span> </div> <div class="component-reference-token-scroll" data-copy-source="component.breadcrumb.separator.color → semantic.color.text.muted → #929292
+component.breadcrumb.separator.thickness → foundation.stroke.width.thin → 1px
+component.breadcrumb.separator.size.block → system.typography.size.control → 1rem
+component.breadcrumb.spacing.separator-gap → foundation.space.100 → 8px
+component.breadcrumb.spacing.row-gap → foundation.space.100 → 8px
+component.breadcrumb.current.color → semantic.color.text.strong → #242424
+component.breadcrumb.current.typography.family → component.link.typography.family → Inter, Segoe UI, Arial, sans-serif
+component.breadcrumb.current.typography.size → component.link.typography.size → 1rem
+component.breadcrumb.current.typography.weight → system.typography.weight.semibold → 600
+component.breadcrumb.current.typography.line-height → component.link.typography.line-height → 1.5"> <div class="component-reference-token-map"> <div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.separator.color</code> <code class="component-reference-token-target">semantic.color.text.muted</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-color" data-fallback-value="#929292"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>#929292</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.separator.thickness</code> <code class="component-reference-token-target">foundation.stroke.width.thin</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-thickness" data-fallback-value="1px"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>1px</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.separator.size.block</code> <code class="component-reference-token-target">system.typography.size.control</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-separator-size-block" data-fallback-value="1rem"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>1rem</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.spacing.separator-gap</code> <code class="component-reference-token-target">foundation.space.100</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-spacing-separator-gap" data-fallback-value="8px"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>8px</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.spacing.row-gap</code> <code class="component-reference-token-target">foundation.space.100</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-spacing-row-gap" data-fallback-value="8px"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>8px</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.current.color</code> <code class="component-reference-token-target">semantic.color.text.strong</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-color" data-fallback-value="#242424"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>#242424</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.current.typography.family</code> <code class="component-reference-token-target">component.link.typography.family</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-family" data-fallback-value="Inter, Segoe UI, Arial, sans-serif"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>Inter, Segoe UI, Arial, sans-serif</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.current.typography.size</code> <code class="component-reference-token-target">component.link.typography.size</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-size" data-fallback-value="1rem"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>1rem</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.current.typography.weight</code> <code class="component-reference-token-target">system.typography.weight.semibold</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-weight" data-fallback-value="600"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>600</code> </span> </div><div class="component-reference-token-row"> <code class="component-reference-token-source">component.breadcrumb.current.typography.line-height</code> <code class="component-reference-token-target">component.link.typography.line-height</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-breadcrumb-current-typography-line-height" data-fallback-value="1.5"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>1.5</code> </span> </div> </div> </div>  </section> <section id="breadcrumb-reference-token-json-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="breadcrumb-reference-token-json-tab" data-reference-panel="token-json" hidden> <header class="code-panel-header"> <span>packages/tokens/src/base.tokens.json</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source="{
+  &#34;component&#34;: {
+    &#34;breadcrumb&#34;: {
+      &#34;$description&#34;: &#34;Component decisions for native breadcrumb navigation composed from ordered list structure and Link ancestors.&#34;,
+      &#34;separator&#34;: {
+        &#34;color&#34;: {
+          &#34;$type&#34;: &#34;color&#34;,
+          &#34;$value&#34;: &#34;{semantic.color.text.muted}&#34;
+        },
+        &#34;thickness&#34;: {
+          &#34;$type&#34;: &#34;dimension&#34;,
+          &#34;$value&#34;: &#34;{foundation.stroke.width.thin}&#34;
+        },
+        &#34;size&#34;: {
+          &#34;block&#34;: {
+            &#34;$type&#34;: &#34;dimension&#34;,
+            &#34;$value&#34;: &#34;{system.typography.size.control}&#34;
+          }
+        }
+      },
+      &#34;spacing&#34;: {
+        &#34;separator-gap&#34;: {
+          &#34;$type&#34;: &#34;dimension&#34;,
+          &#34;$value&#34;: &#34;{foundation.space.100}&#34;
+        },
+        &#34;row-gap&#34;: {
+          &#34;$type&#34;: &#34;dimension&#34;,
+          &#34;$value&#34;: &#34;{foundation.space.100}&#34;
+        }
+      },
+      &#34;current&#34;: {
+        &#34;color&#34;: {
+          &#34;$type&#34;: &#34;color&#34;,
+          &#34;$value&#34;: &#34;{semantic.color.text.strong}&#34;
+        },
+        &#34;typography&#34;: {
+          &#34;family&#34;: {
+            &#34;$type&#34;: &#34;fontFamily&#34;,
+            &#34;$value&#34;: &#34;{component.link.typography.family}&#34;
+          },
+          &#34;size&#34;: {
+            &#34;$type&#34;: &#34;dimension&#34;,
+            &#34;$value&#34;: &#34;{component.link.typography.size}&#34;
+          },
+          &#34;weight&#34;: {
+            &#34;$type&#34;: &#34;fontWeight&#34;,
+            &#34;$value&#34;: &#34;{system.typography.weight.semibold}&#34;
+          },
+          &#34;line-height&#34;: {
+            &#34;$type&#34;: &#34;number&#34;,
+            &#34;$value&#34;: &#34;{component.link.typography.line-height}&#34;
+          }
+        }
+      }
+    }
+  }
+}"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "component"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "breadcrumb"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "$description"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"Component decisions for native breadcrumb navigation composed from ordered list structure and Link ancestors."</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "separator"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{semantic.color.text.muted}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "thickness"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{foundation.stroke.width.thin}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "size"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "block"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{system.typography.size.control}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "spacing"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "separator-gap"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{foundation.space.100}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "row-gap"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{foundation.space.100}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "current"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{semantic.color.text.strong}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "typography"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "family"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"fontFamily"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{component.link.typography.family}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "size"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{component.link.typography.size}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "weight"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"fontWeight"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{system.typography.weight.semibold}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "line-height"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"number"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{component.link.typography.line-height}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <span class="component-reference-runtime-resolver" data-component-reference-runtime-resolver data-design-system-preview aria-hidden="true"></span> </div> </section> <section class="component-accessibility" data-component-accessibility aria-labelledby="breadcrumb-accessibility-heading"> <div class="component-reference-heading component-accessibility-heading"> <div> <p class="component-reference-eyebrow">Component contract</p> <h2 id="breadcrumb-accessibility-heading">Accessibility</h2> </div> <span class="dsl-tag docs-badge target-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> <div class="accessibility-reference-grid"> <section class="accessibility-reference-group"> <h3>Native semantics</h3> <ul class="accessibility-list"> <li>Canonical HTML uses a native nav landmark containing an ordered list of breadcrumb locations.</li><li>Navigable ancestors compose the existing Link component and therefore retain native anchor semantics and interaction.</li><li>The final current page is non-interactive and identified with aria-current=&quot;page&quot;.</li><li>Separators are CSS-generated presentation and are not authored as breadcrumb content.</li> </ul> </section> <section class="accessibility-reference-group"> <h3>Requirements</h3> <ul class="accessibility-list"> <li>Provide an accessible name for the breadcrumb nav, normally aria-label=&quot;Breadcrumb&quot;.</li><li>Use distinct accessible names when more than one breadcrumb landmark appears on the same page and needs disambiguation.</li><li>Keep ancestor labels concise and destination-specific.</li><li>Do not add redundant visually hidden breadcrumb-identification text when the nav accessible name already supplies that context.</li><li>Do not use the Divider component as breadcrumb punctuation.</li> </ul> </section>  </div> </section> </main>  </div>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CNwjPPH5.js"></script> </body> </html>

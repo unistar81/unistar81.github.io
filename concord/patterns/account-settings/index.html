@@ -1,0 +1,1736 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="A complete account workflow built from shared Concord contracts. Explore state, validation, accessibility, and responsive composition across HTML, Lit, and React."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>Account Settings · Concord · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<link rel="stylesheet" href="/concord/_astro/_slug_.hRvNEfmE.css">
+<link rel="stylesheet" href="/concord/_astro/_id_.CU4HBNFr.css"></head> <body> <a class="skip-link" href="#main-content">Skip to main content</a> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/">Foundations</a> <a href="/concord/components/">Components</a> <a href="/concord/layout/">Layout</a> <a aria-current="page" href="/concord/patterns/">Patterns</a> <a href="/concord/templates/">Templates</a> <a href="/concord/resources/">Resources</a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <div class="docs-shell"> <aside class="context-sidebar" aria-label="patterns navigation"> <p class="sidebar-title">patterns</p>  <section class="sidebar-section"> <h2>Patterns</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/overview/"> Overview </a> </li> </ul> </section><section class="sidebar-section"> <h2>Integration</h2> <ul class="sidebar-list"> <li> <a aria-current="page" href="/concord/patterns/account-settings/"> Account Settings </a> </li> </ul> </section><section class="sidebar-section"> <h2>Forms</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/form-layout/"> Form Layout </a> </li><li> <a href="/concord/patterns/form-validation/"> Form Validation </a> </li><li> <a href="/concord/patterns/selection-groups/"> Selection Groups </a> </li> </ul> </section><section class="sidebar-section"> <h2>Actions</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/action-groups/"> Action Groups </a> </li><li> <a href="/concord/patterns/confirmation/"> Confirmation </a> </li> </ul> </section><section class="sidebar-section"> <h2>Feedback</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/status-messaging/"> Status Messaging </a> </li><li> <a href="/concord/patterns/loading-progress/"> Loading &amp; Progress </a> </li> </ul> </section><section class="sidebar-section"> <h2>Disclosure</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/tooltip-guidance/"> Tooltip Guidance </a> </li><li> <a href="/concord/patterns/popover-disclosure/"> Popover Disclosure </a> </li><li> <a href="/concord/patterns/modal-flow/"> Modal Flow </a> </li> </ul> </section><section class="sidebar-section"> <h2>Content &amp; collections</h2> <ul class="sidebar-list"> <li> <a href="/concord/patterns/search-filtering/"> Search &amp; Filtering </a> </li><li> <a href="/concord/patterns/empty-states/"> Empty States </a> </li><li> <a href="/concord/patterns/pagination/"> Pagination </a> </li> </ul> </section> <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1 --> <aside class="sidebar-card" aria-label="Concord architecture signature"> <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1.2 --> <div class="sidebar-card__identity"> <span class="sidebar-card__mark sidebar-card__signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-sidebar-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-sidebar-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-sidebar-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-sidebar-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-sidebar-mark-clip)" stroke="url(#concord-sidebar-mark-motion)"></path> </svg> </span> <p class="sidebar-card__eyebrow">Concord architecture</p> </div> <strong class="sidebar-card__title">Web-native. Framework-agnostic.</strong> <p class="sidebar-card__summary">
+Semantic HTML · External CSS · Platform-neutral tokens · Web Components · Framework
+      adapters
+</p> <p class="sidebar-card__credit">Designed &amp; engineered by Oleg Ivanov</p> <a class="sidebar-card__link" href="https://github.com/unistar81/concord-design-system"> <span>View source on GitHub</span> <span class="sidebar-card__arrow" aria-hidden="true">→</span> </a> </aside> </aside> <main id="main-content" class="docs-main"> <article class="information-page" data-information-page="account-settings" data-astro-cid-peev57ep> <header class="information-header" data-astro-cid-peev57ep> <div data-astro-cid-peev57ep> <p class="information-eyebrow" data-astro-cid-peev57ep>Patterns · Integration</p> <h1 data-astro-cid-peev57ep>Account Settings</h1> <p class="information-lede" data-astro-cid-peev57ep>A complete account workflow built from shared Concord contracts. Explore state, validation, accessibility, and responsive composition across HTML, Lit, and React.</p> </div>  <!-- CONCORD IMPLICIT IMPLEMENTED STATUS v7 --> </header>                <section class="account-integration" aria-label="Account Settings integration example"> <div class="account-delivery-bar dsl-split"> <div> <strong>Explore the working example</strong><p>
+Same contract. Your values travel between delivery views.
+</p> </div> <div class="account-delivery-picker"> <label for="account-delivery">Delivery</label><div class="dsl-select"> <select id="account-delivery" data-account-delivery disabled><option value="html">HTML + CSS</option><option value="lit">Lit</option><option value="react">React</option></select> </div> </div> </div> <div class="account-specimen dsl-layout-context" data-account-specimen data-design-system-preference-target data-canonical-sources="[&#34;packages/html/src/components/tabs/tabs.html&#34;,&#34;packages/html/src/components/button/snippets/pattern-modal-flow-1.html&#34;,&#34;packages/html/src/components/modal/snippets/profile-form.html&#34;,&#34;packages/html/src/components/input/snippets/content-resilience.html&#34;,&#34;packages/html/src/components/toggle/snippets/description.html&#34;,&#34;packages/html/src/components/select/select.html&#34;,&#34;packages/html/src/components/button/snippets/pattern-action-groups-2.html&#34;,&#34;packages/html/src/components/list-item/snippets/static.html&#34;]"> <header class="account-workspace dsl-split"> <div> <span class="account-eyebrow">Northstar Studio</span><h2>Personal settings</h2><p>
+A workspace that works for you.
+</p> </div><span class="account-sample-note">Interactive sample · Memory only</span> </header> <div class="account-composition dsl-sidebar"> <div class="account-main"> <div data-account-view><div data-account-mount><div class="dsl-tabs" data-tabs="" data-mobile-presentation="dropdown" data-active-tab="profile">
+  <div class="tablist" role="tablist" aria-label="Account settings sections">
+    <button id="account-html-profile-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="account-html-profile-panel" data-tab="profile">Profile</button>
+    <button id="account-html-notifications-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-notifications-panel" data-tab="notifications" tabindex="-1">Notifications</button>
+    <button id="account-html-security-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-security-panel" data-tab="security" tabindex="-1">Security</button>
+  </div>
+  <div class="dsl-select mobile-select" hidden="">
+    <select aria-label="Account settings sections" data-tabs-select="">
+      <option value="profile" selected="">Profile</option>
+      <option value="notifications">Notifications</option>
+      <option value="security">Security</option>
+    </select>
+  </div>
+  <div class="panels">
+    <section id="account-html-profile-panel" class="panel" role="tabpanel" aria-labelledby="account-html-profile-tab" data-tab-panel="profile">
+      <button id="account-html-profile-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="true" aria-controls="account-html-profile-content" data-tab="profile" hidden="">Profile</button>
+      <div id="account-html-profile-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Your profile</h3>
+            <p>A familiar identity, wherever you collaborate.</p>
+          </header>
+              <div class="account-profile-card dsl-split">
+                <div class="account-identity">
+                  <span class="account-avatar" data-account-initials="" aria-hidden="true">AM</span>
+                  <div>
+                    <strong data-account-name="">Avery Morgan</strong>
+                    <p data-account-job="">Staff product designer</p>
+                  </div>
+                </div>
+                <div data-account-edit="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium" commandfor="account-html-profile-dialog" command="show-modal" data-dialog-open="account-html-profile-dialog">
+  <span class="label">Edit profile</span>
+</button><dialog id="account-html-profile-dialog" class="dsl-modal" aria-labelledby="account-html-profile-title" aria-describedby="account-html-profile-description">
+  <header><h2 id="account-html-profile-title">Edit profile</h2></header>
+  <button class="close" type="button" commandfor="account-html-profile-dialog" command="close" data-dialog-close="" value="dismiss" aria-label="Close Edit profile">
+    <span class="dsl-icon" data-icon="close" aria-hidden="true"></span>
+  </button>
+  <div class="content"> <p id="account-html-profile-description" class="account-help">
+              Update the details your teammates see. Required fields are marked in their labels.
+            </p>
+            <form id="account-html-profile-form" method="dialog" class="account-profile-form dsl-flow">
+              <p class="account-error-summary" role="alert" hidden=""></p>
+              <div class="account-field dsl-flow">
+              <label for="account-html-fullName">Full name (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-fullName" name="fullName" type="text" value="Avery Morgan" required="" autocomplete="name" maxlength="80" aria-describedby="account-html-fullName-help account-html-fullName-error">
+</div>
+              <p class="account-help" id="account-html-fullName-help">Use the name your teammates know you by.</p>
+              <p class="account-error" id="account-html-fullName-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-email">Work email (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-email" name="email" type="email" value="avery.morgan@example.com" required="" autocomplete="email" maxlength="254" aria-describedby="account-html-email-help account-html-email-error">
+</div>
+              <p class="account-help" id="account-html-email-help">Use a complete address, such as avery@example.com.</p>
+              <p class="account-error" id="account-html-email-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-jobTitle">Job title</label>
+              <div class="dsl-input">
+  <input id="account-html-jobTitle" name="jobTitle" type="text" value="Staff product designer" autocomplete="organization-title" maxlength="80" aria-describedby="account-html-jobTitle-help account-html-jobTitle-error">
+</div>
+              <p class="account-help" id="account-html-jobTitle-help">Optional. Help collaborators understand your role.</p>
+              <p class="account-error" id="account-html-jobTitle-error" hidden=""></p>
+            </div>
+            </form></div>
+  <form class="actions" method="dialog">
+    <button class="dsl-button" type="submit" data-variant="secondary" data-size="medium" value="cancel">
+      <span>Cancel</span>
+    </button>
+    <button class="dsl-button" type="submit" form="account-html-profile-form" data-variant="primary" data-size="medium" value="save">
+      <span>Save changes</span>
+    </button>
+  </form>
+</dialog>
+                </div>
+              </div>
+              <dl class="account-facts dsl-grid">
+                <div>
+                  <dt>Work email</dt>
+                  <dd data-account-email="">avery.morgan@example.com</dd>
+                </div>
+                <div>
+                        <dt>Workspace</dt>
+                        <dd>Northstar Studio</dd>
+                      </div><div>
+                        <dt>Role</dt>
+                        <dd>Member</dd>
+                      </div><div>
+                        <dt>Time zone</dt>
+                        <dd>Eastern Time · New York</dd>
+                      </div>
+              </dl>
+              <p class="account-note">
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              </p>
+            </section></div>
+    </section>
+    <section id="account-html-notifications-panel" class="panel" role="tabpanel" aria-labelledby="account-html-notifications-tab" data-tab-panel="notifications" hidden="">
+      <button id="account-html-notifications-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-notifications-content" data-tab="notifications" hidden="">Notifications</button>
+      <div id="account-html-notifications-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Make room for what matters</h3>
+            <p>Choose the updates that deserve your attention. Preferences apply immediately in this example.</p>
+          </header>
+              <form class="account-preferences dsl-flow" aria-label="Notification preferences">
+                <fieldset>
+                  <legend>Updates you receive</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Mentions and replies<small>When someone needs your attention in a conversation.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-mentions" name="mentions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Project updates<small>Changes to milestones, assignments, and project status.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-projectUpdates" name="projectUpdates" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Product news<small>Occasional tips and new features from the product team.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-productNews" name="productNews" type="checkbox" role="switch" value="enabled">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+                <div class="account-field dsl-flow">
+                  <label for="account-html-frequency">Delivery frequency</label>
+                  <div class="dsl-select">
+  <select id="account-html-frequency" name="frequency">
+    <option value="" disabled="">Choose a frequency</option>
+    <option value="immediate">As activity happens</option>
+    <option value="daily" selected="">Daily digest</option>
+    <option value="weekly">Weekly digest</option>
+  </select>
+</div>
+                  <p class="account-help">
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  </p>
+                </div>
+                <div data-account-defaults="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium">
+  <span class="label">Restore notification defaults</span>
+</button>
+                </div>
+              </form>
+            </section></div>
+    </section>
+    <section id="account-html-security-panel" class="panel" role="tabpanel" aria-labelledby="account-html-security-tab" data-tab-panel="security" hidden="">
+      <button id="account-html-security-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-security-content" data-tab="security" hidden="">Security</button>
+      <div id="account-html-security-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Keep your account in view</h3>
+            <p>Review security preferences and representative session information. This example does not change real account security.</p>
+          </header>
+              <form class="account-preferences" aria-label="Security preferences">
+                <fieldset>
+                  <legend>Account safeguards</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">New sign-in alerts<small>A notification when a new device accesses your account.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-signInAlerts" name="signInAlerts" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Confirm sensitive actions<small>Ask for confirmation before important account changes.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-sensitiveActions" name="sensitiveActions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+              </form>
+              <section class="dsl-flow">
+                <h4>Recent sessions</h4>
+                <p class="account-help">
+                  Representative data for this specimen. No real devices or accounts are
+                  connected.
+                </p>
+                <ul class="account-sessions">
+                  <li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li>
+                </ul>
+              </section>
+            </section></div>
+    </section>
+  </div>
+</div></div></div><p class="account-status" role="status" aria-atomic="true" data-account-status></p> </div> <aside class="account-context dsl-flow" aria-label="About this example"> <p class="account-eyebrow">Designed to work together</p><h3>
+One account. Connected decisions.
+</h3><p>
+Update your profile, tune the signal, and review your security preferences
+          without losing your place.
+</p><hr><h4>Try it</h4><ol> <li>Edit your profile and try an incomplete email.</li><li>
+Save, switch sections, and reopen the editor.
+</li><li>Change Theme, Appearance, or Density above.</li><li>
+Switch delivery. Your sample values stay with you.
+</li> </ol><p class="account-help">
+Reload to start again. Account data is never stored or sent. Security
+          information is representative.
+</p> </aside> </div> <template data-account-native><div class="dsl-tabs" data-tabs="" data-mobile-presentation="dropdown" data-active-tab="profile">
+  <div class="tablist" role="tablist" aria-label="Account settings sections">
+    <button id="account-html-profile-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="account-html-profile-panel" data-tab="profile">Profile</button>
+    <button id="account-html-notifications-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-notifications-panel" data-tab="notifications" tabindex="-1">Notifications</button>
+    <button id="account-html-security-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-security-panel" data-tab="security" tabindex="-1">Security</button>
+  </div>
+  <div class="dsl-select mobile-select" hidden="">
+    <select aria-label="Account settings sections" data-tabs-select="">
+      <option value="profile" selected="">Profile</option>
+      <option value="notifications">Notifications</option>
+      <option value="security">Security</option>
+    </select>
+  </div>
+  <div class="panels">
+    <section id="account-html-profile-panel" class="panel" role="tabpanel" aria-labelledby="account-html-profile-tab" data-tab-panel="profile">
+      <button id="account-html-profile-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="true" aria-controls="account-html-profile-content" data-tab="profile" hidden="">Profile</button>
+      <div id="account-html-profile-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Your profile</h3>
+            <p>A familiar identity, wherever you collaborate.</p>
+          </header>
+              <div class="account-profile-card dsl-split">
+                <div class="account-identity">
+                  <span class="account-avatar" data-account-initials="" aria-hidden="true">AM</span>
+                  <div>
+                    <strong data-account-name="">Avery Morgan</strong>
+                    <p data-account-job="">Staff product designer</p>
+                  </div>
+                </div>
+                <div data-account-edit="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium" commandfor="account-html-profile-dialog" command="show-modal" data-dialog-open="account-html-profile-dialog">
+  <span class="label">Edit profile</span>
+</button><dialog id="account-html-profile-dialog" class="dsl-modal" aria-labelledby="account-html-profile-title" aria-describedby="account-html-profile-description">
+  <header><h2 id="account-html-profile-title">Edit profile</h2></header>
+  <button class="close" type="button" commandfor="account-html-profile-dialog" command="close" data-dialog-close="" value="dismiss" aria-label="Close Edit profile">
+    <span class="dsl-icon" data-icon="close" aria-hidden="true"></span>
+  </button>
+  <div class="content"> <p id="account-html-profile-description" class="account-help">
+              Update the details your teammates see. Required fields are marked in their labels.
+            </p>
+            <form id="account-html-profile-form" method="dialog" class="account-profile-form dsl-flow">
+              <p class="account-error-summary" role="alert" hidden=""></p>
+              <div class="account-field dsl-flow">
+              <label for="account-html-fullName">Full name (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-fullName" name="fullName" type="text" value="Avery Morgan" required="" autocomplete="name" maxlength="80" aria-describedby="account-html-fullName-help account-html-fullName-error">
+</div>
+              <p class="account-help" id="account-html-fullName-help">Use the name your teammates know you by.</p>
+              <p class="account-error" id="account-html-fullName-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-email">Work email (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-email" name="email" type="email" value="avery.morgan@example.com" required="" autocomplete="email" maxlength="254" aria-describedby="account-html-email-help account-html-email-error">
+</div>
+              <p class="account-help" id="account-html-email-help">Use a complete address, such as avery@example.com.</p>
+              <p class="account-error" id="account-html-email-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-jobTitle">Job title</label>
+              <div class="dsl-input">
+  <input id="account-html-jobTitle" name="jobTitle" type="text" value="Staff product designer" autocomplete="organization-title" maxlength="80" aria-describedby="account-html-jobTitle-help account-html-jobTitle-error">
+</div>
+              <p class="account-help" id="account-html-jobTitle-help">Optional. Help collaborators understand your role.</p>
+              <p class="account-error" id="account-html-jobTitle-error" hidden=""></p>
+            </div>
+            </form></div>
+  <form class="actions" method="dialog">
+    <button class="dsl-button" type="submit" data-variant="secondary" data-size="medium" value="cancel">
+      <span>Cancel</span>
+    </button>
+    <button class="dsl-button" type="submit" form="account-html-profile-form" data-variant="primary" data-size="medium" value="save">
+      <span>Save changes</span>
+    </button>
+  </form>
+</dialog>
+                </div>
+              </div>
+              <dl class="account-facts dsl-grid">
+                <div>
+                  <dt>Work email</dt>
+                  <dd data-account-email="">avery.morgan@example.com</dd>
+                </div>
+                <div>
+                        <dt>Workspace</dt>
+                        <dd>Northstar Studio</dd>
+                      </div><div>
+                        <dt>Role</dt>
+                        <dd>Member</dd>
+                      </div><div>
+                        <dt>Time zone</dt>
+                        <dd>Eastern Time · New York</dd>
+                      </div>
+              </dl>
+              <p class="account-note">
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              </p>
+            </section></div>
+    </section>
+    <section id="account-html-notifications-panel" class="panel" role="tabpanel" aria-labelledby="account-html-notifications-tab" data-tab-panel="notifications" hidden="">
+      <button id="account-html-notifications-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-notifications-content" data-tab="notifications" hidden="">Notifications</button>
+      <div id="account-html-notifications-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Make room for what matters</h3>
+            <p>Choose the updates that deserve your attention. Preferences apply immediately in this example.</p>
+          </header>
+              <form class="account-preferences dsl-flow" aria-label="Notification preferences">
+                <fieldset>
+                  <legend>Updates you receive</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Mentions and replies<small>When someone needs your attention in a conversation.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-mentions" name="mentions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Project updates<small>Changes to milestones, assignments, and project status.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-projectUpdates" name="projectUpdates" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Product news<small>Occasional tips and new features from the product team.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-productNews" name="productNews" type="checkbox" role="switch" value="enabled">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+                <div class="account-field dsl-flow">
+                  <label for="account-html-frequency">Delivery frequency</label>
+                  <div class="dsl-select">
+  <select id="account-html-frequency" name="frequency">
+    <option value="" disabled="">Choose a frequency</option>
+    <option value="immediate">As activity happens</option>
+    <option value="daily" selected="">Daily digest</option>
+    <option value="weekly">Weekly digest</option>
+  </select>
+</div>
+                  <p class="account-help">
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  </p>
+                </div>
+                <div data-account-defaults="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium">
+  <span class="label">Restore notification defaults</span>
+</button>
+                </div>
+              </form>
+            </section></div>
+    </section>
+    <section id="account-html-security-panel" class="panel" role="tabpanel" aria-labelledby="account-html-security-tab" data-tab-panel="security" hidden="">
+      <button id="account-html-security-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-security-content" data-tab="security" hidden="">Security</button>
+      <div id="account-html-security-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Keep your account in view</h3>
+            <p>Review security preferences and representative session information. This example does not change real account security.</p>
+          </header>
+              <form class="account-preferences" aria-label="Security preferences">
+                <fieldset>
+                  <legend>Account safeguards</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">New sign-in alerts<small>A notification when a new device accesses your account.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-signInAlerts" name="signInAlerts" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Confirm sensitive actions<small>Ask for confirmation before important account changes.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-sensitiveActions" name="sensitiveActions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+              </form>
+              <section class="dsl-flow">
+                <h4>Recent sessions</h4>
+                <p class="account-help">
+                  Representative data for this specimen. No real devices or accounts are
+                  connected.
+                </p>
+                <ul class="account-sessions">
+                  <li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li>
+                </ul>
+              </section>
+            </section></div>
+    </section>
+  </div>
+</div></template> <template data-account-session-source><ul class="account-sessions"><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li></ul></template> <noscript><p>
+This page contains the canonical HTML example. JavaScript enables its in-memory
+        workflow and framework delivery views.
+</p></noscript> </div> <div class="account-teaching dsl-grid"> <section> <p class="account-teaching-label">For product teams</p><h2>Predictable state</h2><p>
+Save commits your profile. Cancel, Close, and Escape discard the draft.
+        Preferences take effect immediately in this sample. No backend or storage is
+        involved.
+</p> </section> <section> <p class="account-teaching-label">For designers</p><h2>
+Relationships, not replicas
+</h2><p>
+Tabs own selection. Modal owns the native dialog. Input, Select, and Toggle own
+        their controls. Flow, Grid, Split, and Sidebar arrange the experience as space
+        changes.
+</p> </section> <section> <p class="account-teaching-label">For developers</p><h2>One state contract</h2><p>
+A shared model and native form controller drive three thin delivery views. React's
+        existing portal bridge keeps interactive content inside Lit-owned Tabs and Modal
+        regions.
+</p> </section> </div> <details class="account-source-disclosure"> <summary>Inspect canonical sources and delivery boundaries</summary> <p>
+The HTML below is assembled at build time from these explicitly selected sources.
+      Only supported example values and consumer content regions are supplied by the
+      pattern.
+</p> <ul> <li> <code data-canonical-source="packages/html/src/components/tabs/tabs.html">packages/html/src/components/tabs/tabs.html</code> </li><li> <code data-canonical-source="packages/html/src/components/button/snippets/pattern-modal-flow-1.html">packages/html/src/components/button/snippets/pattern-modal-flow-1.html</code> </li><li> <code data-canonical-source="packages/html/src/components/modal/snippets/profile-form.html">packages/html/src/components/modal/snippets/profile-form.html</code> </li><li> <code data-canonical-source="packages/html/src/components/input/snippets/content-resilience.html">packages/html/src/components/input/snippets/content-resilience.html</code> </li><li> <code data-canonical-source="packages/html/src/components/toggle/snippets/description.html">packages/html/src/components/toggle/snippets/description.html</code> </li><li> <code data-canonical-source="packages/html/src/components/select/select.html">packages/html/src/components/select/select.html</code> </li><li> <code data-canonical-source="packages/html/src/components/button/snippets/pattern-action-groups-2.html">packages/html/src/components/button/snippets/pattern-action-groups-2.html</code> </li><li> <code data-canonical-source="packages/html/src/components/list-item/snippets/static.html">packages/html/src/components/list-item/snippets/static.html</code> </li> </ul> <dl> <div> <dt>Canonical HTML</dt><dd>
+Complete component structures from <code>packages/html</code>, with no runtime
+          HTML generator or fallback.
+</dd> </div><div> <dt>Lit</dt><dd>
+Explicit registration from <code>@dsl/components-lit/tabs</code>, <code>/modal</code>, <code>/input</code>, <code>/select</code>, <code>/toggle</code>, and <code>/button</code>.
+</dd> </div><div> <dt>React</dt><dd>
+The equivalent selective <code>@dsl/react/…</code> entries, using the existing rich-content
+          bridge.
+</dd> </div><div> <dt>Native behavior</dt><dd> <code>@dsl/html/behaviors/tabs</code>, <code>/dialog</code>, and <code>/input</code>. Noninteractive List Item rows remain canonical native HTML in every delivery.
+</dd> </div> </dl> <details> <summary>Resolved HTML example</summary><pre><code>&lt;div class=&quot;dsl-tabs&quot; data-tabs=&quot;&quot; data-mobile-presentation=&quot;dropdown&quot; data-active-tab=&quot;profile&quot;&gt;
+  &lt;div class=&quot;tablist&quot; role=&quot;tablist&quot; aria-label=&quot;Account settings sections&quot;&gt;
+    &lt;button id=&quot;account-html-profile-tab&quot; class=&quot;tab&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; aria-controls=&quot;account-html-profile-panel&quot; data-tab=&quot;profile&quot;&gt;Profile&lt;/button&gt;
+    &lt;button id=&quot;account-html-notifications-tab&quot; class=&quot;tab&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;account-html-notifications-panel&quot; data-tab=&quot;notifications&quot; tabindex=&quot;-1&quot;&gt;Notifications&lt;/button&gt;
+    &lt;button id=&quot;account-html-security-tab&quot; class=&quot;tab&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; aria-controls=&quot;account-html-security-panel&quot; data-tab=&quot;security&quot; tabindex=&quot;-1&quot;&gt;Security&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;dsl-select mobile-select&quot; hidden=&quot;&quot;&gt;
+    &lt;select aria-label=&quot;Account settings sections&quot; data-tabs-select=&quot;&quot;&gt;
+      &lt;option value=&quot;profile&quot; selected=&quot;&quot;&gt;Profile&lt;/option&gt;
+      &lt;option value=&quot;notifications&quot;&gt;Notifications&lt;/option&gt;
+      &lt;option value=&quot;security&quot;&gt;Security&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panels&quot;&gt;
+    &lt;section id=&quot;account-html-profile-panel&quot; class=&quot;panel&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;account-html-profile-tab&quot; data-tab-panel=&quot;profile&quot;&gt;
+      &lt;button id=&quot;account-html-profile-accordion-trigger&quot; class=&quot;accordion-trigger&quot; type=&quot;button&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;account-html-profile-content&quot; data-tab=&quot;profile&quot; hidden=&quot;&quot;&gt;Profile&lt;/button&gt;
+      &lt;div id=&quot;account-html-profile-content&quot; class=&quot;content&quot;&gt;&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+              &lt;header class=&quot;account-panel-heading&quot;&gt;
+            &lt;h3&gt;Your profile&lt;/h3&gt;
+            &lt;p&gt;A familiar identity, wherever you collaborate.&lt;/p&gt;
+          &lt;/header&gt;
+              &lt;div class=&quot;account-profile-card dsl-split&quot;&gt;
+                &lt;div class=&quot;account-identity&quot;&gt;
+                  &lt;span class=&quot;account-avatar&quot; data-account-initials=&quot;&quot; aria-hidden=&quot;true&quot;&gt;AM&lt;/span&gt;
+                  &lt;div&gt;
+                    &lt;strong data-account-name=&quot;&quot;&gt;Avery Morgan&lt;/strong&gt;
+                    &lt;p data-account-job=&quot;&quot;&gt;Staff product designer&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-account-edit=&quot;&quot;&gt;
+                  &lt;button class=&quot;dsl-button&quot; type=&quot;button&quot; data-variant=&quot;secondary&quot; data-size=&quot;medium&quot; commandfor=&quot;account-html-profile-dialog&quot; command=&quot;show-modal&quot; data-dialog-open=&quot;account-html-profile-dialog&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Edit profile&lt;/span&gt;
+&lt;/button&gt;&lt;dialog id=&quot;account-html-profile-dialog&quot; class=&quot;dsl-modal&quot; aria-labelledby=&quot;account-html-profile-title&quot; aria-describedby=&quot;account-html-profile-description&quot;&gt;
+  &lt;header&gt;&lt;h2 id=&quot;account-html-profile-title&quot;&gt;Edit profile&lt;/h2&gt;&lt;/header&gt;
+  &lt;button class=&quot;close&quot; type=&quot;button&quot; commandfor=&quot;account-html-profile-dialog&quot; command=&quot;close&quot; data-dialog-close=&quot;&quot; value=&quot;dismiss&quot; aria-label=&quot;Close Edit profile&quot;&gt;
+    &lt;span class=&quot;dsl-icon&quot; data-icon=&quot;close&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;content&quot;&gt; &lt;p id=&quot;account-html-profile-description&quot; class=&quot;account-help&quot;&gt;
+              Update the details your teammates see. Required fields are marked in their labels.
+            &lt;/p&gt;
+            &lt;form id=&quot;account-html-profile-form&quot; method=&quot;dialog&quot; class=&quot;account-profile-form dsl-flow&quot;&gt;
+              &lt;p class=&quot;account-error-summary&quot; role=&quot;alert&quot; hidden=&quot;&quot;&gt;&lt;/p&gt;
+              &lt;div class=&quot;account-field dsl-flow&quot;&gt;
+              &lt;label for=&quot;account-html-fullName&quot;&gt;Full name (required)&lt;/label&gt;
+              &lt;div class=&quot;dsl-input&quot;&gt;
+  &lt;input id=&quot;account-html-fullName&quot; name=&quot;fullName&quot; type=&quot;text&quot; value=&quot;Avery Morgan&quot; required=&quot;&quot; autocomplete=&quot;name&quot; maxlength=&quot;80&quot; aria-describedby=&quot;account-html-fullName-help account-html-fullName-error&quot;&gt;
+&lt;/div&gt;
+              &lt;p class=&quot;account-help&quot; id=&quot;account-html-fullName-help&quot;&gt;Use the name your teammates know you by.&lt;/p&gt;
+              &lt;p class=&quot;account-error&quot; id=&quot;account-html-fullName-error&quot; hidden=&quot;&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;div class=&quot;account-field dsl-flow&quot;&gt;
+              &lt;label for=&quot;account-html-email&quot;&gt;Work email (required)&lt;/label&gt;
+              &lt;div class=&quot;dsl-input&quot;&gt;
+  &lt;input id=&quot;account-html-email&quot; name=&quot;email&quot; type=&quot;email&quot; value=&quot;avery.morgan@example.com&quot; required=&quot;&quot; autocomplete=&quot;email&quot; maxlength=&quot;254&quot; aria-describedby=&quot;account-html-email-help account-html-email-error&quot;&gt;
+&lt;/div&gt;
+              &lt;p class=&quot;account-help&quot; id=&quot;account-html-email-help&quot;&gt;Use a complete address, such as avery@example.com.&lt;/p&gt;
+              &lt;p class=&quot;account-error&quot; id=&quot;account-html-email-error&quot; hidden=&quot;&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;div class=&quot;account-field dsl-flow&quot;&gt;
+              &lt;label for=&quot;account-html-jobTitle&quot;&gt;Job title&lt;/label&gt;
+              &lt;div class=&quot;dsl-input&quot;&gt;
+  &lt;input id=&quot;account-html-jobTitle&quot; name=&quot;jobTitle&quot; type=&quot;text&quot; value=&quot;Staff product designer&quot; autocomplete=&quot;organization-title&quot; maxlength=&quot;80&quot; aria-describedby=&quot;account-html-jobTitle-help account-html-jobTitle-error&quot;&gt;
+&lt;/div&gt;
+              &lt;p class=&quot;account-help&quot; id=&quot;account-html-jobTitle-help&quot;&gt;Optional. Help collaborators understand your role.&lt;/p&gt;
+              &lt;p class=&quot;account-error&quot; id=&quot;account-html-jobTitle-error&quot; hidden=&quot;&quot;&gt;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;/form&gt;&lt;/div&gt;
+  &lt;form class=&quot;actions&quot; method=&quot;dialog&quot;&gt;
+    &lt;button class=&quot;dsl-button&quot; type=&quot;submit&quot; data-variant=&quot;secondary&quot; data-size=&quot;medium&quot; value=&quot;cancel&quot;&gt;
+      &lt;span&gt;Cancel&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;dsl-button&quot; type=&quot;submit&quot; form=&quot;account-html-profile-form&quot; data-variant=&quot;primary&quot; data-size=&quot;medium&quot; value=&quot;save&quot;&gt;
+      &lt;span&gt;Save changes&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;dl class=&quot;account-facts dsl-grid&quot;&gt;
+                &lt;div&gt;
+                  &lt;dt&gt;Work email&lt;/dt&gt;
+                  &lt;dd data-account-email=&quot;&quot;&gt;avery.morgan@example.com&lt;/dd&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                        &lt;dt&gt;Workspace&lt;/dt&gt;
+                        &lt;dd&gt;Northstar Studio&lt;/dd&gt;
+                      &lt;/div&gt;&lt;div&gt;
+                        &lt;dt&gt;Role&lt;/dt&gt;
+                        &lt;dd&gt;Member&lt;/dd&gt;
+                      &lt;/div&gt;&lt;div&gt;
+                        &lt;dt&gt;Time zone&lt;/dt&gt;
+                        &lt;dd&gt;Eastern Time · New York&lt;/dd&gt;
+                      &lt;/div&gt;
+              &lt;/dl&gt;
+              &lt;p class=&quot;account-note&quot;&gt;
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              &lt;/p&gt;
+            &lt;/section&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;account-html-notifications-panel&quot; class=&quot;panel&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;account-html-notifications-tab&quot; data-tab-panel=&quot;notifications&quot; hidden=&quot;&quot;&gt;
+      &lt;button id=&quot;account-html-notifications-accordion-trigger&quot; class=&quot;accordion-trigger&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;account-html-notifications-content&quot; data-tab=&quot;notifications&quot; hidden=&quot;&quot;&gt;Notifications&lt;/button&gt;
+      &lt;div id=&quot;account-html-notifications-content&quot; class=&quot;content&quot;&gt;&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+              &lt;header class=&quot;account-panel-heading&quot;&gt;
+            &lt;h3&gt;Make room for what matters&lt;/h3&gt;
+            &lt;p&gt;Choose the updates that deserve your attention. Preferences apply immediately in this example.&lt;/p&gt;
+          &lt;/header&gt;
+              &lt;form class=&quot;account-preferences dsl-flow&quot; aria-label=&quot;Notification preferences&quot;&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Updates you receive&lt;/legend&gt;
+                   &lt;div class=&quot;account-preference&quot;&gt;
+                  &lt;dsl-toggle class=&quot;dsl-toggle&quot;&gt;
+  &lt;label class=&quot;label-wrapper&quot;&gt;
+    &lt;span class=&quot;label&quot;&gt;Mentions and replies&lt;small&gt;When someone needs your attention in a conversation.&lt;/small&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;switch-wrapper&quot;&gt;
+      &lt;input id=&quot;account-html-mentions&quot; name=&quot;mentions&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; value=&quot;enabled&quot; checked=&quot;&quot;&gt;
+
+      &lt;span class=&quot;slider&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/label&gt;
+&lt;/dsl-toggle&gt;
+                &lt;/div&gt; &lt;div class=&quot;account-preference&quot;&gt;
+                  &lt;dsl-toggle class=&quot;dsl-toggle&quot;&gt;
+  &lt;label class=&quot;label-wrapper&quot;&gt;
+    &lt;span class=&quot;label&quot;&gt;Project updates&lt;small&gt;Changes to milestones, assignments, and project status.&lt;/small&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;switch-wrapper&quot;&gt;
+      &lt;input id=&quot;account-html-projectUpdates&quot; name=&quot;projectUpdates&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; value=&quot;enabled&quot; checked=&quot;&quot;&gt;
+
+      &lt;span class=&quot;slider&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/label&gt;
+&lt;/dsl-toggle&gt;
+                &lt;/div&gt; &lt;div class=&quot;account-preference&quot;&gt;
+                  &lt;dsl-toggle class=&quot;dsl-toggle&quot;&gt;
+  &lt;label class=&quot;label-wrapper&quot;&gt;
+    &lt;span class=&quot;label&quot;&gt;Product news&lt;small&gt;Occasional tips and new features from the product team.&lt;/small&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;switch-wrapper&quot;&gt;
+      &lt;input id=&quot;account-html-productNews&quot; name=&quot;productNews&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; value=&quot;enabled&quot;&gt;
+
+      &lt;span class=&quot;slider&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/label&gt;
+&lt;/dsl-toggle&gt;
+                &lt;/div&gt;
+                &lt;/fieldset&gt;
+                &lt;div class=&quot;account-field dsl-flow&quot;&gt;
+                  &lt;label for=&quot;account-html-frequency&quot;&gt;Delivery frequency&lt;/label&gt;
+                  &lt;div class=&quot;dsl-select&quot;&gt;
+  &lt;select id=&quot;account-html-frequency&quot; name=&quot;frequency&quot;&gt;
+    &lt;option value=&quot;&quot; disabled=&quot;&quot;&gt;Choose a frequency&lt;/option&gt;
+    &lt;option value=&quot;immediate&quot;&gt;As activity happens&lt;/option&gt;
+    &lt;option value=&quot;daily&quot; selected=&quot;&quot;&gt;Daily digest&lt;/option&gt;
+    &lt;option value=&quot;weekly&quot;&gt;Weekly digest&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+                  &lt;p class=&quot;account-help&quot;&gt;
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div data-account-defaults=&quot;&quot;&gt;
+                  &lt;button class=&quot;dsl-button&quot; type=&quot;button&quot; data-variant=&quot;secondary&quot; data-size=&quot;medium&quot;&gt;
+  &lt;span class=&quot;label&quot;&gt;Restore notification defaults&lt;/span&gt;
+&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/section&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;account-html-security-panel&quot; class=&quot;panel&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;account-html-security-tab&quot; data-tab-panel=&quot;security&quot; hidden=&quot;&quot;&gt;
+      &lt;button id=&quot;account-html-security-accordion-trigger&quot; class=&quot;accordion-trigger&quot; type=&quot;button&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;account-html-security-content&quot; data-tab=&quot;security&quot; hidden=&quot;&quot;&gt;Security&lt;/button&gt;
+      &lt;div id=&quot;account-html-security-content&quot; class=&quot;content&quot;&gt;&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+              &lt;header class=&quot;account-panel-heading&quot;&gt;
+            &lt;h3&gt;Keep your account in view&lt;/h3&gt;
+            &lt;p&gt;Review security preferences and representative session information. This example does not change real account security.&lt;/p&gt;
+          &lt;/header&gt;
+              &lt;form class=&quot;account-preferences&quot; aria-label=&quot;Security preferences&quot;&gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Account safeguards&lt;/legend&gt;
+                   &lt;div class=&quot;account-preference&quot;&gt;
+                  &lt;dsl-toggle class=&quot;dsl-toggle&quot;&gt;
+  &lt;label class=&quot;label-wrapper&quot;&gt;
+    &lt;span class=&quot;label&quot;&gt;New sign-in alerts&lt;small&gt;A notification when a new device accesses your account.&lt;/small&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;switch-wrapper&quot;&gt;
+      &lt;input id=&quot;account-html-signInAlerts&quot; name=&quot;signInAlerts&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; value=&quot;enabled&quot; checked=&quot;&quot;&gt;
+
+      &lt;span class=&quot;slider&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/label&gt;
+&lt;/dsl-toggle&gt;
+                &lt;/div&gt; &lt;div class=&quot;account-preference&quot;&gt;
+                  &lt;dsl-toggle class=&quot;dsl-toggle&quot;&gt;
+  &lt;label class=&quot;label-wrapper&quot;&gt;
+    &lt;span class=&quot;label&quot;&gt;Confirm sensitive actions&lt;small&gt;Ask for confirmation before important account changes.&lt;/small&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;switch-wrapper&quot;&gt;
+      &lt;input id=&quot;account-html-sensitiveActions&quot; name=&quot;sensitiveActions&quot; type=&quot;checkbox&quot; role=&quot;switch&quot; value=&quot;enabled&quot; checked=&quot;&quot;&gt;
+
+      &lt;span class=&quot;slider&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/label&gt;
+&lt;/dsl-toggle&gt;
+                &lt;/div&gt;
+                &lt;/fieldset&gt;
+              &lt;/form&gt;
+              &lt;section class=&quot;dsl-flow&quot;&gt;
+                &lt;h4&gt;Recent sessions&lt;/h4&gt;
+                &lt;p class=&quot;account-help&quot;&gt;
+                  Representative data for this specimen. No real devices or accounts are
+                  connected.
+                &lt;/p&gt;
+                &lt;ul class=&quot;account-sessions&quot;&gt;
+                  &lt;li class=&quot;dsl-list-item&quot; data-separator=&quot;&quot;&gt;
+  &lt;div class=&quot;item-wrap&quot;&gt;
+    &lt;div class=&quot;content-wrap&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;label&quot;&gt;MacBook Pro · Current session&lt;/div&gt;
+        &lt;div class=&quot;supporting&quot;&gt;Chrome · New York, United States · Today at 09:42&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;&lt;li class=&quot;dsl-list-item&quot; data-separator=&quot;&quot;&gt;
+  &lt;div class=&quot;item-wrap&quot;&gt;
+    &lt;div class=&quot;content-wrap&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;label&quot;&gt;iPhone · Mobile session&lt;/div&gt;
+        &lt;div class=&quot;supporting&quot;&gt;Safari · New York, United States · Yesterday at 18:16&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/section&gt;
+            &lt;/section&gt;&lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre> </details> <details>  <summary>Shared data, validation, and transitions</summary> <p> <code>apps/docs/src/patterns/account-settings/model.ts</code> </p> <pre>              <code>/** Application-example data and transitions. No delivery layer owns another copy. */
+export const accountSections = [
+  { id: &#39;profile&#39;, label: &#39;Profile&#39;, content: &#39;Your identity in the workspace.&#39; },
+  { id: &#39;notifications&#39;, label: &#39;Notifications&#39;, content: &#39;Choose what reaches you.&#39; },
+  { id: &#39;security&#39;, label: &#39;Security&#39;, content: &#39;Review your account preferences.&#39; },
+] as const;
+export type AccountSection = (typeof accountSections)[number][&#39;id&#39;];
+export type Delivery = &#39;html&#39; | &#39;lit&#39; | &#39;react&#39;;
+export const workspaceName = &#39;Northstar Studio&#39;;
+export const accountFacts = [
+  { label: &#39;Workspace&#39;, value: workspaceName },
+  { label: &#39;Role&#39;, value: &#39;Member&#39; },
+  { label: &#39;Time zone&#39;, value: &#39;Eastern Time · New York&#39; },
+] as const;
+export const profileInitials = (name: string) =&gt;
+  name
+    .trim()
+    .split(/\s+/)
+    .slice(0, 2)
+    .map((part) =&gt; part[0] ?? &#39;&#39;)
+    .join(&#39;&#39;)
+    .toUpperCase();
+export const validationSummary = &#39;Check the highlighted fields before saving.&#39;;
+
+export const profileFields = [
+  {
+    name: &#39;fullName&#39;,
+    label: &#39;Full name&#39;,
+    type: &#39;text&#39;,
+    autocomplete: &#39;name&#39;,
+    required: true,
+    maxLength: 80,
+    help: &#39;Use the name your teammates know you by.&#39;,
+  },
+  {
+    name: &#39;email&#39;,
+    label: &#39;Work email&#39;,
+    type: &#39;email&#39;,
+    autocomplete: &#39;email&#39;,
+    required: true,
+    maxLength: 254,
+    help: &#39;Use a complete address, such as avery@example.com.&#39;,
+  },
+  {
+    name: &#39;jobTitle&#39;,
+    label: &#39;Job title&#39;,
+    type: &#39;text&#39;,
+    autocomplete: &#39;organization-title&#39;,
+    required: false,
+    maxLength: 80,
+    help: &#39;Optional. Help collaborators understand your role.&#39;,
+  },
+] as const;
+export type ProfileField = (typeof profileFields)[number][&#39;name&#39;];
+export type Profile = Record&lt;ProfileField, string&gt;;
+export type ProfileErrors = Partial&lt;Record&lt;ProfileField, string&gt;&gt;;
+
+export const preferenceGroups = {
+  notifications: [
+    {
+      name: &#39;mentions&#39;,
+      label: &#39;Mentions and replies&#39;,
+      description: &#39;When someone needs your attention in a conversation.&#39;,
+      initial: true,
+    },
+    {
+      name: &#39;projectUpdates&#39;,
+      label: &#39;Project updates&#39;,
+      description: &#39;Changes to milestones, assignments, and project status.&#39;,
+      initial: true,
+    },
+    {
+      name: &#39;productNews&#39;,
+      label: &#39;Product news&#39;,
+      description: &#39;Occasional tips and new features from the product team.&#39;,
+      initial: false,
+    },
+  ],
+  security: [
+    {
+      name: &#39;signInAlerts&#39;,
+      label: &#39;New sign-in alerts&#39;,
+      description: &#39;A notification when a new device accesses your account.&#39;,
+      initial: true,
+    },
+    {
+      name: &#39;sensitiveActions&#39;,
+      label: &#39;Confirm sensitive actions&#39;,
+      description: &#39;Ask for confirmation before important account changes.&#39;,
+      initial: true,
+    },
+  ],
+} as const;
+export const preferences = [
+  ...preferenceGroups.notifications,
+  ...preferenceGroups.security,
+];
+export type Preference = (typeof preferences)[number][&#39;name&#39;];
+export const frequencies = [
+  { value: &#39;immediate&#39;, label: &#39;As activity happens&#39; },
+  { value: &#39;daily&#39;, label: &#39;Daily digest&#39; },
+  { value: &#39;weekly&#39;, label: &#39;Weekly digest&#39; },
+] as const;
+export type Frequency = (typeof frequencies)[number][&#39;value&#39;];
+export const frequencyPlaceholder = &#39;Choose a frequency&#39;;
+export const sessions = [
+  {
+    label: &#39;MacBook Pro · Current session&#39;,
+    supporting: &#39;Chrome · New York, United States · Today at 09:42&#39;,
+  },
+  {
+    label: &#39;iPhone · Mobile session&#39;,
+    supporting: &#39;Safari · New York, United States · Yesterday at 18:16&#39;,
+  },
+] as const;
+export const profileDialog = {
+  title: &#39;Edit profile&#39;,
+  description:
+    &#39;Update the details your teammates see. Required fields are marked in their labels.&#39;,
+};
+export const panelCopy = {
+  profile: {
+    title: &#39;Your profile&#39;,
+    description: &#39;A familiar identity, wherever you collaborate.&#39;,
+  },
+  notifications: {
+    title: &#39;Make room for what matters&#39;,
+    description:
+      &#39;Choose the updates that deserve your attention. Preferences apply immediately in this example.&#39;,
+  },
+  security: {
+    title: &#39;Keep your account in view&#39;,
+    description:
+      &#39;Review security preferences and representative session information. This example does not change real account security.&#39;,
+  },
+} as const;
+
+export interface AccountState {
+  readonly profile: Profile;
+  readonly draft: Profile;
+  readonly editing: boolean;
+  readonly errors: ProfileErrors;
+  readonly preferences: Readonly&lt;Record&lt;Preference, boolean&gt;&gt;;
+  readonly frequency: Frequency;
+  readonly section: AccountSection;
+  readonly status: string;
+}
+export function initialAccountState(): AccountState {
+  const profile = {
+    fullName: &#39;Avery Morgan&#39;,
+    email: &#39;avery.morgan@example.com&#39;,
+    jobTitle: &#39;Staff product designer&#39;,
+  };
+  return {
+    profile,
+    draft: { ...profile },
+    editing: false,
+    errors: {},
+    preferences: Object.fromEntries(
+      preferences.map((item) =&gt; [item.name, item.initial]),
+    ) as Record&lt;Preference, boolean&gt;,
+    frequency: &#39;daily&#39;,
+    section: &#39;profile&#39;,
+    status: &#39;&#39;,
+  };
+}
+
+/** Additional application rules; native required/type/maxlength still participate. */
+export function validateProfile(profile: Profile): ProfileErrors {
+  const errors: ProfileErrors = {};
+  if (profile.fullName.trim().length &lt; 2)
+    errors.fullName = &#39;Enter a name with at least two characters.&#39;;
+  if (!profile.email.trim()) errors.email = &#39;Enter your work email address.&#39;;
+  else if (
+    !/^[a-zA-Z0-9.!#$%&amp;&#39;*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?)*$/.test(
+      profile.email.trim(),
+    )
+  )
+    errors.email = &#39;Enter a complete email address, such as avery@example.com.&#39;;
+  for (const field of profileFields)
+    if (profile[field.name].length &gt; field.maxLength)
+      errors[field.name] =
+        `Use ${field.maxLength} characters or fewer for ${field.label.toLowerCase()}.`;
+  return errors;
+}
+export type AccountAction =
+  | { type: &#39;section&#39;; section: AccountSection }
+  | { type: &#39;edit&#39; }
+  | { type: &#39;draft&#39;; field: ProfileField; value: string }
+  | { type: &#39;invalid&#39;; profile: Profile }
+  | { type: &#39;save&#39;; profile: Profile }
+  | { type: &#39;cancel&#39; }
+  | { type: &#39;preference&#39;; name: Preference; value: boolean }
+  | { type: &#39;frequency&#39;; value: Frequency }
+  | { type: &#39;notification-defaults&#39; };
+
+export function transitionAccount(
+  state: AccountState,
+  action: AccountAction,
+): AccountState {
+  switch (action.type) {
+    case &#39;section&#39;:
+      return { ...state, section: action.section };
+    case &#39;edit&#39;:
+      return state.editing
+        ? state
+        : {
+            ...state,
+            editing: true,
+            draft: { ...state.profile },
+            errors: {},
+            status: &#39;&#39;,
+          };
+    case &#39;draft&#39;: {
+      const draft = { ...state.draft, [action.field]: action.value };
+      const errors = { ...state.errors };
+      if (action.field in errors) {
+        const message = validateProfile(draft)[action.field];
+        if (message) errors[action.field] = message;
+        else delete errors[action.field];
+      }
+      return { ...state, draft, errors };
+    }
+    case &#39;invalid&#39;:
+      return { ...state, draft: action.profile, errors: validateProfile(action.profile) };
+    case &#39;save&#39;: {
+      const errors = validateProfile(action.profile);
+      if (Object.keys(errors).length)
+        return { ...state, draft: action.profile, errors, editing: true };
+      const profile = Object.fromEntries(
+        Object.entries(action.profile).map(([key, value]) =&gt; [key, value.trim()]),
+      ) as Profile;
+      return {
+        ...state,
+        profile,
+        draft: { ...profile },
+        errors: {},
+        editing: false,
+        status: &#39;Profile saved. Your teammates will see these details in this example.&#39;,
+      };
+    }
+    case &#39;cancel&#39;:
+      return {
+        ...state,
+        draft: { ...state.profile },
+        editing: false,
+        errors: {},
+        status: &#39;Changes canceled. Your saved profile is unchanged.&#39;,
+      };
+    case &#39;preference&#39;:
+      return {
+        ...state,
+        preferences: { ...state.preferences, [action.name]: action.value },
+        status: `${preferences.find((item) =&gt; item.name === action.name)!.label} ${action.value ? &#39;on&#39; : &#39;off&#39;}.`,
+      };
+    case &#39;frequency&#39;:
+      return {
+        ...state,
+        frequency: action.value,
+        status: `Delivery frequency: ${frequencies.find((item) =&gt; item.value === action.value)!.label}.`,
+      };
+    case &#39;notification-defaults&#39;:
+      return {
+        ...state,
+        preferences: {
+          ...state.preferences,
+          ...Object.fromEntries(
+            preferenceGroups.notifications.map((item) =&gt; [item.name, item.initial]),
+          ),
+        },
+        frequency: &#39;daily&#39;,
+        status: &#39;Notification defaults restored.&#39;,
+      };
+  }
+}
+
+export function createAccountStore() {
+  let state = initialAccountState();
+  const listeners = new Set&lt;() =&gt; void&gt;();
+  return {
+    getSnapshot: () =&gt; state,
+    dispatch(action: AccountAction) {
+      state = transitionAccount(state, action);
+      listeners.forEach((listener) =&gt; listener());
+    },
+    subscribe(listener: () =&gt; void) {
+      listeners.add(listener);
+      return () =&gt; {
+        listeners.delete(listener);
+      };
+    },
+  };
+}
+export type AccountStore = ReturnType&lt;typeof createAccountStore&gt;;
+export const fieldId = (delivery: Delivery, name: string) =&gt;
+  `account-${delivery}-${name}`;
+export const formId = (delivery: Delivery) =&gt; fieldId(delivery, &#39;profile-form&#39;);
+export const modalActions = (delivery: Delivery) =&gt; [
+  { id: &#39;cancel&#39;, label: &#39;Cancel&#39; },
+  {
+    id: &#39;save&#39;,
+    label: &#39;Save changes&#39;,
+    variant: &#39;primary&#39; as const,
+    form: formId(delivery),
+  },
+];
+</code>
+            </pre>  </details><details>  <summary>Shared native form and event controller</summary> <p> <code>apps/docs/src/patterns/account-settings/controller.ts</code> </p> <pre>              <code>import {
+  accountSections,
+  fieldId,
+  formId,
+  frequencies,
+  preferences,
+  profileFields,
+  validateProfile,
+  type AccountStore,
+  type Delivery,
+  type Profile,
+  type ProfileField,
+} from &#39;./model.js&#39;;
+
+/** One native form/event contract, shared by every renderer (including React portals). */
+export function connectAccountView(
+  root: HTMLElement,
+  store: AccountStore,
+  delivery: Delivery,
+) {
+  const abort = new AbortController();
+  const options = { signal: abort.signal, capture: true };
+  const profileForm = () =&gt; root.querySelector&lt;HTMLFormElement&gt;(`#${formId(delivery)}`);
+  const readProfile = (): Profile =&gt; {
+    const form = profileForm();
+    const data = form ? new FormData(form) : new FormData();
+    return Object.fromEntries(
+      profileFields.map((field) =&gt; [field.name, String(data.get(field.name) ?? &#39;&#39;)]),
+    ) as Profile;
+  };
+  const syncValidity = () =&gt; {
+    const values = readProfile();
+    const errors = validateProfile(values);
+    for (const field of profileFields) {
+      const control = root.querySelector&lt;HTMLInputElement&gt;(
+        `#${fieldId(delivery, field.name)}`,
+      );
+      if (control) control.setCustomValidity(errors[field.name] ?? &#39;&#39;);
+    }
+  };
+  root.addEventListener(
+    &#39;click&#39;,
+    (event) =&gt; {
+      const target = event.target;
+      if (target instanceof Element &amp;&amp; target.closest(&#39;[data-account-defaults] button&#39;)) {
+        store.dispatch({ type: &#39;notification-defaults&#39; });
+        return;
+      }
+      if (
+        !(target instanceof Element) ||
+        target.closest(&#39;dialog&#39;) ||
+        !target.closest(&#39;[data-account-edit] button&#39;)
+      )
+        return;
+      // Safari does not focus buttons on pointer activation. Establish the
+      // workflow&#39;s invoking control before showModal records its return target;
+      // focus restoration itself remains the native dialog&#39;s responsibility.
+      (target.closest(&#39;[data-account-edit] button&#39;) as HTMLButtonElement).focus({
+        preventScroll: true,
+      });
+      store.dispatch({ type: &#39;edit&#39; });
+      requestAnimationFrame(() =&gt; {
+        const dialog = root.querySelector&lt;HTMLDialogElement&gt;(&#39;dialog&#39;);
+        if (dialog?.open) {
+          syncValidity();
+          root
+            .querySelector&lt;HTMLInputElement&gt;(`#${fieldId(delivery, &#39;fullName&#39;)}`)
+            ?.focus();
+        }
+      });
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;input&#39;,
+    (event) =&gt; {
+      const target = event.target;
+      if (!(target instanceof HTMLInputElement) || target.form?.id !== formId(delivery))
+        return;
+      if (!profileFields.some((field) =&gt; field.name === target.name)) return;
+      store.dispatch({
+        type: &#39;draft&#39;,
+        field: target.name as ProfileField,
+        value: target.value,
+      });
+      syncValidity();
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;invalid&#39;,
+    (event) =&gt; {
+      const target = event.target;
+      if (!(target instanceof HTMLInputElement) || target.form?.id !== formId(delivery))
+        return;
+      store.dispatch({ type: &#39;invalid&#39;, profile: readProfile() });
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;submit&#39;,
+    (event) =&gt; {
+      if (event.target !== profileForm()) return;
+      event.preventDefault();
+      const profile = readProfile();
+      syncValidity();
+      if (!profileForm()?.reportValidity()) return;
+      store.dispatch({ type: &#39;save&#39;, profile });
+      if (!store.getSnapshot().editing)
+        root.querySelector&lt;HTMLDialogElement&gt;(&#39;dialog&#39;)?.close(&#39;save&#39;);
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;close&#39;,
+    (event) =&gt; {
+      if (!(event.target instanceof HTMLDialogElement) || event.target.open) return;
+      if (store.getSnapshot().editing) store.dispatch({ type: &#39;cancel&#39; });
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;change&#39;,
+    (event) =&gt; {
+      const target = event.target;
+      if (target instanceof HTMLInputElement) {
+        const preference = preferences.find((item) =&gt; item.name === target.name);
+        if (preference)
+          store.dispatch({
+            type: &#39;preference&#39;,
+            name: preference.name,
+            value: target.checked,
+          });
+      }
+      if (target instanceof HTMLSelectElement &amp;&amp; target.name === &#39;frequency&#39;) {
+        const frequency = frequencies.find((item) =&gt; item.value === target.value);
+        if (frequency) store.dispatch({ type: &#39;frequency&#39;, value: frequency.value });
+      }
+    },
+    options,
+  );
+  root.addEventListener(
+    &#39;dsl-tab-change&#39;,
+    (event) =&gt; {
+      const section = accountSections.find(
+        (item) =&gt; item.id === (event as CustomEvent&lt;{ value: string }&gt;).detail.value,
+      );
+      if (section) store.dispatch({ type: &#39;section&#39;, section: section.id });
+    },
+    options,
+  );
+  return () =&gt; abort.abort();
+}
+</code>
+            </pre>  </details><details>  <summary>HTML behavior and value bindings</summary> <p> <code>apps/docs/src/patterns/account-settings/html-view.ts</code> </p> <pre>              <code>import { enhanceTabs } from &#39;@dsl/html/behaviors/tabs&#39;;
+import { enhanceDialogs } from &#39;@dsl/html/behaviors/dialog&#39;;
+import { enhanceInputs } from &#39;@dsl/html/behaviors/input&#39;;
+import {
+  fieldId,
+  formId,
+  profileFields,
+  profileInitials,
+  validationSummary,
+  type AccountStore,
+} from &#39;./model.js&#39;;
+
+/** Bind supported values to the already resolved canonical HTML; never build internals. */
+export function mountHtmlView(root: HTMLElement, store: AccountStore) {
+  const render = () =&gt; {
+    const state = store.getSnapshot();
+    for (const [name, value] of Object.entries({
+      name: state.profile.fullName,
+      initials: profileInitials(state.profile.fullName),
+      email: state.profile.email,
+      job: state.profile.jobTitle || &#39;No job title added&#39;,
+    })) {
+      const node = root.querySelector(`[data-account-${name}]`);
+      if (node) node.textContent = value;
+    }
+    for (const field of profileFields) {
+      const id = fieldId(&#39;html&#39;, field.name);
+      const input = root.querySelector&lt;HTMLInputElement&gt;(`#${id}`);
+      if (input &amp;&amp; input.value !== state.draft[field.name])
+        input.value = state.draft[field.name];
+      if (state.errors[field.name]) input?.setAttribute(&#39;aria-invalid&#39;, &#39;true&#39;);
+      else input?.removeAttribute(&#39;aria-invalid&#39;);
+      const error = root.querySelector&lt;HTMLElement&gt;(`#${id}-error`);
+      if (error) {
+        error.hidden = !state.errors[field.name];
+        error.textContent = state.errors[field.name] ?? &#39;&#39;;
+      }
+    }
+    const summary = root.querySelector&lt;HTMLElement&gt;(
+      `#${formId(&#39;html&#39;)} .account-error-summary`,
+    );
+    if (summary) {
+      summary.hidden = Object.keys(state.errors).length === 0;
+      summary.textContent = summary.hidden ? &#39;&#39; : validationSummary;
+    }
+    for (const [name, checked] of Object.entries(state.preferences)) {
+      const input = root.querySelector&lt;HTMLInputElement&gt;(`input[name=&quot;${name}&quot;]`);
+      if (input) input.checked = checked;
+    }
+    const frequency = root.querySelector&lt;HTMLSelectElement&gt;(&#39;select[name=&quot;frequency&quot;]&#39;);
+    if (frequency) frequency.value = state.frequency;
+  };
+  const tabs = root.querySelector&lt;HTMLElement&gt;(&#39;[data-tabs]&#39;);
+  if (tabs) tabs.dataset.activeTab = store.getSnapshot().section;
+  render();
+  const lifetime = new AbortController();
+  const options = { signal: lifetime.signal };
+  enhanceTabs(root, options);
+  enhanceInputs(root, options);
+  enhanceDialogs(root, options);
+  const unsubscribe = store.subscribe(render);
+  return () =&gt; {
+    unsubscribe();
+    lifetime.abort();
+  };
+}
+</code>
+            </pre>  </details><details>  <summary>Lit delivery with explicit registration</summary> <p> <code>apps/docs/src/patterns/account-settings/lit-view.ts</code> </p> <pre>              <code>import { html, render } from &#39;lit&#39;;
+import { unsafeHTML } from &#39;lit/directives/unsafe-html.js&#39;;
+import { defineDslTabs } from &#39;@dsl/components-lit/tabs&#39;;
+import { defineDslModal } from &#39;@dsl/components-lit/modal&#39;;
+import { defineDslInput } from &#39;@dsl/components-lit/input&#39;;
+import { defineDslSelect } from &#39;@dsl/components-lit/select&#39;;
+import { defineDslToggle } from &#39;@dsl/components-lit/toggle&#39;;
+import { defineDslButton } from &#39;@dsl/components-lit/button&#39;;
+import {
+  accountFacts,
+  accountSections,
+  profileInitials,
+  validationSummary,
+  fieldId,
+  formId,
+  frequencies,
+  frequencyPlaceholder,
+  modalActions,
+  panelCopy,
+  preferenceGroups,
+  profileDialog,
+  profileFields,
+  type AccountSection,
+  type AccountStore,
+} from &#39;./model.js&#39;;
+
+/** A delivery view. All transitions and native form events belong to the shared controller. */
+export function mountLitView(
+  root: HTMLElement,
+  store: AccountStore,
+  sessionsMarkup: string,
+) {
+  [
+    defineDslTabs,
+    defineDslModal,
+    defineDslInput,
+    defineDslSelect,
+    defineDslToggle,
+    defineDslButton,
+  ].forEach((define) =&gt; define());
+  const update = () =&gt; {
+    const state = store.getSnapshot();
+    const fields = () =&gt;
+      html`&lt;form
+        id=${formId(&#39;lit&#39;)}
+        method=&quot;dialog&quot;
+        class=&quot;account-profile-form dsl-flow&quot;
+      &gt;
+        &lt;p
+          class=&quot;account-error-summary&quot;
+          role=&quot;alert&quot;
+          ?hidden=${!Object.keys(state.errors).length}
+        &gt;
+          ${Object.keys(state.errors).length ? validationSummary : &#39;&#39;}
+        &lt;/p&gt;
+        ${profileFields.map((field) =&gt; {
+          const id = fieldId(&#39;lit&#39;, field.name);
+          return html`&lt;div class=&quot;account-field dsl-flow&quot;&gt;
+            &lt;label for=${id}&gt;${field.label}${field.required ? &#39; (required)&#39; : &#39;&#39;}&lt;/label&gt;
+            &lt;dsl-input
+              .inputId=${id}
+              .name=${field.name}
+              .type=${field.type}
+              .value=${state.draft[field.name]}
+              .required=${field.required}
+              .autocomplete=${field.autocomplete}
+              .maxLength=${field.maxLength}
+              .describedBy=${`${id}-help ${id}-error`}
+              .invalid=${!!state.errors[field.name]}
+            &gt;&lt;/dsl-input&gt;
+            &lt;p class=&quot;account-help&quot; id=${`${id}-help`}&gt;${field.help}&lt;/p&gt;
+            &lt;p
+              class=&quot;account-error&quot;
+              id=${`${id}-error`}
+              ?hidden=${!state.errors[field.name]}
+            &gt;
+              ${state.errors[field.name] ?? &#39;&#39;}
+            &lt;/p&gt;
+          &lt;/div&gt;`;
+        })}
+      &lt;/form&gt;`;
+    const heading = (id: AccountSection) =&gt;
+      html`&lt;header class=&quot;account-panel-heading&quot;&gt;
+        &lt;h3&gt;${panelCopy[id].title}&lt;/h3&gt;
+        &lt;p&gt;${panelCopy[id].description}&lt;/p&gt;
+      &lt;/header&gt;`;
+    const choices = (group: &#39;notifications&#39; | &#39;security&#39;) =&gt;
+      preferenceGroups[group].map(
+        (item) =&gt;
+          html`&lt;div class=&quot;account-preference&quot;&gt;
+            &lt;dsl-toggle
+              .inputId=${fieldId(&#39;lit&#39;, item.name)}
+              .name=${item.name}
+              .value=${&#39;enabled&#39;}
+              .label=${item.label}
+              .description=${item.description}
+              .checked=${state.preferences[item.name]}
+            &gt;&lt;/dsl-toggle&gt;
+          &lt;/div&gt;`,
+      );
+    const panel = (item: { id: string }) =&gt; {
+      if (item.id === &#39;profile&#39;)
+        return html`&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+          ${heading(&#39;profile&#39;)}
+          &lt;div class=&quot;account-profile-card dsl-split&quot;&gt;
+            &lt;div class=&quot;account-identity&quot;&gt;
+              &lt;span class=&quot;account-avatar&quot; data-account-initials aria-hidden=&quot;true&quot;
+                &gt;${profileInitials(state.profile.fullName)}&lt;/span
+              &gt;
+              &lt;div&gt;
+                &lt;strong data-account-name&gt;${state.profile.fullName}&lt;/strong&gt;
+                &lt;p data-account-job&gt;${state.profile.jobTitle || &#39;No job title added&#39;}&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div data-account-edit&gt;
+              &lt;dsl-modal
+                .heading=${profileDialog.title}
+                .content=${profileDialog.description}
+                .triggerLabel=${profileDialog.title}
+                .actions=${modalActions(&#39;lit&#39;)}
+                .renderContent=${fields}
+              &gt;&lt;/dsl-modal&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;dl class=&quot;account-facts dsl-grid&quot;&gt;
+            &lt;div&gt;
+              &lt;dt&gt;Work email&lt;/dt&gt;
+              &lt;dd data-account-email&gt;${state.profile.email}&lt;/dd&gt;
+            &lt;/div&gt;
+            ${accountFacts.map(
+              (fact) =&gt;
+                html`&lt;div&gt;
+                  &lt;dt&gt;${fact.label}&lt;/dt&gt;
+                  &lt;dd&gt;${fact.value}&lt;/dd&gt;
+                &lt;/div&gt;`,
+            )}
+          &lt;/dl&gt;
+          &lt;p class=&quot;account-note&quot;&gt;
+            Your saved details stay with you as you explore sections and display
+            preferences.
+          &lt;/p&gt;
+        &lt;/section&gt;`;
+      if (item.id === &#39;notifications&#39;)
+        return html`&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+          ${heading(&#39;notifications&#39;)}
+          &lt;form
+            class=&quot;account-preferences dsl-flow&quot;
+            aria-label=&quot;Notification preferences&quot;
+          &gt;
+            &lt;fieldset&gt;
+              &lt;legend&gt;Updates you receive&lt;/legend&gt;
+              ${choices(&#39;notifications&#39;)}
+            &lt;/fieldset&gt;
+            &lt;div class=&quot;account-field dsl-flow&quot;&gt;
+              &lt;label for=&quot;account-lit-frequency&quot;&gt;Delivery frequency&lt;/label&gt;
+              &lt;dsl-select
+                .selectId=${&#39;account-lit-frequency&#39;}
+                .name=${&#39;frequency&#39;}
+                .value=${state.frequency}
+                .placeholder=${frequencyPlaceholder}
+                .options=${frequencies}
+              &gt;&lt;/dsl-select&gt;
+              &lt;p class=&quot;account-help&quot;&gt;
+                Applies to project updates. Mentions and security alerts remain immediate.
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div data-account-defaults&gt;
+              &lt;dsl-button
+                label=&quot;Restore notification defaults&quot;
+                variant=&quot;secondary&quot;
+              &gt;&lt;/dsl-button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;`;
+      return html`&lt;section class=&quot;account-panel dsl-flow&quot;&gt;
+        ${heading(&#39;security&#39;)}
+        &lt;form class=&quot;account-preferences&quot; aria-label=&quot;Security preferences&quot;&gt;
+          &lt;fieldset&gt;
+            &lt;legend&gt;Account safeguards&lt;/legend&gt;
+            ${choices(&#39;security&#39;)}
+          &lt;/fieldset&gt;
+        &lt;/form&gt;
+        &lt;section class=&quot;dsl-flow&quot;&gt;
+          &lt;h4&gt;Recent sessions&lt;/h4&gt;
+          &lt;p class=&quot;account-help&quot;&gt;
+            Representative data for this specimen. No real devices or accounts are
+            connected.
+          &lt;/p&gt;
+          ${unsafeHTML(sessionsMarkup)}
+        &lt;/section&gt;
+      &lt;/section&gt;`;
+    };
+    render(
+      html`&lt;dsl-tabs
+        .items=${accountSections}
+        .activeTab=${state.section}
+        accessible-label=&quot;Account settings sections&quot;
+        .renderPanel=${panel}
+      &gt;&lt;/dsl-tabs&gt;`,
+      root,
+    );
+  };
+  update();
+  const unsubscribe = store.subscribe(update);
+  return () =&gt; {
+    unsubscribe();
+    render(null, root);
+  };
+}
+</code>
+            </pre>  </details><details>  <summary>React delivery using the existing portal bridge</summary> <p> <code>apps/docs/src/patterns/account-settings/react-view.tsx</code> </p> <pre>              <code>import * as React from &#39;react&#39;;
+import { createRoot } from &#39;react-dom/client&#39;;
+import { Tabs } from &#39;@dsl/react/tabs&#39;;
+import { Modal } from &#39;@dsl/react/modal&#39;;
+import { Input } from &#39;@dsl/react/input&#39;;
+import { Select } from &#39;@dsl/react/select&#39;;
+import { Toggle } from &#39;@dsl/react/toggle&#39;;
+import { Button } from &#39;@dsl/react/button&#39;;
+import {
+  accountFacts,
+  accountSections,
+  profileInitials,
+  validationSummary,
+  fieldId,
+  formId,
+  frequencies,
+  frequencyPlaceholder,
+  modalActions,
+  panelCopy,
+  preferenceGroups,
+  profileDialog,
+  profileFields,
+  type AccountSection,
+  type AccountStore,
+} from &#39;./model.js&#39;;
+
+function AccountReactView({
+  store,
+  sessionsMarkup,
+}: {
+  store: AccountStore;
+  sessionsMarkup: string;
+}) {
+  const state = React.useSyncExternalStore(store.subscribe, store.getSnapshot);
+  const fields = (
+    &lt;form id={formId(&#39;react&#39;)} method=&quot;dialog&quot; className=&quot;account-profile-form dsl-flow&quot;&gt;
+      &lt;p
+        className=&quot;account-error-summary&quot;
+        role=&quot;alert&quot;
+        hidden={!Object.keys(state.errors).length}
+      &gt;
+        {Object.keys(state.errors).length ? validationSummary : &#39;&#39;}
+      &lt;/p&gt;
+      {profileFields.map((field) =&gt; {
+        const id = fieldId(&#39;react&#39;, field.name);
+        return (
+          &lt;div className=&quot;account-field dsl-flow&quot; key={field.name}&gt;
+            &lt;label htmlFor={id}&gt;
+              {field.label}
+              {field.required ? &#39; (required)&#39; : &#39;&#39;}
+            &lt;/label&gt;
+            &lt;Input
+              inputId={id}
+              name={field.name}
+              type={field.type}
+              value={state.draft[field.name]}
+              required={field.required}
+              autocomplete={field.autocomplete}
+              maxLength={field.maxLength}
+              describedBy={`${id}-help ${id}-error`}
+              invalid={!!state.errors[field.name]}
+            /&gt;
+            &lt;p className=&quot;account-help&quot; id={`${id}-help`}&gt;
+              {field.help}
+            &lt;/p&gt;
+            &lt;p
+              className=&quot;account-error&quot;
+              id={`${id}-error`}
+              hidden={!state.errors[field.name]}
+            &gt;
+              {state.errors[field.name] ?? &#39;&#39;}
+            &lt;/p&gt;
+          &lt;/div&gt;
+        );
+      })}
+    &lt;/form&gt;
+  );
+  const heading = (id: AccountSection) =&gt; (
+    &lt;header className=&quot;account-panel-heading&quot;&gt;
+      &lt;h3&gt;{panelCopy[id].title}&lt;/h3&gt;
+      &lt;p&gt;{panelCopy[id].description}&lt;/p&gt;
+    &lt;/header&gt;
+  );
+  const choices = (group: &#39;notifications&#39; | &#39;security&#39;) =&gt;
+    preferenceGroups[group].map((item) =&gt; (
+      &lt;div className=&quot;account-preference&quot; key={item.name}&gt;
+        &lt;Toggle
+          inputId={fieldId(&#39;react&#39;, item.name)}
+          name={item.name}
+          value=&quot;enabled&quot;
+          label={item.label}
+          description={item.description}
+          checked={state.preferences[item.name]}
+        /&gt;
+      &lt;/div&gt;
+    ));
+  return (
+    &lt;Tabs
+      items={accountSections}
+      activeTab={state.section}
+      accessibleLabel=&quot;Account settings sections&quot;
+      renderPanel={(item) =&gt; {
+        if (item.id === &#39;profile&#39;)
+          return (
+            &lt;section className=&quot;account-panel dsl-flow&quot;&gt;
+              {heading(&#39;profile&#39;)}
+              &lt;div className=&quot;account-profile-card dsl-split&quot;&gt;
+                &lt;div className=&quot;account-identity&quot;&gt;
+                  &lt;span
+                    className=&quot;account-avatar&quot;
+                    data-account-initials
+                    aria-hidden=&quot;true&quot;
+                  &gt;
+                    {profileInitials(state.profile.fullName)}
+                  &lt;/span&gt;
+                  &lt;div&gt;
+                    &lt;strong data-account-name&gt;{state.profile.fullName}&lt;/strong&gt;
+                    &lt;p data-account-job&gt;
+                      {state.profile.jobTitle || &#39;No job title added&#39;}
+                    &lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div data-account-edit&gt;
+                  &lt;Modal
+                    heading={profileDialog.title}
+                    content={profileDialog.description}
+                    triggerLabel={profileDialog.title}
+                    actions={modalActions(&#39;react&#39;)}
+                  &gt;
+                    {fields}
+                  &lt;/Modal&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;dl className=&quot;account-facts dsl-grid&quot;&gt;
+                &lt;div&gt;
+                  &lt;dt&gt;Work email&lt;/dt&gt;
+                  &lt;dd data-account-email&gt;{state.profile.email}&lt;/dd&gt;
+                &lt;/div&gt;
+                {accountFacts.map((fact) =&gt; (
+                  &lt;div key={fact.label}&gt;
+                    &lt;dt&gt;{fact.label}&lt;/dt&gt;
+                    &lt;dd&gt;{fact.value}&lt;/dd&gt;
+                  &lt;/div&gt;
+                ))}
+              &lt;/dl&gt;
+              &lt;p className=&quot;account-note&quot;&gt;
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              &lt;/p&gt;
+            &lt;/section&gt;
+          );
+        if (item.id === &#39;notifications&#39;)
+          return (
+            &lt;section className=&quot;account-panel dsl-flow&quot;&gt;
+              {heading(&#39;notifications&#39;)}
+              &lt;form
+                className=&quot;account-preferences dsl-flow&quot;
+                aria-label=&quot;Notification preferences&quot;
+              &gt;
+                &lt;fieldset&gt;
+                  &lt;legend&gt;Updates you receive&lt;/legend&gt;
+                  {choices(&#39;notifications&#39;)}
+                &lt;/fieldset&gt;
+                &lt;div className=&quot;account-field dsl-flow&quot;&gt;
+                  &lt;label htmlFor=&quot;account-react-frequency&quot;&gt;Delivery frequency&lt;/label&gt;
+                  &lt;Select
+                    selectId=&quot;account-react-frequency&quot;
+                    name=&quot;frequency&quot;
+                    value={state.frequency}
+                    placeholder={frequencyPlaceholder}
+                    options={frequencies}
+                  /&gt;
+                  &lt;p className=&quot;account-help&quot;&gt;
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div data-account-defaults&gt;
+                  &lt;Button label=&quot;Restore notification defaults&quot; variant=&quot;secondary&quot; /&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/section&gt;
+          );
+        return (
+          &lt;section className=&quot;account-panel dsl-flow&quot;&gt;
+            {heading(&#39;security&#39;)}
+            &lt;form className=&quot;account-preferences&quot; aria-label=&quot;Security preferences&quot;&gt;
+              &lt;fieldset&gt;
+                &lt;legend&gt;Account safeguards&lt;/legend&gt;
+                {choices(&#39;security&#39;)}
+              &lt;/fieldset&gt;
+            &lt;/form&gt;
+            &lt;section className=&quot;dsl-flow&quot;&gt;
+              &lt;h4&gt;Recent sessions&lt;/h4&gt;
+              &lt;p className=&quot;account-help&quot;&gt;
+                Representative data for this specimen. No real devices or accounts are
+                connected.
+              &lt;/p&gt;
+              &lt;div dangerouslySetInnerHTML={{ __html: sessionsMarkup }} /&gt;
+            &lt;/section&gt;
+          &lt;/section&gt;
+        );
+      }}
+    /&gt;
+  );
+}
+
+export function mountReactView(
+  root: HTMLElement,
+  store: AccountStore,
+  sessionsMarkup: string,
+) {
+  const reactRoot = createRoot(root);
+  reactRoot.render(&lt;AccountReactView store={store} sessionsMarkup={sessionsMarkup} /&gt;);
+  return () =&gt; reactRoot.unmount();
+}
+</code>
+            </pre>  </details> </details> </section> <script type="module" src="/concord/_astro/AccountSettingsSpecimen.astro_astro_type_script_index_0_lang.D86OGWvx.js"></script>                               <div class="information-sections" data-astro-cid-peev57ep>  <section class="information-section" data-astro-cid-peev57ep> <h2 data-astro-cid-peev57ep>Ownership that stays visible</h2> <p data-astro-cid-peev57ep> The pattern owns account data, validation, state transitions, and arrangement. Components own their structure, styling, native behavior, and accessibility relationships. The framework views consume those contracts; they do not define three different applications. </p> </section>  <section class="information-section" data-astro-cid-peev57ep> <h2 data-astro-cid-peev57ep>A real form, a bounded example</h2> <p data-astro-cid-peev57ep> The profile editor is a consumer form inside the Modal content region. Its Save action targets that form, so required fields, email validity, and the application&#39;s validation rules run before the dialog can close. Cancel and Escape preserve the saved profile. Preferences remain in memory across sections and delivery changes, and a reload restores the sample. </p> </section>  <section class="information-section" data-astro-cid-peev57ep> <h2 data-astro-cid-peev57ep>Space changes the composition</h2> <p data-astro-cid-peev57ep> Concord&#39;s Sidebar drops supporting guidance below the main task when space becomes scarce. Grid wraps profile details. Tabs use their existing narrow-width selection control while retaining panels and their state. Theme, Appearance, and Density change expression without recreating the workflow. </p> </section>  <section class="information-section" data-astro-cid-peev57ep> <h2 data-astro-cid-peev57ep>What this evidence does and does not cover</h2> <p data-astro-cid-peev57ep> This public specimen exercises native HTML, explicitly registered Lit components, and selective React adapters, including rich content through the established portal bridge. It does not authenticate users, persist data, contact services, or implement security policy. Automated accessibility and browser checks complement, rather than replace, real assistive-technology and device qualification. </p> </section>  </div> </article>  </main>  </div>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CNwjPPH5.js"></script> </body> </html>

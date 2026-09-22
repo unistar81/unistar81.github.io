@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Menu: Actions and shortcuts</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<style>html,body{margin:0}html{block-size:100%}body{box-sizing:border-box;background:var(--dsl-semantic-color-surface-page);place-items:center;min-block-size:20rem;padding:clamp(1rem,6vw,2.5rem);display:grid}.demo-root{max-inline-size:100%}body.demo-tooltip{min-block-size:100vh;padding:2rem;overflow:hidden}
+</style></head> <body data-demo-component="menu"> <div class="demo-root"><button
+  id="menu-actions-trigger"
+  class="dsl-button"
+  type="button"
+  data-variant="secondary"
+  data-size="medium"
+  aria-haspopup="menu"
+  popovertarget="menu-actions"
+>
+  <span>Actions</span>
+  <span class="dsl-icon menu-indicator" data-icon="caret-down" aria-hidden="true"></span>
+</button>
+
+<div
+  id="menu-actions"
+  class="dsl-menu"
+  data-side="bottom"
+  data-align="start"
+  popover=""
+  role="menu"
+  aria-labelledby="menu-actions-trigger"
+>
+  <button
+    class="item"
+    type="button"
+    role="menuitem"
+    tabindex="-1"
+    data-menu-value="search"
+    aria-keyshortcuts="Meta+K"
+  >
+    <span class="leading" aria-hidden="true"
+      ><span class="dsl-icon" data-icon="search"></span
+    ></span>
+    <span class="content"><span class="label">Search</span></span>
+    <span class="trailing" aria-hidden="true"><kbd>⌘K</kbd></span>
+  </button>
+  <button
+    class="item"
+    type="button"
+    role="menuitem"
+    tabindex="-1"
+    data-menu-value="rename"
+  >
+    <span class="content"><span class="label">Rename</span></span>
+  </button>
+  <button
+    class="item"
+    type="button"
+    role="menuitem"
+    tabindex="-1"
+    data-menu-value="add"
+    aria-keyshortcuts="Shift+Meta+A"
+  >
+    <span class="leading" aria-hidden="true"
+      ><span class="dsl-icon" data-icon="plus"></span
+    ></span>
+    <span class="content"><span class="label">Add to collection</span></span>
+    <span class="trailing" aria-hidden="true"><kbd>⇧⌘A</kbd></span>
+  </button>
+</div></div> <script type="module" src="/concord/_astro/_scenario_.astro_astro_type_script_index_0_lang.C9iJzI4F.js"></script> </body> </html>

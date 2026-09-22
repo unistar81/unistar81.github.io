@@ -1,0 +1,1448 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Number Stepper component documentation for Concord Design System."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>Number Stepper · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<link rel="stylesheet" href="/concord/_astro/_id_.CU4HBNFr.css"></head> <body> <a class="skip-link" href="#main-content">Skip to main content</a> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/">Foundations</a> <a aria-current="page" href="/concord/components/">Components</a> <a href="/concord/layout/">Layout</a> <a href="/concord/patterns/">Patterns</a> <a href="/concord/templates/">Templates</a> <a href="/concord/resources/">Resources</a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <div class="docs-shell"> <aside class="context-sidebar" aria-label="components navigation"> <p class="sidebar-title">components</p> <section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-actions" data-sidebar-toggle> <span>Actions</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-actions" hidden data-sidebar-panel> <li> <a href="/concord/components/button/"> Button </a> </li><li> <a href="/concord/components/link/"> Link </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-selection-controls" data-sidebar-toggle> <span>Selection controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-selection-controls" hidden data-sidebar-panel> <li> <a href="/concord/components/checkbox/"> Checkbox </a> </li><li> <a href="/concord/components/radio/"> Radio </a> </li><li> <a href="/concord/components/toggle/"> Toggle </a> </li><li> <a href="/concord/components/pill/"> Selectable Pill </a> </li><li> <a href="/concord/components/select/"> Select </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="true" aria-controls="sidebar-form-controls" data-sidebar-toggle> <span>Form controls</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-controls" data-sidebar-panel> <li> <a href="/concord/components/input/"> Input </a> </li><li> <a href="/concord/components/textarea/"> Textarea </a> </li><li> <a href="/concord/components/date-input/"> Date Input </a> </li><li> <a href="/concord/components/slider/"> Slider </a> </li><li> <a aria-current="page" href="/concord/components/stepper/"> Number Stepper </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-form-structure" data-sidebar-toggle> <span>Form structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-form-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/label/"> Form Label </a> </li><li> <a href="/concord/components/field/"> Form Field Group </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-layout-structure" data-sidebar-toggle> <span>Layout &amp; structure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-layout-structure" hidden data-sidebar-panel> <li> <a href="/concord/components/divider/"> Divider </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-navigation-disclosure" data-sidebar-toggle> <span>Navigation &amp; disclosure</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-navigation-disclosure" hidden data-sidebar-panel> <li> <a href="/concord/components/breadcrumb/"> Breadcrumb </a> </li><li> <a href="/concord/components/pagination/"> Pagination </a> </li><li> <a href="/concord/components/accordion/"> Accordion </a> </li><li> <a href="/concord/components/tabs/"> Tabs </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-content-media" data-sidebar-toggle> <span>Content &amp; media</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-content-media" hidden data-sidebar-panel> <li> <a href="/concord/components/media/"> Media </a> </li><li> <a href="/concord/components/list-item/"> List Item </a> </li><li> <a href="/concord/components/card/"> Card </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-feedback-status" data-sidebar-toggle> <span>Feedback &amp; status</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-feedback-status" hidden data-sidebar-panel> <li> <a href="/concord/components/tag/"> Tag </a> </li><li> <a href="/concord/components/alert/"> Alert </a> </li><li> <a href="/concord/components/loading-indicator/"> Loading Indicator </a> </li><li> <a href="/concord/components/progress-indicator/"> Progress Indicator </a> </li><li> <a href="/concord/components/progress-steps/"> Progress Steps </a> </li> </ul> </section><section class="sidebar-group" data-sidebar-group> <h2> <button type="button" aria-expanded="false" aria-controls="sidebar-overlays" data-sidebar-toggle> <span>Overlays</span> <span class="sidebar-chevron" aria-hidden="true"></span> </button> </h2> <ul id="sidebar-overlays" hidden data-sidebar-panel> <li> <a href="/concord/components/tooltip/"> Tooltip </a> </li><li> <a href="/concord/components/menu/"> Menu </a> </li><li> <a href="/concord/components/popover/"> Popover </a> </li><li> <a href="/concord/components/modal/"> Modal </a> </li> </ul> </section>  <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1 --> <aside class="sidebar-card" aria-label="Concord architecture signature"> <!-- CONCORD SIDEBAR ARCHITECTURE SIGNATURE v1.2 --> <div class="sidebar-card__identity"> <span class="sidebar-card__mark sidebar-card__signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-sidebar-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-sidebar-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-sidebar-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-sidebar-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-sidebar-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-sidebar-mark-clip)" stroke="url(#concord-sidebar-mark-motion)"></path> </svg> </span> <p class="sidebar-card__eyebrow">Concord architecture</p> </div> <strong class="sidebar-card__title">Web-native. Framework-agnostic.</strong> <p class="sidebar-card__summary">
+Semantic HTML · External CSS · Platform-neutral tokens · Web Components · Framework
+      adapters
+</p> <p class="sidebar-card__credit">Designed &amp; engineered by Oleg Ivanov</p> <a class="sidebar-card__link" href="https://github.com/unistar81/concord-design-system"> <span>View source on GitHub</span> <span class="sidebar-card__arrow" aria-hidden="true">→</span> </a> </aside> </aside> <main id="main-content" class="docs-main"> <header class="component-heading"> <div class="component-utility-row"> <p class="eyebrow">Components / Form controls</p> <nav class="heading-actions" aria-label="Number Stepper resources"> <a href="http://localhost:6006/?path=/story/components-stepper--canonical" aria-label="Open Number Stepper in Storybook">Storybook ↗</a> <a href="/concord/react/stepper/" aria-label="Open Number Stepper React demo">
+React demo ↗
+</a> </nav> </div> <div class="component-introduction"> <h1>Number Stepper</h1> <p class="summary">A native numeric input with explicit decrement and increment controls, configurable steps, and optional boundaries.</p> <div class="badges" aria-label="Component status and accessibility" data-component-status="stable">  <span class="dsl-tag docs-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> </div> </header> <div class="examples"> <details class="example-card" open data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 01</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Default stepper</h2> </div> <p>Shows the Stepper control itself. Form Label, supporting text, and validation messaging are composed separately.</p>  </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Default stepper preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">5</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-default-basic"
+      aria-label="Decrease Quantity by 1"
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-default-basic"
+        name="stepper-default"
+        type="number"
+        value="5"
+        step="1"
+        aria-label="Quantity"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-default-basic"
+      aria-label="Increase Quantity by 1"
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div> </div> </div> </div> </section> <script type="module">function e(){document.querySelectorAll('[data-design-system-preview] input[type="checkbox"][data-indeterminate]').forEach(t=>{t.indeterminate=!0})}e();document.addEventListener("astro:page-load",e);</script> <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="stepper-basic-html-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-basic-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="stepper-basic-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-basic-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="stepper-basic-react-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-basic-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="stepper-basic-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="stepper-basic-implementation-panels" class="code-drawer-panels"> <section id="stepper-basic-html-panel" role="tabpanel" aria-labelledby="stepper-basic-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/stepper/stepper.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>5</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-default&#34;
+      aria-label=&#34;Decrease Quantity by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-default&#34;
+        name=&#34;stepper-default&#34;
+        type=&#34;number&#34;
+        value=&#34;5&#34;
+        step=&#34;1&#34;
+        aria-label=&#34;Quantity&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-default&#34;
+      aria-label=&#34;Increase Quantity by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>5&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Quantity by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Quantity by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-basic-lit-panel" role="tabpanel" aria-labelledby="stepper-basic-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/stepper/dsl-stepper.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-number-stepper
+  input-id=&#34;stepper-default&#34;
+  accessible-label=&#34;Quantity&#34;
+  value=&#34;5&#34;
+  step=&#34;1&#34;
+></dsl-number-stepper>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">  input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#0E1116">  value</span><span style="color:#A0111F">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#0E1116">  step</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-basic-react-panel" role="tabpanel" aria-labelledby="stepper-basic-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<NumberStepper
+  inputId=&#34;stepper-default&#34;
+  accessibleLabel=&#34;Quantity&#34;
+  value={5}
+  step={1}
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">  inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-default"</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#023B95">  value</span><span style="color:#A0111F">={</span><span style="color:#023B95">5</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  step</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 02</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Minimum and maximum</h2> </div> <p>Boundary controls become unavailable when the native minimum or maximum is reached.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>min=&quot;1&quot;</code><code>max=&quot;10&quot;</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Minimum and maximum preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="docs-stepper-specimens">
+  <div class="docs-stepper-specimen">
+    <span class="docs-stepper-specimen-caption">Minimum reached</span>
+    <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">1</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-minimum-boundaries"
+      aria-label="Decrease Minimum boundary quantity by 1"
+      disabled=""
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-minimum-boundaries"
+        name="stepper-minimum"
+        type="number"
+        min="1"
+        max="10"
+        value="1"
+        step="1"
+        aria-label="Minimum boundary quantity"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-minimum-boundaries"
+      aria-label="Increase Minimum boundary quantity by 1"
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class="docs-stepper-specimen">
+    <span class="docs-stepper-specimen-caption">Maximum reached</span>
+    <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">10</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-maximum-boundaries"
+      aria-label="Decrease Maximum boundary quantity by 1"
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-maximum-boundaries"
+        name="stepper-maximum"
+        type="number"
+        min="1"
+        max="10"
+        value="10"
+        step="1"
+        aria-label="Maximum boundary quantity"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-maximum-boundaries"
+      aria-label="Increase Maximum boundary quantity by 1"
+      disabled=""
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div>
+  </div>
+</div> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="stepper-boundaries-html-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-boundaries-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="stepper-boundaries-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-boundaries-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="stepper-boundaries-react-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-boundaries-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="stepper-boundaries-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="stepper-boundaries-implementation-panels" class="code-drawer-panels"> <section id="stepper-boundaries-html-panel" role="tabpanel" aria-labelledby="stepper-boundaries-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/stepper/snippets/boundaries.html, packages/html/src/components/stepper/snippets/boundaries-2.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;docs-stepper-specimens&#34;>
+  <div class=&#34;docs-stepper-specimen&#34;>
+    <span class=&#34;docs-stepper-specimen-caption&#34;>Minimum reached</span>
+    <div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>1</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-minimum&#34;
+      aria-label=&#34;Decrease Minimum boundary quantity by 1&#34;
+      disabled=&#34;&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-minimum&#34;
+        name=&#34;stepper-minimum&#34;
+        type=&#34;number&#34;
+        min=&#34;1&#34;
+        max=&#34;10&#34;
+        value=&#34;1&#34;
+        step=&#34;1&#34;
+        aria-label=&#34;Minimum boundary quantity&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-minimum&#34;
+      aria-label=&#34;Increase Minimum boundary quantity by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class=&#34;docs-stepper-specimen&#34;>
+    <span class=&#34;docs-stepper-specimen-caption&#34;>Maximum reached</span>
+    <div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>10</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-maximum&#34;
+      aria-label=&#34;Decrease Maximum boundary quantity by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-maximum&#34;
+        name=&#34;stepper-maximum&#34;
+        type=&#34;number&#34;
+        min=&#34;1&#34;
+        max=&#34;10&#34;
+        value=&#34;10&#34;
+        step=&#34;1&#34;
+        aria-label=&#34;Maximum boundary quantity&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-maximum&#34;
+      aria-label=&#34;Increase Maximum boundary quantity by 1&#34;
+      disabled=&#34;&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>
+  </div>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimens"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen-caption"</span><span style="color:#0E1116">>Minimum reached&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>1&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Minimum boundary quantity by 1"</span></span>
+<span class="line"><span style="color:#023B95">      disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        min</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        max</span><span style="color:#0E1116">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Minimum boundary quantity"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Minimum boundary quantity by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen-caption"</span><span style="color:#0E1116">>Maximum reached&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>10&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Maximum boundary quantity by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        min</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        max</span><span style="color:#0E1116">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Maximum boundary quantity"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Maximum boundary quantity by 1"</span></span>
+<span class="line"><span style="color:#023B95">      disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-boundaries-lit-panel" role="tabpanel" aria-labelledby="stepper-boundaries-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/stepper/dsl-stepper.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div>
+  <dsl-number-stepper
+    input-id=&#34;stepper-minimum&#34;
+    accessible-label=&#34;Minimum boundary quantity&#34;
+    minimum=&#34;1&#34;
+    maximum=&#34;10&#34;
+    value=&#34;1&#34;
+    step=&#34;1&#34;
+  ></dsl-number-stepper>
+
+  <dsl-number-stepper
+    input-id=&#34;stepper-maximum&#34;
+    accessible-label=&#34;Maximum boundary quantity&#34;
+    minimum=&#34;1&#34;
+    maximum=&#34;10&#34;
+    value=&#34;10&#34;
+    step=&#34;1&#34;
+  ></dsl-number-stepper>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#702C00">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Minimum boundary quantity"</span></span>
+<span class="line"><span style="color:#0E1116">    minimum</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#0E1116">    maximum</span><span style="color:#A0111F">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#0E1116">    value</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#0E1116">    step</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Maximum boundary quantity"</span></span>
+<span class="line"><span style="color:#0E1116">    minimum</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#0E1116">    maximum</span><span style="color:#A0111F">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#0E1116">    value</span><span style="color:#A0111F">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#0E1116">    step</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">&#x3C;/</span><span style="color:#0E1116">div</span><span style="color:#A0111F">></span></span></code></pre> </div> </section><section id="stepper-boundaries-react-panel" role="tabpanel" aria-labelledby="stepper-boundaries-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<>
+  <NumberStepper
+    inputId=&#34;stepper-minimum&#34;
+    accessibleLabel=&#34;Minimum boundary quantity&#34;
+    minimum={1}
+    maximum={10}
+    value={1}
+    step={1}
+  />
+
+  <NumberStepper
+    inputId=&#34;stepper-maximum&#34;
+    accessibleLabel=&#34;Maximum boundary quantity&#34;
+    minimum={1}
+    maximum={10}
+    value={10}
+    step={1}
+  />
+</>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-minimum"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Minimum boundary quantity"</span></span>
+<span class="line"><span style="color:#023B95">    minimum</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    maximum</span><span style="color:#A0111F">={</span><span style="color:#023B95">10</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    value</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    step</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-maximum"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Maximum boundary quantity"</span></span>
+<span class="line"><span style="color:#023B95">    minimum</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    maximum</span><span style="color:#A0111F">={</span><span style="color:#023B95">10</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    value</span><span style="color:#A0111F">={</span><span style="color:#023B95">10</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    step</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 03</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Step increments</h2> </div> <p>The increment and decrement amount can be configured independently of the numeric range.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>step=&quot;1&quot;</code><code>step=&quot;10&quot;</code><code>step=&quot;100&quot;</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Step increments preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="docs-stepper-specimens">
+  <div class="docs-stepper-specimen">
+    <span class="docs-stepper-specimen-caption">Step 1</span>
+    <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">5</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-step-1-steps"
+      aria-label="Decrease Quantity stepping by 1 by 1"
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-step-1-steps"
+        name="stepper-step-1"
+        type="number"
+        value="5"
+        step="1"
+        aria-label="Quantity stepping by 1"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-step-1-steps"
+      aria-label="Increase Quantity stepping by 1 by 1"
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class="docs-stepper-specimen">
+    <span class="docs-stepper-specimen-caption">Step 10</span>
+    <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">50</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-step-10-steps"
+      aria-label="Decrease Quantity stepping by 10 by 10"
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-step-10-steps"
+        name="stepper-step-10"
+        type="number"
+        value="50"
+        step="10"
+        aria-label="Quantity stepping by 10"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-step-10-steps"
+      aria-label="Increase Quantity stepping by 10 by 10"
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class="docs-stepper-specimen">
+    <span class="docs-stepper-specimen-caption">Step 100</span>
+    <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">500</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-step-100-steps"
+      aria-label="Decrease Quantity stepping by 100 by 100"
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-step-100-steps"
+        name="stepper-step-100"
+        type="number"
+        value="500"
+        step="100"
+        aria-label="Quantity stepping by 100"
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-step-100-steps"
+      aria-label="Increase Quantity stepping by 100 by 100"
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div>
+  </div>
+</div> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="stepper-steps-html-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-steps-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="stepper-steps-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-steps-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="stepper-steps-react-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-steps-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="stepper-steps-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="stepper-steps-implementation-panels" class="code-drawer-panels"> <section id="stepper-steps-html-panel" role="tabpanel" aria-labelledby="stepper-steps-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/stepper/snippets/steps.html, packages/html/src/components/stepper/snippets/steps-2.html, packages/html/src/components/stepper/snippets/steps-3.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;docs-stepper-specimens&#34;>
+  <div class=&#34;docs-stepper-specimen&#34;>
+    <span class=&#34;docs-stepper-specimen-caption&#34;>Step 1</span>
+    <div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>5</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-step-1&#34;
+      aria-label=&#34;Decrease Quantity stepping by 1 by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-step-1&#34;
+        name=&#34;stepper-step-1&#34;
+        type=&#34;number&#34;
+        value=&#34;5&#34;
+        step=&#34;1&#34;
+        aria-label=&#34;Quantity stepping by 1&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-step-1&#34;
+      aria-label=&#34;Increase Quantity stepping by 1 by 1&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class=&#34;docs-stepper-specimen&#34;>
+    <span class=&#34;docs-stepper-specimen-caption&#34;>Step 10</span>
+    <div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>50</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-step-10&#34;
+      aria-label=&#34;Decrease Quantity stepping by 10 by 10&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-step-10&#34;
+        name=&#34;stepper-step-10&#34;
+        type=&#34;number&#34;
+        value=&#34;50&#34;
+        step=&#34;10&#34;
+        aria-label=&#34;Quantity stepping by 10&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-step-10&#34;
+      aria-label=&#34;Increase Quantity stepping by 10 by 10&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>
+  </div>
+
+  <div class=&#34;docs-stepper-specimen&#34;>
+    <span class=&#34;docs-stepper-specimen-caption&#34;>Step 100</span>
+    <div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>500</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-step-100&#34;
+      aria-label=&#34;Decrease Quantity stepping by 100 by 100&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-step-100&#34;
+        name=&#34;stepper-step-100&#34;
+        type=&#34;number&#34;
+        value=&#34;500&#34;
+        step=&#34;100&#34;
+        aria-label=&#34;Quantity stepping by 100&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-step-100&#34;
+      aria-label=&#34;Increase Quantity stepping by 100 by 100&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>
+  </div>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimens"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen-caption"</span><span style="color:#0E1116">>Step 1&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>5&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Quantity stepping by 1 by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Quantity stepping by 1"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Quantity stepping by 1 by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen-caption"</span><span style="color:#0E1116">>Step 10&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>50&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Quantity stepping by 10 by 10"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"50"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Quantity stepping by 10"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Quantity stepping by 10 by 10"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"docs-stepper-specimen-caption"</span><span style="color:#0E1116">>Step 100&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>500&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Quantity stepping by 100 by 100"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"500"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"100"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Quantity stepping by 100"</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Quantity stepping by 100 by 100"</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-steps-lit-panel" role="tabpanel" aria-labelledby="stepper-steps-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/stepper/dsl-stepper.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div>
+  <dsl-number-stepper
+    input-id=&#34;stepper-step-1&#34;
+    accessible-label=&#34;Quantity stepping by 1&#34;
+    value=&#34;5&#34;
+    step=&#34;1&#34;
+  ></dsl-number-stepper>
+
+  <dsl-number-stepper
+    input-id=&#34;stepper-step-10&#34;
+    accessible-label=&#34;Quantity stepping by 10&#34;
+    value=&#34;50&#34;
+    step=&#34;10&#34;
+  ></dsl-number-stepper>
+
+  <dsl-number-stepper
+    input-id=&#34;stepper-step-100&#34;
+    accessible-label=&#34;Quantity stepping by 100&#34;
+    value=&#34;500&#34;
+    step=&#34;100&#34;
+  ></dsl-number-stepper>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#702C00">div</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 1"</span></span>
+<span class="line"><span style="color:#0E1116">    value</span><span style="color:#A0111F">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#0E1116">    step</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 10"</span></span>
+<span class="line"><span style="color:#0E1116">    value</span><span style="color:#A0111F">=</span><span style="color:#032563">"50"</span></span>
+<span class="line"><span style="color:#0E1116">    step</span><span style="color:#A0111F">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A0111F">  &#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">    input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#0E1116">    accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 100"</span></span>
+<span class="line"><span style="color:#0E1116">    value</span><span style="color:#A0111F">=</span><span style="color:#032563">"500"</span></span>
+<span class="line"><span style="color:#0E1116">    step</span><span style="color:#A0111F">=</span><span style="color:#032563">"100"</span></span>
+<span class="line"><span style="color:#A0111F">  ></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#A0111F">&#x3C;/</span><span style="color:#0E1116">div</span><span style="color:#A0111F">></span></span></code></pre> </div> </section><section id="stepper-steps-react-panel" role="tabpanel" aria-labelledby="stepper-steps-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<>
+  <NumberStepper
+    inputId=&#34;stepper-step-1&#34;
+    accessibleLabel=&#34;Quantity stepping by 1&#34;
+    value={5}
+    step={1}
+  />
+
+  <NumberStepper
+    inputId=&#34;stepper-step-10&#34;
+    accessibleLabel=&#34;Quantity stepping by 10&#34;
+    value={50}
+    step={10}
+  />
+
+  <NumberStepper
+    inputId=&#34;stepper-step-100&#34;
+    accessibleLabel=&#34;Quantity stepping by 100&#34;
+    value={500}
+    step={100}
+  />
+</>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-1"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 1"</span></span>
+<span class="line"><span style="color:#023B95">    value</span><span style="color:#A0111F">={</span><span style="color:#023B95">5</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    step</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-10"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 10"</span></span>
+<span class="line"><span style="color:#023B95">    value</span><span style="color:#A0111F">={</span><span style="color:#023B95">50</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    step</span><span style="color:#A0111F">={</span><span style="color:#023B95">10</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">    inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-step-100"</span></span>
+<span class="line"><span style="color:#023B95">    accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity stepping by 100"</span></span>
+<span class="line"><span style="color:#023B95">    value</span><span style="color:#A0111F">={</span><span style="color:#023B95">500</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">    step</span><span style="color:#A0111F">={</span><span style="color:#023B95">100</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#0E1116">  /></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/></span></span></code></pre> </div> </section> </div> </div>  </div> </details><details class="example-card" data-initial-preview-width="auto"> <summary class="example-summary"> <div> <div class="example-title-row"> <p class="example-eyebrow">Example 04</p> <span class="example-title-separator" aria-hidden="true">—</span> <h2>Disabled state</h2> </div> <p>The disabled state prevents direct entry, increment, and decrement interaction.</p> <div class="example-configuration" aria-label="Key configuration"> <span>Key configuration</span> <div> <code>disabled</code> </div> </div> </div> <span class="example-summary-status">  <span class="example-chevron" aria-hidden="true"></span> </span> </summary> <div class="example-body">  <section class="preview-pane" data-preview-pane data-preview-size="auto" aria-label="Disabled state preview"> <div class="preview-toolbar" aria-label="Preview width"> <span>Preview width</span> <button type="button" aria-pressed="true" data-preview-width="auto"> Auto </button><button type="button" aria-pressed="false" data-preview-width="768"> 768 </button><button type="button" aria-pressed="false" data-preview-width="480"> 480 </button><button type="button" aria-pressed="false" data-preview-width="320"> 320 </button> </div> <div class="preview-canvas" data-preview-canvas> <div class="preview-frame" data-preview-frame data-design-system-preview> <span class="preview-width-label preview-width-label-auto" aria-hidden="true">
+Auto
+</span> <span class="preview-width-label preview-width-label-fixed" data-preview-width-label aria-hidden="true" hidden></span> <div class="preview-content"> <div class="dsl-stepper" data-stepper="">
+  <span class="status dsl-visually-hidden" aria-live="polite">5</span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="decrease"
+      aria-controls="stepper-disabled-disabled"
+      aria-label="Decrease Quantity by 1"
+      disabled=""
+    >
+      <span class="dsl-icon" data-icon="minus" aria-hidden="true"></span>
+    </button>
+  </span>
+
+  <span class="value">
+    <span class="dsl-input" data-align="center">
+      <input
+        id="stepper-disabled-disabled"
+        name="stepper-disabled"
+        type="number"
+        min="1"
+        max="10"
+        value="5"
+        step="1"
+        aria-label="Quantity"
+        disabled=""
+      />
+    </span>
+  </span>
+
+  <span class="control">
+    <button
+      class="dsl-button"
+      type="button"
+      data-variant="secondary"
+      data-shape="circle"
+      data-stepper-action="increase"
+      aria-controls="stepper-disabled-disabled"
+      aria-label="Increase Quantity by 1"
+      disabled=""
+    >
+      <span class="dsl-icon" data-icon="plus" aria-hidden="true"></span>
+    </button>
+  </span>
+</div> </div> </div> </div> </section>  <div class="code-drawer" data-code-drawer> <div class="code-drawer-toolbar"> <div class="code-tabs" role="tablist" aria-label="Implementation source"> <button id="stepper-disabled-html-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-disabled-html-panel" tabindex="0" data-code-tab="html"> HTML </button><button id="stepper-disabled-lit-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-disabled-lit-panel" tabindex="-1" data-code-tab="lit"> Lit Web Component </button><button id="stepper-disabled-react-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-disabled-react-panel" tabindex="-1" data-code-tab="react"> React </button> </div> <button class="code-drawer-toggle" type="button" aria-expanded="false" aria-controls="stepper-disabled-implementation-panels" data-code-toggle> <span data-code-toggle-label>View implementation</span> <span class="code-toggle-chevron" aria-hidden="true"></span> </button> </div> <div id="stepper-disabled-implementation-panels" class="code-drawer-panels"> <section id="stepper-disabled-html-panel" role="tabpanel" aria-labelledby="stepper-disabled-html-tab" hidden data-code-panel="html"> <header class="code-panel-header"> <span>packages/html/src/components/stepper/snippets/disabled.html</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<div class=&#34;dsl-stepper&#34; data-stepper=&#34;&#34;>
+  <span class=&#34;status dsl-visually-hidden&#34; aria-live=&#34;polite&#34;>5</span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;decrease&#34;
+      aria-controls=&#34;stepper-disabled&#34;
+      aria-label=&#34;Decrease Quantity by 1&#34;
+      disabled=&#34;&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;minus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+
+  <span class=&#34;value&#34;>
+    <span class=&#34;dsl-input&#34; data-align=&#34;center&#34;>
+      <input
+        id=&#34;stepper-disabled&#34;
+        name=&#34;stepper-disabled&#34;
+        type=&#34;number&#34;
+        min=&#34;1&#34;
+        max=&#34;10&#34;
+        value=&#34;5&#34;
+        step=&#34;1&#34;
+        aria-label=&#34;Quantity&#34;
+        disabled=&#34;&#34;
+      />
+    </span>
+  </span>
+
+  <span class=&#34;control&#34;>
+    <button
+      class=&#34;dsl-button&#34;
+      type=&#34;button&#34;
+      data-variant=&#34;secondary&#34;
+      data-shape=&#34;circle&#34;
+      data-stepper-action=&#34;increase&#34;
+      aria-controls=&#34;stepper-disabled&#34;
+      aria-label=&#34;Increase Quantity by 1&#34;
+      disabled=&#34;&#34;
+    >
+      <span class=&#34;dsl-icon&#34; data-icon=&#34;plus&#34; aria-hidden=&#34;true&#34;></span>
+    </button>
+  </span>
+</div>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">div</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-stepper"</span><span style="color:#023B95"> data-stepper</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"status dsl-visually-hidden"</span><span style="color:#023B95"> aria-live</span><span style="color:#0E1116">=</span><span style="color:#032563">"polite"</span><span style="color:#0E1116">>5&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"decrease"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Decrease Quantity by 1"</span></span>
+<span class="line"><span style="color:#023B95">      disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"minus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"value"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-input"</span><span style="color:#023B95"> data-align</span><span style="color:#0E1116">=</span><span style="color:#032563">"center"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">input</span></span>
+<span class="line"><span style="color:#023B95">        id</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#023B95">        name</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#023B95">        type</span><span style="color:#0E1116">=</span><span style="color:#032563">"number"</span></span>
+<span class="line"><span style="color:#023B95">        min</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        max</span><span style="color:#0E1116">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#023B95">        value</span><span style="color:#0E1116">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#023B95">        step</span><span style="color:#0E1116">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#023B95">        aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#023B95">        disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span></span>
+<span class="line"><span style="color:#0E1116">      /></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"control"</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;</span><span style="color:#024C1A">button</span></span>
+<span class="line"><span style="color:#023B95">      class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-button"</span></span>
+<span class="line"><span style="color:#023B95">      type</span><span style="color:#0E1116">=</span><span style="color:#032563">"button"</span></span>
+<span class="line"><span style="color:#023B95">      data-variant</span><span style="color:#0E1116">=</span><span style="color:#032563">"secondary"</span></span>
+<span class="line"><span style="color:#023B95">      data-shape</span><span style="color:#0E1116">=</span><span style="color:#032563">"circle"</span></span>
+<span class="line"><span style="color:#023B95">      data-stepper-action</span><span style="color:#0E1116">=</span><span style="color:#032563">"increase"</span></span>
+<span class="line"><span style="color:#023B95">      aria-controls</span><span style="color:#0E1116">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#023B95">      aria-label</span><span style="color:#0E1116">=</span><span style="color:#032563">"Increase Quantity by 1"</span></span>
+<span class="line"><span style="color:#023B95">      disabled</span><span style="color:#0E1116">=</span><span style="color:#032563">""</span></span>
+<span class="line"><span style="color:#0E1116">    ></span></span>
+<span class="line"><span style="color:#0E1116">      &#x3C;</span><span style="color:#024C1A">span</span><span style="color:#023B95"> class</span><span style="color:#0E1116">=</span><span style="color:#032563">"dsl-icon"</span><span style="color:#023B95"> data-icon</span><span style="color:#0E1116">=</span><span style="color:#032563">"plus"</span><span style="color:#023B95"> aria-hidden</span><span style="color:#0E1116">=</span><span style="color:#032563">"true"</span><span style="color:#0E1116">>&#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">    &#x3C;/</span><span style="color:#024C1A">button</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">  &#x3C;/</span><span style="color:#024C1A">span</span><span style="color:#0E1116">></span></span>
+<span class="line"><span style="color:#0E1116">&#x3C;/</span><span style="color:#024C1A">div</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-disabled-lit-panel" role="tabpanel" aria-labelledby="stepper-disabled-lit-tab" hidden data-code-panel="lit"> <header class="code-panel-header"> <span>packages/components-lit/src/stepper/dsl-stepper.ts</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<dsl-number-stepper
+  input-id=&#34;stepper-disabled&#34;
+  accessible-label=&#34;Quantity&#34;
+  minimum=&#34;1&#34;
+  maximum=&#34;10&#34;
+  value=&#34;5&#34;
+  step=&#34;1&#34;
+  disabled
+></dsl-number-stepper>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="ts"><code><span class="line"><span style="color:#A0111F">&#x3C;</span><span style="color:#0E1116">dsl</span><span style="color:#A0111F">-</span><span style="color:#0E1116">number</span><span style="color:#A0111F">-</span><span style="color:#0E1116">stepper</span></span>
+<span class="line"><span style="color:#0E1116">  input</span><span style="color:#A0111F">-</span><span style="color:#0E1116">id</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#0E1116">  accessible</span><span style="color:#A0111F">-</span><span style="color:#0E1116">label</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#0E1116">  minimum</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#0E1116">  maximum</span><span style="color:#A0111F">=</span><span style="color:#032563">"10"</span></span>
+<span class="line"><span style="color:#0E1116">  value</span><span style="color:#A0111F">=</span><span style="color:#032563">"5"</span></span>
+<span class="line"><span style="color:#0E1116">  step</span><span style="color:#A0111F">=</span><span style="color:#032563">"1"</span></span>
+<span class="line"><span style="color:#0E1116">  disabled</span></span>
+<span class="line"><span style="color:#A0111F">></span><span style="color:#0E1116">&#x3C;/</span><span style="color:#702C00">dsl</span><span style="color:#0E1116">-</span><span style="color:#023B95">number</span><span style="color:#0E1116">-</span><span style="color:#702C00">stepper</span><span style="color:#0E1116">></span></span></code></pre> </div> </section><section id="stepper-disabled-react-panel" role="tabpanel" aria-labelledby="stepper-disabled-react-tab" hidden data-code-panel="react"> <header class="code-panel-header"> <span>packages/react/src/examples/index.tsx</span> <button type="button" data-copy-code>
+Copy
+</button> </header> <div class="code-scroll" data-copy-source="<NumberStepper
+  inputId=&#34;stepper-disabled&#34;
+  accessibleLabel=&#34;Quantity&#34;
+  minimum={1}
+  maximum={10}
+  value={5}
+  step={1}
+  disabled
+/>"> <pre class="astro-code github-light-high-contrast" style="background-color:#ffffff;color:#0e1116; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#0E1116">&#x3C;</span><span style="color:#024C1A">NumberStepper</span></span>
+<span class="line"><span style="color:#023B95">  inputId</span><span style="color:#A0111F">=</span><span style="color:#032563">"stepper-disabled"</span></span>
+<span class="line"><span style="color:#023B95">  accessibleLabel</span><span style="color:#A0111F">=</span><span style="color:#032563">"Quantity"</span></span>
+<span class="line"><span style="color:#023B95">  minimum</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  maximum</span><span style="color:#A0111F">={</span><span style="color:#023B95">10</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  value</span><span style="color:#A0111F">={</span><span style="color:#023B95">5</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  step</span><span style="color:#A0111F">={</span><span style="color:#023B95">1</span><span style="color:#A0111F">}</span></span>
+<span class="line"><span style="color:#023B95">  disabled</span></span>
+<span class="line"><span style="color:#0E1116">/></span></span></code></pre> </div> </section> </div> </div>  </div> </details> </div> <section class="component-reference" data-component-reference aria-labelledby="stepper-component-implementation"> <div class="component-reference-heading"> <p class="component-reference-eyebrow">Component reference</p> <h2 id="stepper-component-implementation">Component implementation</h2> </div> <div class="component-reference-surface" data-component-reference-tabs> <div class="component-reference-tablist" role="tablist" aria-label="Component implementation reference"> <button id="stepper-reference-css-tab" type="button" role="tab" aria-selected="true" aria-controls="stepper-reference-css-panel" tabindex="0" data-reference-tab="css"> CSS </button><button id="stepper-reference-custom-properties-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-reference-custom-properties-panel" tabindex="-1" data-reference-tab="custom-properties"> CSS Custom Properties </button><button id="stepper-reference-token-map-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-reference-token-map-panel" tabindex="-1" data-reference-tab="token-map"> Token Map </button><button id="stepper-reference-token-json-tab" type="button" role="tab" aria-selected="false" aria-controls="stepper-reference-token-json-panel" tabindex="-1" data-reference-tab="token-json"> Source JSON </button> </div> <section id="stepper-reference-css-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="stepper-reference-css-tab" data-reference-panel="css"> <header class="code-panel-header"> <span>packages/css/src/components/stepper.css</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source="﻿.dsl-stepper {
+  display: inline-flex;
+  align-items: center;
+  inline-size: var(--dsl-stepper-width, 100%);
+  block-size: var(--dsl-stepper-height, auto);
+  background: var(--dsl-component-stepper-surface-background);
+
+  > .control {
+    flex: 0 0 auto;
+  }
+
+  > .value {
+    flex: 1 1 auto;
+    min-inline-size: 0;
+    margin-inline: var(--dsl-component-stepper-spacing-gap);
+  }
+
+  > .control > button {
+    box-sizing: border-box;
+
+    inline-size: var(--dsl-component-stepper-control-size);
+    block-size: var(--dsl-component-stepper-control-size);
+    padding: 0;
+
+    /*
+     * Stepper is a composite control. Match the +/- control stroke to the
+     * nested Input stroke so the three-part control reads as one system.
+     * This remains theme-aware because component.input.border.width is a
+     * generated component token that themes may override.
+     */
+    border-width: var(--dsl-component-input-border-width);
+
+    /*
+     * CONCORD STEPPER COMPOSITION CONTRACT
+     * Stepper composes canonical secondary Button controls.
+     * Button owns foreground, background, border color, and interaction-state
+     * colors so each theme keeps a single tested contrast pair.
+     * Stepper owns only composite geometry and the Input-matching border width.
+     */
+  }
+
+  > .value > .dsl-input {
+    --dsl-input-width: 100%;
+  }
+
+  > .value input[type='number'] {
+    appearance: textfield;
+    text-align: center;
+  }
+
+  > .value input[type='number']::-webkit-inner-spin-button,
+  > .value input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+@media (forced-colors: active) {
+  .dsl-stepper {
+    background: Canvas;
+    color: CanvasText;
+  }
+}
+"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="css"><code><span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">﻿.dsl-stepper</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  display</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">inline-flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  align-items</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-stepper-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-stepper-height</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">, </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-stepper-surface-background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  > .</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">control</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 0</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .value</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    flex</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> 1</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> auto</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    min-inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin-inline</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-stepper-spacing-gap</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .control</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    box-sizing</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">border-box</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    inline-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-stepper-control-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    block-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-stepper-control-size</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    padding</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * Stepper is a composite control. Match the +/- control stroke to the</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * nested Input stroke so the three-part control reads as one system.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * This remains theme-aware because component.input.border.width is a</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * generated component token that themes may override.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     */</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">var</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">(</span><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">--dsl-component-input-border-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">    /*</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * CONCORD STEPPER COMPOSITION CONTRACT</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * Stepper composes canonical secondary Button controls.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * Button owns foreground, background, border color, and interaction-state</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * colors so each theme keeps a single tested contrast pair.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     * Stepper owns only composite geometry and the Input-matching border width.</span></span>
+<span class="line"><span style="--shiki-light:#66707B;--shiki-dark:#BDC4CC">     */</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .value</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492"> ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .dsl-input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#702C00;--shiki-dark:#FFB757">    --dsl-input-width</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">100</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">%</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .value</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'number'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">] {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    appearance</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: textfield;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    text-align</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">center</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .value</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'number'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">::-webkit-inner-spin-button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">  ></span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF"> .value</span><span style="--shiki-light:#024C1A;--shiki-dark:#72F088"> input</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">[</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">type</span><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">=</span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">'number'</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">]</span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">::-webkit-outer-spin-button</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    appearance</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">none</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    margin</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">0</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A0111F;--shiki-dark:#FF9492">@media</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> (forced-colors: active) {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">  .dsl-stepper</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6"> {</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    background</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: Canvas;</span></span>
+<span class="line"><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">    color</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: CanvasText;</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <section id="stepper-reference-custom-properties-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="stepper-reference-custom-properties-tab" data-reference-panel="custom-properties" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div>  <div class="component-reference-table-heading component-reference-property-heading" aria-hidden="true"> <span>Custom property</span> <span>Assigned value</span> <span>Resolved value</span> </div> <dl class="component-reference-properties" data-copy-source="--dsl-component-stepper-surface-background: var(--dsl-semantic-color-surface-transparent);
+--dsl-component-stepper-spacing-gap: var(--dsl-foundation-space-100);
+--dsl-component-stepper-control-size: 2.5rem;
+--dsl-component-stepper-control-color: var(--dsl-semantic-color-action-primary);"> <div class="component-reference-property-row"> <dt> <code>--dsl-component-stepper-surface-background</code> </dt> <dd> <code>var(--dsl-semantic-color-surface-transparent)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-stepper-surface-background" data-fallback-value="var(--dsl-semantic-color-surface-transparent)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-semantic-color-surface-transparent)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-stepper-spacing-gap</code> </dt> <dd> <code>var(--dsl-foundation-space-100)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-stepper-spacing-gap" data-fallback-value="var(--dsl-foundation-space-100)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-foundation-space-100)</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-stepper-control-size</code> </dt> <dd> <code>2.5rem</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-stepper-control-size" data-fallback-value="2.5rem"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>2.5rem</code> </dd> </div><div class="component-reference-property-row"> <dt> <code>--dsl-component-stepper-control-color</code> </dt> <dd> <code>var(--dsl-semantic-color-action-primary)</code> </dd> <dd class="component-reference-property-resolved" data-reference-resolved data-css-variable="--dsl-component-stepper-control-color" data-fallback-value="var(--dsl-semantic-color-action-primary)"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>var(--dsl-semantic-color-action-primary)</code> </dd> </div> </dl>  </section> <section id="stepper-reference-token-map-panel" class="component-reference-panel component-reference-structured-panel" role="tabpanel" aria-labelledby="stepper-reference-token-map-tab" data-reference-panel="token-map" hidden> <div class="component-reference-list-actions"> <button type="button" data-copy-code>Copy</button> </div>  <div class="component-reference-table-heading component-reference-token-heading" aria-hidden="true"> <span>Token</span> <span>Reference / authored value</span> <span>Resolved value</span> </div> <div class="component-reference-token-scroll" data-copy-source="component.stepper.control.size → 2.5rem → 2.5rem"> <div class="component-reference-token-map"> <div class="component-reference-token-row"> <code class="component-reference-token-source">component.stepper.control.size</code> <code class="component-reference-token-target">2.5rem</code> <span class="component-reference-token-resolved" data-reference-resolved data-css-variable="--dsl-component-stepper-control-size" data-fallback-value="2.5rem"> <span class="component-reference-value-swatch" data-reference-resolved-swatch aria-hidden="true" hidden></span> <code data-reference-resolved-value>2.5rem</code> </span> </div> </div> </div>  </section> <section id="stepper-reference-token-json-panel" class="component-reference-panel component-reference-code-panel" role="tabpanel" aria-labelledby="stepper-reference-token-json-tab" data-reference-panel="token-json" hidden> <header class="code-panel-header"> <span>packages/tokens/src/base.tokens.json</span> <button type="button" data-copy-code>Copy</button> </header> <div class="component-reference-code-scroll" data-copy-source="{
+  &#34;component&#34;: {
+    &#34;stepper&#34;: {
+      &#34;$description&#34;: &#34;Component decisions for numeric increment and decrement controls.&#34;,
+      &#34;surface&#34;: {
+        &#34;background&#34;: {
+          &#34;$type&#34;: &#34;color&#34;,
+          &#34;$value&#34;: &#34;{semantic.color.surface.transparent}&#34;
+        }
+      },
+      &#34;spacing&#34;: {
+        &#34;gap&#34;: {
+          &#34;$type&#34;: &#34;dimension&#34;,
+          &#34;$value&#34;: &#34;{foundation.space.100}&#34;
+        }
+      },
+      &#34;control&#34;: {
+        &#34;size&#34;: {
+          &#34;$type&#34;: &#34;dimension&#34;,
+          &#34;$value&#34;: {
+            &#34;value&#34;: 2.5,
+            &#34;unit&#34;: &#34;rem&#34;
+          }
+        },
+        &#34;color&#34;: {
+          &#34;$type&#34;: &#34;color&#34;,
+          &#34;$value&#34;: &#34;{semantic.color.action.primary}&#34;
+        }
+      }
+    }
+  }
+}"> <pre class="astro-code astro-code-themes github-light-high-contrast github-dark-high-contrast" style="--shiki-light:#0e1116;--shiki-dark:#f0f3f6;--shiki-light-bg:#ffffff;--shiki-dark-bg:#0a0c10; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">{</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">  "component"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">    "stepper"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "$description"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"Component decisions for numeric increment and decrement controls."</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "surface"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "background"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{semantic.color.surface.transparent}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "spacing"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "gap"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{foundation.space.100}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">      "control"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "size"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"dimension"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#023B95;--shiki-dark:#91CBFF">2.5</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">            "unit"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"rem"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">          }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        },</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">        "color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: {</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$type"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"color"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">,</span></span>
+<span class="line"><span style="--shiki-light:#024C1A;--shiki-dark:#72F088">          "$value"</span><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">: </span><span style="--shiki-light:#032563;--shiki-dark:#ADDCFF">"{semantic.color.action.primary}"</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">        }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">      }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">    }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">  }</span></span>
+<span class="line"><span style="--shiki-light:#0E1116;--shiki-dark:#F0F3F6">}</span></span></code></pre> </div> </section> <span class="component-reference-runtime-resolver" data-component-reference-runtime-resolver data-design-system-preview aria-hidden="true"></span> </div> </section> <section class="component-accessibility" data-component-accessibility aria-labelledby="stepper-accessibility-heading"> <div class="component-reference-heading component-accessibility-heading"> <div> <p class="component-reference-eyebrow">Component contract</p> <h2 id="stepper-accessibility-heading">Accessibility</h2> </div> <span class="dsl-tag docs-badge target-badge"> <span class="label">WCAG 2.2 AA target</span> </span> </div> <div class="accessibility-reference-grid"> <section class="accessibility-reference-group"> <h3>Native semantics</h3> <ul class="accessibility-list"> <li>Uses a native number input for direct editing and native buttons for explicit decrement and increment actions.</li><li>Form Label, supporting/help text, and validation-message markup are external field composition rather than Stepper anatomy.</li> </ul> </section> <section class="accessibility-reference-group"> <h3>Requirements</h3> <ul class="accessibility-list"> <li>Provide the native numeric input with an accessible name using a visible external label, aria-labelledby, or aria-label.</li><li>Give decrement and increment buttons accessible names that communicate both the action and increment amount.</li><li>Keep each action associated with the numeric input through aria-controls.</li><li>When external supporting or validation content applies, associate it with the numeric input using aria-describedby.</li> </ul> </section>  </div> </section> </main>  </div>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CNwjPPH5.js"></script> </body> </html>

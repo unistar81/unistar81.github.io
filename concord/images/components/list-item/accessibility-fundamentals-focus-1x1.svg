@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Accessible interface focus state</title>
+  <desc id="desc">A simplified interface thumbnail with browser chrome, a strong focus ring, and a confirmation check.</desc>
+
+  <rect x="8" y="8" width="496" height="496" rx="72" fill="#F7F9FC" stroke="#D8DEE8" stroke-width="16"/>
+  <path d="M80 8h352c39.8 0 72 32.2 72 72v76H8V80C8 40.2 40.2 8 80 8Z" fill="#102746"/>
+
+  <circle cx="76" cy="82" r="14" fill="#F7F9FC"/>
+  <circle cx="122" cy="82" r="14" fill="#F7F9FC"/>
+  <circle cx="168" cy="82" r="14" fill="#F7F9FC"/>
+
+  <rect x="76" y="214" width="278" height="116" rx="28" fill="#FFFFFF" stroke="#2563EB" stroke-width="18"/>
+  <rect x="104" y="242" width="222" height="60" rx="14" fill="#EEF3F9"/>
+
+  <rect x="78" y="376" width="78" height="78" rx="18" fill="#102746"/>
+  <path d="M99 415l17 18 36-40" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="194" y="386" width="208" height="18" rx="9" fill="#CBD5E1"/>
+  <rect x="194" y="424" width="146" height="18" rx="9" fill="#DCE3EC"/>
+
+  <circle cx="420" cy="416" r="42" fill="#2563EB"/>
+  <path d="M399 417l15 16 29-32" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

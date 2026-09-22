@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Popover: Interactive content and actions</title><link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
+<style>html,body{margin:0}html{block-size:100%}body{box-sizing:border-box;background:var(--dsl-semantic-color-surface-page);place-items:center;min-block-size:20rem;padding:clamp(1rem,6vw,2.5rem);display:grid}.demo-root{max-inline-size:100%}body.demo-tooltip{min-block-size:100vh;padding:2rem;overflow:hidden}
+</style></head> <body data-demo-component="popover"> <div class="demo-root"><button
+  class="dsl-button"
+  type="button"
+  data-variant="secondary"
+  data-size="medium"
+  popovertarget="popover-interactive"
+>
+  <span>Manage preferences</span>
+</button>
+
+<div
+  id="popover-interactive"
+  class="dsl-popover"
+  popover=""
+  role="dialog"
+  aria-labelledby="popover-interactive-title"
+>
+  <header>
+    <h2 id="popover-interactive-title">Workspace preferences</h2>
+  </header>
+
+  <button
+    class="close"
+    type="button"
+    popovertarget="popover-interactive"
+    popovertargetaction="hide"
+    aria-label="Close workspace preferences"
+  >
+    <span class="dsl-icon" data-icon="close" aria-hidden="true"></span>
+  </button>
+
+  <div class="content">
+    <p>Choose how this workspace handles notifications and collaboration defaults.</p>
+
+    <div class="actions">
+      <button
+        class="dsl-button"
+        type="button"
+        data-variant="primary"
+        data-size="medium"
+        popovertarget="popover-interactive"
+        popovertargetaction="hide"
+      >
+        <span>Save preferences</span>
+      </button>
+      <button
+        class="dsl-button"
+        type="button"
+        data-variant="secondary"
+        data-size="medium"
+        popovertarget="popover-interactive"
+        popovertargetaction="hide"
+      >
+        <span>Cancel</span>
+      </button>
+    </div>
+  </div>
+</div></div> <script type="module" src="/concord/_astro/_scenario_.astro_astro_type_script_index_0_lang.C9iJzI4F.js"></script> </body> </html>
