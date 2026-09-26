@@ -1,15 +1,514 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Concord is a framework-independent design-system architecture built around semantic HTML, CSS, governed design tokens, and portable delivery contracts."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>Built in agreement · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/index.DZh_SBD8.css">
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Explore Concord through a working product experience. Web-platform-native and framework-agnostic by architecture, with semantic HTML/CSS, governed tokens, and shared component contracts."><!-- CONCORD DOCS BRAND HEAD v1.1.0 --><link rel="icon" href="/concord/brand/concord/favicons/favicon.svg" type="image/svg+xml"><link rel="icon" href="/concord/brand/concord/favicons/favicon-32x32.png" type="image/png" sizes="32x32"><link rel="icon" href="/concord/brand/concord/favicons/favicon-16x16.png" type="image/png" sizes="16x16"><link rel="shortcut icon" href="/concord/brand/concord/favicons/favicon.ico"><link rel="apple-touch-icon" href="/concord/brand/concord/favicons/apple-touch-icon.png" sizes="180x180"><link rel="mask-icon" href="/concord/brand/concord/favicons/safari-pinned-tab.svg" color="#06152F"><link rel="manifest" href="/concord/brand/concord/favicons/site.webmanifest"><meta name="theme-color" content="#06152F"><title>A design language at work · Concord Design System</title><link rel="stylesheet" href="/concord/_astro/index.xWUZtDMv.css">
 <link rel="stylesheet" href="/concord/_astro/_id_.Bce4rZEa.css">
-<link rel="stylesheet" href="/concord/_astro/_id_.rOrpYuQI.css"></head> <body class="home-body"> <a class="skip-link" href="#main-content">Skip to main content</a> <!-- Home is above every documentation section, so no primary-nav item is active. --> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/"> Foundations </a><a href="/concord/components/"> Components </a><a href="/concord/layout/"> Layout </a><a href="/concord/patterns/"> Patterns </a><a href="/concord/templates/"> Templates </a><a href="/concord/resources/"> Resources </a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <main id="main-content" class="home-page" data-astro-cid-j7pv25f6> <section class="home-hero" aria-labelledby="home-title" data-astro-cid-j7pv25f6> <div class="home-hero__copy" data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>Concord Design Language System</p> <h1 id="home-title" data-astro-cid-j7pv25f6>Built in agreement.</h1> <p class="home-hero__lede" data-astro-cid-j7pv25f6>
-Concord is a framework-independent design-system architecture built around
-          semantic HTML, CSS, governed design tokens, and portable delivery contracts.
-          Components are developed toward documented enterprise-readiness criteria across
-          accessibility, responsive behavior, themes, density, and framework delivery.
-</p> <div class="home-hero__actions" data-astro-cid-j7pv25f6> <a class="home-action home-action--primary" href="/concord/foundations/overview/" data-astro-cid-j7pv25f6>
-Explore the system
-<span aria-hidden="true" data-astro-cid-j7pv25f6>→</span> </a> <a class="home-action home-action--secondary" href="/concord/components/button/" data-astro-cid-j7pv25f6>
-View components
-</a> </div> </div> <figure class="home-architecture" aria-labelledby="home-architecture-caption" data-astro-cid-6paxggr3> <div class="home-architecture__frame" data-astro-cid-6paxggr3> <svg class="home-architecture__graphic home-architecture__graphic--desktop" viewBox="0 0 1000 400" role="img" aria-labelledby="concord-architecture-title concord-architecture-description" data-astro-cid-6paxggr3> <title id="concord-architecture-title">Concord design language architecture</title> <desc id="concord-architecture-description" data-astro-cid-6paxggr3>
+<link rel="stylesheet" href="/concord/_astro/_id_.rOrpYuQI.css">
+<link rel="stylesheet" href="/concord/_astro/_scenario_.Cm-Zm_Rr.css"></head> <body class="home-body"> <a class="skip-link" href="#main-content">Skip to main content</a> <!-- Home is above every documentation section, so no primary-nav item is active. --> <header class="site-header"> <a class="brand" href="/concord/" aria-label="Concord Design System home"> <span class="brand-signal" aria-hidden="true"> <svg class="brand-mark concord-mark" viewBox="0 0 512 512" focusable="false" aria-hidden="true"> <defs> <linearGradient id="concord-header-mark-base" x1="0.15" y1="0.10" x2="0.90" y2="0.90"> <stop offset="0" stop-color="#0A326B"></stop> <stop offset="0.45" stop-color="#082957"></stop> <stop offset="1" stop-color="#06152F"></stop> </linearGradient> <radialGradient id="concord-header-mark-glow" cx="0.22" cy="0.38" r="0.62" fx="0.16" fy="0.38"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0.90"></stop> <stop offset="0.50" stop-color="#0A4A98" stop-opacity="0.42"></stop> <stop offset="1" stop-color="#0A4A98" stop-opacity="0"></stop> </radialGradient> <linearGradient id="concord-header-mark-motion" x1="82" y1="82" x2="430" y2="430" gradientUnits="userSpaceOnUse"> <stop offset="0" stop-color="#0B57B1" stop-opacity="0"></stop> <stop offset="0.30" stop-color="#1C68CF" stop-opacity="0.45"></stop> <stop offset="0.52" stop-color="#6AAEFF" stop-opacity="0.92"></stop> <stop offset="0.74" stop-color="#1A63C0" stop-opacity="0.58"></stop> <stop offset="1" stop-color="#0B57B1" stop-opacity="0"></stop> </linearGradient> <clipPath id="concord-header-mark-clip"> <path d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill-rule="evenodd" clip-rule="evenodd"></path> </clipPath> </defs> <!-- Canonical Concord primary mark: identical resting geometry and gradients to brand package v1.1.0. --> <path class="concord-mark__base" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-base)" fill-rule="evenodd"></path> <path class="concord-mark__glow" d="M132 106 H380 A26 26 0 0 1 406 132 V380 A26 26 0 0 1 380 406 H132 A26 26 0 0 1 106 380 V132 A26 26 0 0 1 132 106 Z M189 172 H323 A17 17 0 0 1 340 189 V323 A17 17 0 0 1 323 340 H189 A17 17 0 0 1 172 323 V189 A17 17 0 0 1 189 172 Z" transform="rotate(45 256 256)" fill="url(#concord-header-mark-glow)" fill-rule="evenodd"></path> <!-- Motion is a clipped light sweep. The icon geometry itself never rotates, scales, or morphs. --> <path class="concord-mark__motion" d="M256 90.5 421.5 256 256 421.5 90.5 256Z" pathLength="100" clip-path="url(#concord-header-mark-clip)" stroke="url(#concord-header-mark-motion)"></path> </svg> </span> <span class="brand-name">Concord</span> </a> <nav id="primary-navigation" class="primary-navigation" aria-label="Primary"> <a href="/concord/foundations/overview/"> Foundations </a><a href="/concord/components/"> Components </a><a href="/concord/layout/"> Layout </a><a href="/concord/patterns/"> Patterns </a><a href="/concord/templates/"> Templates </a><a href="/concord/resources/"> Resources </a> </nav> <div class="global-controls" aria-label="Display preferences"> <div class="global-control"> <label for="docs-theme-control"><span>Theme</span></label> <div class="dsl-select"> <select id="docs-theme-control" data-theme-control> <option value>Default</option><option value="architect">Architect</option><option value="atelier">Atelier</option><option value="bloom">Bloom</option><option value="editorial">Editorial</option><option value="ledger">Ledger</option><option value="noir">Noir</option><option value="signal">Signal</option><option value="studio">Studio</option><option value="terminal">Terminal</option><option value="typewriter">Typewriter</option><option value="wellness">Wellness</option> </select> </div> </div> <div class="global-control"> <label for="docs-density-control"><span>Density</span></label> <div class="dsl-select"> <select id="docs-density-control" data-density-control> <option value="">Default</option> <option value="compact">Compact</option> <option value="spacious">Spacious</option> </select> </div> </div> <div class="appearance-control" aria-label="Appearance"> <button type="button" data-appearance="light" aria-label="Use light appearance"> <svg class="appearance-icon appearance-icon-light" aria-hidden="true" viewBox="0 0 24 24"> <circle cx="12" cy="12" r="4"></circle> <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path> </svg> </button> <button type="button" data-appearance="dark" aria-label="Use dark appearance"> <svg class="appearance-icon appearance-icon-dark" aria-hidden="true" viewBox="0 0 24 24"> <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"></path> </svg> </button> </div> <a class="github-link" href="https://github.com/unistar81/concord-design-system" aria-label="Open GitHub repository" title="Open GitHub repository"> <svg class="github-icon" aria-hidden="true" viewBox="0 0 24 24"> <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.36-3.9-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"></path> </svg> </a> </div> </header>  <main id="main-content" class="home-page"> <section class="home-hero" aria-labelledby="home-title"> <div class="home-hero__copy"> <p class="home-kicker">Concord Design Language System</p> <h1 id="home-title">One system.<br>Real product work.</h1> <p class="home-hero__lede">
+Edit a profile, change the theme, and switch delivery without losing your work.
+</p> <a class="home-action" data-home-cta href="/concord/patterns/account-settings/#account-settings-example">
+Open the full example <span aria-hidden="true">↗</span> </a> <p class="home-hero__positioning">
+A shared design language, from individual controls to complete workflows.
+</p> <a class="home-text-link home-audience-jump" href="#your-starting-point">Find your starting point <span aria-hidden="true">↓</span></a> </div> <div class="home-flagship" data-home-flagship> <section id="account-settings-example" class="account-integration" aria-label="Account Settings integration example"> <div class="account-delivery-bar dsl-split"> <div> <h2>Account Settings</h2> </div> <div class="account-delivery-picker"> <label for="account-delivery">Delivery</label><div class="dsl-select"> <select id="account-delivery" data-account-delivery disabled><option value="html">HTML + CSS</option><option value="lit">Lit</option><option value="react">React</option></select> </div> </div> </div> <div class="account-specimen dsl-layout-context" data-account-specimen data-design-system-preference-target data-canonical-sources="[&#34;packages/html/src/components/tabs/tabs.html&#34;,&#34;packages/html/src/components/button/snippets/pattern-modal-flow-1.html&#34;,&#34;packages/html/src/components/modal/snippets/profile-form.html&#34;,&#34;packages/html/src/components/input/snippets/content-resilience.html&#34;,&#34;packages/html/src/components/toggle/snippets/description.html&#34;,&#34;packages/html/src/components/select/select.html&#34;,&#34;packages/html/src/components/button/snippets/pattern-action-groups-2.html&#34;,&#34;packages/html/src/components/list-item/snippets/static.html&#34;]">  <div class="account-composition dsl-sidebar"> <div class="account-main"> <div data-account-view><div data-account-mount><div class="dsl-tabs" data-tabs="" data-mobile-presentation="dropdown" data-active-tab="profile">
+  <div class="tablist" role="tablist" aria-label="Account settings sections">
+    <button id="account-html-profile-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="account-html-profile-panel" data-tab="profile">Profile</button>
+    <button id="account-html-notifications-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-notifications-panel" data-tab="notifications" tabindex="-1">Notifications</button>
+    <button id="account-html-security-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-security-panel" data-tab="security" tabindex="-1">Security</button>
+  </div>
+  <div class="dsl-select mobile-select" hidden="">
+    <select aria-label="Account settings sections" data-tabs-select="">
+      <option value="profile" selected="">Profile</option>
+      <option value="notifications">Notifications</option>
+      <option value="security">Security</option>
+    </select>
+  </div>
+  <div class="panels">
+    <section id="account-html-profile-panel" class="panel" role="tabpanel" aria-labelledby="account-html-profile-tab" data-tab-panel="profile">
+      <button id="account-html-profile-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="true" aria-controls="account-html-profile-content" data-tab="profile" hidden="">Profile</button>
+      <div id="account-html-profile-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Your profile</h3>
+            <p>A familiar identity, wherever you collaborate.</p>
+          </header>
+              <div class="account-profile-card dsl-split">
+                <div class="account-identity">
+                  <span class="account-avatar" data-account-initials="" aria-hidden="true">AM</span>
+                  <div>
+                    <strong data-account-name="">Avery Morgan</strong>
+                    <p data-account-job="">Staff product designer</p>
+                  </div>
+                </div>
+                <div data-account-edit="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium" commandfor="account-html-profile-dialog" command="show-modal" data-dialog-open="account-html-profile-dialog">
+  <span class="label">Edit profile</span>
+</button><dialog id="account-html-profile-dialog" class="dsl-modal" aria-labelledby="account-html-profile-title" aria-describedby="account-html-profile-description">
+  <header><h2 id="account-html-profile-title">Edit profile</h2></header>
+  <button class="close" type="button" commandfor="account-html-profile-dialog" command="close" data-dialog-close="" value="dismiss" aria-label="Close Edit profile">
+    <span class="dsl-icon" data-icon="close" aria-hidden="true"></span>
+  </button>
+  <div class="content"> <p id="account-html-profile-description" class="account-help">
+              Update the details your teammates see. Required fields are marked in their labels.
+            </p>
+            <form id="account-html-profile-form" method="dialog" class="account-profile-form dsl-flow">
+              <p class="account-error-summary" role="alert" hidden=""></p>
+              <div class="account-field dsl-flow">
+              <label for="account-html-fullName">Full name (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-fullName" name="fullName" type="text" value="Avery Morgan" required="" autocomplete="name" maxlength="80" aria-describedby="account-html-fullName-help account-html-fullName-error">
+</div>
+              <p class="account-help" id="account-html-fullName-help">Use the name your teammates know you by.</p>
+              <p class="account-error" id="account-html-fullName-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-email">Work email (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-email" name="email" type="email" value="avery.morgan@example.com" required="" autocomplete="email" maxlength="254" aria-describedby="account-html-email-help account-html-email-error">
+</div>
+              <p class="account-help" id="account-html-email-help">Use a complete address, such as avery@example.com.</p>
+              <p class="account-error" id="account-html-email-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-jobTitle">Job title</label>
+              <div class="dsl-input">
+  <input id="account-html-jobTitle" name="jobTitle" type="text" value="Staff product designer" autocomplete="organization-title" maxlength="80" aria-describedby="account-html-jobTitle-help account-html-jobTitle-error">
+</div>
+              <p class="account-help" id="account-html-jobTitle-help">Optional. Help collaborators understand your role.</p>
+              <p class="account-error" id="account-html-jobTitle-error" hidden=""></p>
+            </div>
+            </form></div>
+  <form class="actions" method="dialog">
+    <button class="dsl-button" type="submit" data-variant="secondary" data-size="medium" value="cancel">
+      <span>Cancel</span>
+    </button>
+    <button class="dsl-button" type="submit" form="account-html-profile-form" data-variant="primary" data-size="medium" value="save">
+      <span>Save changes</span>
+    </button>
+  </form>
+</dialog>
+                </div>
+              </div>
+              <dl class="account-facts dsl-grid">
+                <div>
+                  <dt>Work email</dt>
+                  <dd data-account-email="">avery.morgan@example.com</dd>
+                </div>
+                <div>
+                        <dt>Workspace</dt>
+                        <dd>Northstar Studio</dd>
+                      </div><div>
+                        <dt>Role</dt>
+                        <dd>Member</dd>
+                      </div><div>
+                        <dt>Time zone</dt>
+                        <dd>Eastern Time · New York</dd>
+                      </div>
+              </dl>
+              <p class="account-note">
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              </p>
+            </section></div>
+    </section>
+    <section id="account-html-notifications-panel" class="panel" role="tabpanel" aria-labelledby="account-html-notifications-tab" data-tab-panel="notifications" hidden="">
+      <button id="account-html-notifications-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-notifications-content" data-tab="notifications" hidden="">Notifications</button>
+      <div id="account-html-notifications-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Make room for what matters</h3>
+            <p>Choose the updates that deserve your attention. Preferences apply immediately in this example.</p>
+          </header>
+              <form class="account-preferences dsl-flow" aria-label="Notification preferences">
+                <fieldset>
+                  <legend>Updates you receive</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Mentions and replies<small>When someone needs your attention in a conversation.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-mentions" name="mentions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Project updates<small>Changes to milestones, assignments, and project status.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-projectUpdates" name="projectUpdates" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Product news<small>Occasional tips and new features from the product team.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-productNews" name="productNews" type="checkbox" role="switch" value="enabled">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+                <div class="account-field dsl-flow">
+                  <label for="account-html-frequency">Delivery frequency</label>
+                  <div class="dsl-select">
+  <select id="account-html-frequency" name="frequency">
+    <option value="" disabled="">Choose a frequency</option>
+    <option value="immediate">As activity happens</option>
+    <option value="daily" selected="">Daily digest</option>
+    <option value="weekly">Weekly digest</option>
+  </select>
+</div>
+                  <p class="account-help">
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  </p>
+                </div>
+                <div data-account-defaults="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium">
+  <span class="label">Restore notification defaults</span>
+</button>
+                </div>
+              </form>
+            </section></div>
+    </section>
+    <section id="account-html-security-panel" class="panel" role="tabpanel" aria-labelledby="account-html-security-tab" data-tab-panel="security" hidden="">
+      <button id="account-html-security-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-security-content" data-tab="security" hidden="">Security</button>
+      <div id="account-html-security-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Keep your account in view</h3>
+            <p>Review security preferences and representative session information. This example does not change real account security.</p>
+          </header>
+              <form class="account-preferences" aria-label="Security preferences">
+                <fieldset>
+                  <legend>Account safeguards</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">New sign-in alerts<small>A notification when a new device accesses your account.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-signInAlerts" name="signInAlerts" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Confirm sensitive actions<small>Ask for confirmation before important account changes.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-sensitiveActions" name="sensitiveActions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+              </form>
+              <section class="dsl-flow">
+                <h4>Recent sessions</h4>
+                <p class="account-help">
+                  Representative data for this specimen. No real devices or accounts are
+                  connected.
+                </p>
+                <ul class="account-sessions">
+                  <li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li>
+                </ul>
+              </section>
+            </section></div>
+    </section>
+  </div>
+</div></div></div><p class="account-status" role="status" aria-atomic="true" data-account-status></p> </div>  </div> <template data-account-native><div class="dsl-tabs" data-tabs="" data-mobile-presentation="dropdown" data-active-tab="profile">
+  <div class="tablist" role="tablist" aria-label="Account settings sections">
+    <button id="account-html-profile-tab" class="tab" type="button" role="tab" aria-selected="true" aria-controls="account-html-profile-panel" data-tab="profile">Profile</button>
+    <button id="account-html-notifications-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-notifications-panel" data-tab="notifications" tabindex="-1">Notifications</button>
+    <button id="account-html-security-tab" class="tab" type="button" role="tab" aria-selected="false" aria-controls="account-html-security-panel" data-tab="security" tabindex="-1">Security</button>
+  </div>
+  <div class="dsl-select mobile-select" hidden="">
+    <select aria-label="Account settings sections" data-tabs-select="">
+      <option value="profile" selected="">Profile</option>
+      <option value="notifications">Notifications</option>
+      <option value="security">Security</option>
+    </select>
+  </div>
+  <div class="panels">
+    <section id="account-html-profile-panel" class="panel" role="tabpanel" aria-labelledby="account-html-profile-tab" data-tab-panel="profile">
+      <button id="account-html-profile-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="true" aria-controls="account-html-profile-content" data-tab="profile" hidden="">Profile</button>
+      <div id="account-html-profile-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Your profile</h3>
+            <p>A familiar identity, wherever you collaborate.</p>
+          </header>
+              <div class="account-profile-card dsl-split">
+                <div class="account-identity">
+                  <span class="account-avatar" data-account-initials="" aria-hidden="true">AM</span>
+                  <div>
+                    <strong data-account-name="">Avery Morgan</strong>
+                    <p data-account-job="">Staff product designer</p>
+                  </div>
+                </div>
+                <div data-account-edit="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium" commandfor="account-html-profile-dialog" command="show-modal" data-dialog-open="account-html-profile-dialog">
+  <span class="label">Edit profile</span>
+</button><dialog id="account-html-profile-dialog" class="dsl-modal" aria-labelledby="account-html-profile-title" aria-describedby="account-html-profile-description">
+  <header><h2 id="account-html-profile-title">Edit profile</h2></header>
+  <button class="close" type="button" commandfor="account-html-profile-dialog" command="close" data-dialog-close="" value="dismiss" aria-label="Close Edit profile">
+    <span class="dsl-icon" data-icon="close" aria-hidden="true"></span>
+  </button>
+  <div class="content"> <p id="account-html-profile-description" class="account-help">
+              Update the details your teammates see. Required fields are marked in their labels.
+            </p>
+            <form id="account-html-profile-form" method="dialog" class="account-profile-form dsl-flow">
+              <p class="account-error-summary" role="alert" hidden=""></p>
+              <div class="account-field dsl-flow">
+              <label for="account-html-fullName">Full name (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-fullName" name="fullName" type="text" value="Avery Morgan" required="" autocomplete="name" maxlength="80" aria-describedby="account-html-fullName-help account-html-fullName-error">
+</div>
+              <p class="account-help" id="account-html-fullName-help">Use the name your teammates know you by.</p>
+              <p class="account-error" id="account-html-fullName-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-email">Work email (required)</label>
+              <div class="dsl-input">
+  <input id="account-html-email" name="email" type="email" value="avery.morgan@example.com" required="" autocomplete="email" maxlength="254" aria-describedby="account-html-email-help account-html-email-error">
+</div>
+              <p class="account-help" id="account-html-email-help">Use a complete address, such as avery@example.com.</p>
+              <p class="account-error" id="account-html-email-error" hidden=""></p>
+            </div><div class="account-field dsl-flow">
+              <label for="account-html-jobTitle">Job title</label>
+              <div class="dsl-input">
+  <input id="account-html-jobTitle" name="jobTitle" type="text" value="Staff product designer" autocomplete="organization-title" maxlength="80" aria-describedby="account-html-jobTitle-help account-html-jobTitle-error">
+</div>
+              <p class="account-help" id="account-html-jobTitle-help">Optional. Help collaborators understand your role.</p>
+              <p class="account-error" id="account-html-jobTitle-error" hidden=""></p>
+            </div>
+            </form></div>
+  <form class="actions" method="dialog">
+    <button class="dsl-button" type="submit" data-variant="secondary" data-size="medium" value="cancel">
+      <span>Cancel</span>
+    </button>
+    <button class="dsl-button" type="submit" form="account-html-profile-form" data-variant="primary" data-size="medium" value="save">
+      <span>Save changes</span>
+    </button>
+  </form>
+</dialog>
+                </div>
+              </div>
+              <dl class="account-facts dsl-grid">
+                <div>
+                  <dt>Work email</dt>
+                  <dd data-account-email="">avery.morgan@example.com</dd>
+                </div>
+                <div>
+                        <dt>Workspace</dt>
+                        <dd>Northstar Studio</dd>
+                      </div><div>
+                        <dt>Role</dt>
+                        <dd>Member</dd>
+                      </div><div>
+                        <dt>Time zone</dt>
+                        <dd>Eastern Time · New York</dd>
+                      </div>
+              </dl>
+              <p class="account-note">
+                Your saved details stay with you as you explore sections and display
+                preferences.
+              </p>
+            </section></div>
+    </section>
+    <section id="account-html-notifications-panel" class="panel" role="tabpanel" aria-labelledby="account-html-notifications-tab" data-tab-panel="notifications" hidden="">
+      <button id="account-html-notifications-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-notifications-content" data-tab="notifications" hidden="">Notifications</button>
+      <div id="account-html-notifications-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Make room for what matters</h3>
+            <p>Choose the updates that deserve your attention. Preferences apply immediately in this example.</p>
+          </header>
+              <form class="account-preferences dsl-flow" aria-label="Notification preferences">
+                <fieldset>
+                  <legend>Updates you receive</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Mentions and replies<small>When someone needs your attention in a conversation.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-mentions" name="mentions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Project updates<small>Changes to milestones, assignments, and project status.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-projectUpdates" name="projectUpdates" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Product news<small>Occasional tips and new features from the product team.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-productNews" name="productNews" type="checkbox" role="switch" value="enabled">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+                <div class="account-field dsl-flow">
+                  <label for="account-html-frequency">Delivery frequency</label>
+                  <div class="dsl-select">
+  <select id="account-html-frequency" name="frequency">
+    <option value="" disabled="">Choose a frequency</option>
+    <option value="immediate">As activity happens</option>
+    <option value="daily" selected="">Daily digest</option>
+    <option value="weekly">Weekly digest</option>
+  </select>
+</div>
+                  <p class="account-help">
+                    Applies to project updates. Mentions and security alerts remain
+                    immediate.
+                  </p>
+                </div>
+                <div data-account-defaults="">
+                  <button class="dsl-button" type="button" data-variant="secondary" data-size="medium">
+  <span class="label">Restore notification defaults</span>
+</button>
+                </div>
+              </form>
+            </section></div>
+    </section>
+    <section id="account-html-security-panel" class="panel" role="tabpanel" aria-labelledby="account-html-security-tab" data-tab-panel="security" hidden="">
+      <button id="account-html-security-accordion-trigger" class="accordion-trigger" type="button" aria-expanded="false" aria-controls="account-html-security-content" data-tab="security" hidden="">Security</button>
+      <div id="account-html-security-content" class="content"><section class="account-panel dsl-flow">
+              <header class="account-panel-heading">
+            <h3>Keep your account in view</h3>
+            <p>Review security preferences and representative session information. This example does not change real account security.</p>
+          </header>
+              <form class="account-preferences" aria-label="Security preferences">
+                <fieldset>
+                  <legend>Account safeguards</legend>
+                   <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">New sign-in alerts<small>A notification when a new device accesses your account.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-signInAlerts" name="signInAlerts" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div> <div class="account-preference">
+                  <dsl-toggle class="dsl-toggle">
+  <label class="label-wrapper">
+    <span class="label">Confirm sensitive actions<small>Ask for confirmation before important account changes.</small></span>
+
+    <span class="switch-wrapper">
+      <input id="account-html-sensitiveActions" name="sensitiveActions" type="checkbox" role="switch" value="enabled" checked="">
+
+      <span class="slider" aria-hidden="true"></span>
+    </span>
+  </label>
+</dsl-toggle>
+                </div>
+                </fieldset>
+              </form>
+              <section class="dsl-flow">
+                <h4>Recent sessions</h4>
+                <p class="account-help">
+                  Representative data for this specimen. No real devices or accounts are
+                  connected.
+                </p>
+                <ul class="account-sessions">
+                  <li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li>
+                </ul>
+              </section>
+            </section></div>
+    </section>
+  </div>
+</div></template> <template data-account-session-source><ul class="account-sessions"><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">MacBook Pro · Current session</div>
+        <div class="supporting">Chrome · New York, United States · Today at 09:42</div>
+      </div>
+    </div>
+  </div>
+</li><li class="dsl-list-item" data-separator="">
+  <div class="item-wrap">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="label">iPhone · Mobile session</div>
+        <div class="supporting">Safari · New York, United States · Yesterday at 18:16</div>
+      </div>
+    </div>
+  </div>
+</li></ul></template> <noscript><p>
+This page contains the canonical HTML example. JavaScript enables its in-memory
+        workflow and framework delivery views.
+</p></noscript> </div>  </section> <script type="module" src="/concord/_astro/AccountSettingsSpecimen.astro_astro_type_script_index_0_lang.BbDohz7p.js"></script> <p class="home-preview-note">
+Live, in-memory sample. Opening the full example starts a fresh session.
+</p> </div> </section> <section class="home-experiments" aria-label="Try the system"> <ol> <li> <span class="home-index" aria-hidden="true">
+01 </span> <div>  <h2>Make a change</h2> <p>Edit your profile. Try an incomplete email, then save or cancel.</p> <a href="/concord/patterns/account-settings/"> Explore the complete workflow <span aria-hidden="true">→</span> </a>  </div> </li><li> <span class="home-index" aria-hidden="true">
+02 </span> <div>  <h2>Change the expression</h2> <p>Use Theme, Appearance, and Density in the header. Your values stay in place.</p> <a href="/concord/foundations/themes-density/"> Understand the three axes <span aria-hidden="true">→</span> </a>  </div> </li><li> <span class="home-index" aria-hidden="true">
+03 </span> <div>  <h2>Switch the delivery</h2> <p>Choose HTML, Lit, or React above. The same account state follows your selection.</p> <a href="/concord/resources/delivery-model/"> See how delivery works <span aria-hidden="true">→</span> </a>  </div> </li> </ol> </section> <section class="home-construction home-section" aria-labelledby="construction-title"> <header class="home-section-heading"> <div> <p class="home-kicker">Built in agreement</p><h2 id="construction-title">
+The product changes.<br>The contract holds.
+</h2> </div> <p>Concord is web-platform-native and framework-agnostic by architecture.</p> </header> <figure class="home-architecture" aria-labelledby="home-architecture-caption" data-astro-cid-6paxggr3> <div class="home-architecture__frame" data-astro-cid-6paxggr3> <svg class="home-architecture__graphic home-architecture__graphic--desktop" viewBox="0 0 1000 400" role="img" aria-labelledby="concord-architecture-title concord-architecture-description" data-astro-cid-6paxggr3> <title id="concord-architecture-title">Concord design language architecture</title> <desc id="concord-architecture-description" data-astro-cid-6paxggr3>
 Design tokens, semantic HTML, native CSS, and accessibility feed a shared Concord
         core. The same language is delivered through HTML and CSS, optional Web
         Components, framework adapters and custom elements, and machine-readable
@@ -33,25 +532,41 @@ Four compact language-input nodes connect through the shared Concord core to fou
         connectors therefore begin/end directly at the card boundary.
       --> <g class="home-architecture__connectors home-architecture__connectors--mobile" data-astro-cid-6paxggr3> <path d="M104 41.5 C136 41.5 154 57 172 72" data-astro-cid-6paxggr3></path> <path d="M104 71.5 C136 71.5 153 77 164 81" data-astro-cid-6paxggr3></path> <path d="M104 101.5 C136 101.5 153 97 164 93" data-astro-cid-6paxggr3></path> <path d="M104 131.5 C136 131.5 154 117 172 102" data-astro-cid-6paxggr3></path> <path d="M188 72 C206 57 224 41.5 256 41.5" data-astro-cid-6paxggr3></path> <path d="M196 81 C207 77 224 71.5 256 71.5" data-astro-cid-6paxggr3></path> <path d="M196 93 C207 97 224 101.5 256 101.5" data-astro-cid-6paxggr3></path> <path d="M188 102 C206 117 224 131.5 256 131.5" data-astro-cid-6paxggr3></path> </g> <g class="home-architecture__signals home-architecture__signals--mobile" aria-hidden="true" data-astro-cid-6paxggr3> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="0s" repeatCount="indefinite" path="M104 41.5 C136 41.5 154 57 172 72" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="0s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-1.45s" repeatCount="indefinite" path="M104 71.5 C136 71.5 153 77 164 81" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-1.45s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-2.9s" repeatCount="indefinite" path="M104 101.5 C136 101.5 153 97 164 93" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-2.9s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-4.35s" repeatCount="indefinite" path="M104 131.5 C136 131.5 154 117 172 102" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-4.35s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-0.72s" repeatCount="indefinite" path="M188 72 C206 57 224 41.5 256 41.5" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-0.72s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-2.17s" repeatCount="indefinite" path="M196 81 C207 77 224 71.5 256 71.5" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-2.17s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-3.62s" repeatCount="indefinite" path="M196 93 C207 97 224 101.5 256 101.5" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-3.62s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> <circle class="home-architecture__signal-dot" r="1.25" data-astro-cid-6paxggr3> <animateMotion dur="5.8s" begin="-5.07s" repeatCount="indefinite" path="M188 102 C206 117 224 131.5 256 131.5" data-astro-cid-6paxggr3></animateMotion> <animate attributeName="opacity" values="0;0.56;0.56;0" keyTimes="0;0.14;0.86;1" dur="5.8s" begin="-5.07s" repeatCount="indefinite" data-astro-cid-6paxggr3></animate> </circle> </g> <!-- Flat architectural nodes: card treatment, not button treatment. --> <g class="home-architecture__nodes home-architecture__nodes--mobile" data-astro-cid-6paxggr3> <g transform="translate(14 30)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>DESIGN TOKENS</text> </g> <g transform="translate(14 60)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>SEMANTIC HTML</text> </g> <g transform="translate(14 90)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>NATIVE CSS</text> </g> <g transform="translate(14 120)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>ACCESSIBILITY</text> </g> <g transform="translate(256 30)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>HTML + CSS</text> </g> <g transform="translate(256 60)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>WEB COMPONENTS</text> </g> <g transform="translate(256 90)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>FRAMEWORKS</text> </g> <g transform="translate(256 120)" data-astro-cid-6paxggr3> <rect width="90" height="23" rx="4" data-astro-cid-6paxggr3></rect> <text x="8" y="15.1" data-astro-cid-6paxggr3>MANIFESTS</text> </g> </g> <g class="home-architecture__concord home-architecture__concord--mobile" transform="translate(180 87)" data-astro-cid-6paxggr3> <path class="home-architecture__mobile-core" d="M0 -22 L22 0 L0 22 L-22 0 Z" data-astro-cid-6paxggr3></path> <path class="home-architecture__mobile-core-signal" pathLength="100" d="M0 -22 L22 0 L0 22 L-22 0 Z" data-astro-cid-6paxggr3></path> </g> </svg> </div> <figcaption id="home-architecture-caption" data-astro-cid-6paxggr3> <div class="home-architecture__principle" data-astro-cid-6paxggr3> <span class="home-architecture__caption-label" data-astro-cid-6paxggr3>ARCHITECTURE PRINCIPLE</span> <strong data-astro-cid-6paxggr3>One language. Multiple delivery layers.</strong> <span class="home-architecture__caption-copy" data-astro-cid-6paxggr3>
 Frameworks consume the system; they do not become a second source of visual truth.
-</span> </div> <div class="home-architecture__contract" data-astro-cid-6paxggr3> <span class="home-architecture__caption-label" data-astro-cid-6paxggr3>TOKEN ARCHITECTURE</span> <div class="home-architecture__tier-list" aria-label="Concord token architecture" data-astro-cid-6paxggr3> <span class="home-architecture__tier home-architecture__tier--foundation" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>01</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Foundation</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--system" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>02</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>System</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--semantic" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>03</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Semantic</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--component" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>04</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Component</span> </span> </div> </div> </figcaption> </figure>  </section> <section class="home-manifesto" aria-labelledby="manifesto-title" data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>Architecture principle</p> <h2 id="manifesto-title" data-astro-cid-j7pv25f6>Frameworks are multipliers, not foundations.</h2> </div> <p data-astro-cid-j7pv25f6>
-Concord keeps the language stable while frameworks, themes, densities, and
-        delivery targets evolve around it. Change happens through explicit contracts
-        instead of scattered implementation decisions.
-</p> </section> <section class="home-areas" aria-labelledby="areas-title" data-astro-cid-j7pv25f6> <header class="home-section-heading" data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>Explore Concord</p> <h2 id="areas-title" data-astro-cid-j7pv25f6>One system, six areas of responsibility.</h2> </div> <p data-astro-cid-j7pv25f6>
-Each area owns a different level of the interface. Together they form the
-          language from raw design decisions to complete page-level composition.
-</p> </header> <div class="home-area-grid" data-astro-cid-j7pv25f6> <a class="home-area-card" href="/concord/foundations/overview/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>01</span> <strong data-astro-cid-j7pv25f6>Foundations</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--foundations" aria-hidden="true" data-astro-cid-j7pv25f6> <div class="mini-foundations mini-foundations--stages" data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6> <small data-astro-cid-j7pv25f6>01</small> <b data-astro-cid-j7pv25f6>Foundation</b> </span> <i aria-hidden="true" data-astro-cid-j7pv25f6></i> <span data-astro-cid-j7pv25f6> <small data-astro-cid-j7pv25f6>02</small> <b data-astro-cid-j7pv25f6>System</b> </span> <i aria-hidden="true" data-astro-cid-j7pv25f6></i> <span data-astro-cid-j7pv25f6> <small data-astro-cid-j7pv25f6>03</small> <b data-astro-cid-j7pv25f6>Semantic</b> </span> <i aria-hidden="true" data-astro-cid-j7pv25f6></i> <span class="is-active" data-astro-cid-j7pv25f6> <small data-astro-cid-j7pv25f6>04</small> <b data-astro-cid-j7pv25f6>Component</b> </span> </div>      </div> <p data-astro-cid-j7pv25f6>Shared visual and behavioral contracts: tokens, color, type, space, motion, themes, responsive behavior, and accessibility.</p> </a><a class="home-area-card" href="/concord/components/button/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>02</span> <strong data-astro-cid-j7pv25f6>Components</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--components" aria-hidden="true" data-astro-cid-j7pv25f6>  <div class="mini-components" data-astro-cid-j7pv25f6> <span class="mini-button" data-astro-cid-j7pv25f6>Action</span> <span class="mini-toggle" data-astro-cid-j7pv25f6> <i data-astro-cid-j7pv25f6></i> </span> <span class="mini-checkbox" data-astro-cid-j7pv25f6></span> </div>     </div> <p data-astro-cid-j7pv25f6>Semantic controls and surfaces with canonical HTML and CSS, delivered through Lit Web Components and typed React adapters.</p> </a><a class="home-area-card" href="/concord/layout/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>03</span> <strong data-astro-cid-j7pv25f6>Layout</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--layout" aria-hidden="true" data-astro-cid-j7pv25f6>   <div class="mini-layout" data-astro-cid-j7pv25f6> <span class="mini-layout__header" data-astro-cid-j7pv25f6></span> <span class="mini-layout__rail" data-astro-cid-j7pv25f6></span> <span class="mini-layout__main" data-astro-cid-j7pv25f6></span> <span class="mini-layout__aside" data-astro-cid-j7pv25f6></span> </div>    </div> <p data-astro-cid-j7pv25f6>Spatial relationships, available width, grid direction, layout primitives, and page structure without component coupling.</p> </a><a class="home-area-card" href="/concord/patterns/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>04</span> <strong data-astro-cid-j7pv25f6>Patterns</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--patterns" aria-hidden="true" data-astro-cid-j7pv25f6>    <div class="mini-patterns" data-astro-cid-j7pv25f6> <span class="mini-patterns__source" data-astro-cid-j7pv25f6>Control</span> <i data-astro-cid-j7pv25f6>+</i> <span class="mini-patterns__source" data-astro-cid-j7pv25f6>Status</span> <i data-astro-cid-j7pv25f6>→</i> <span class="mini-patterns__result" data-astro-cid-j7pv25f6> <b data-astro-cid-j7pv25f6></b> <b data-astro-cid-j7pv25f6></b> <em data-astro-cid-j7pv25f6></em> </span> </div>   </div> <p data-astro-cid-j7pv25f6>Repeatable compositions that solve interaction problems without turning every repeated arrangement into another component.</p> </a><a class="home-area-card" href="/concord/templates/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>05</span> <strong data-astro-cid-j7pv25f6>Templates</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--templates" aria-hidden="true" data-astro-cid-j7pv25f6>     <div class="mini-template" data-astro-cid-j7pv25f6> <span class="mini-template__header" data-astro-cid-j7pv25f6></span> <span class="mini-template__nav" data-astro-cid-j7pv25f6></span> <span class="mini-template__content" data-astro-cid-j7pv25f6></span> <span class="mini-template__footer" data-astro-cid-j7pv25f6></span> </div>  </div> <p data-astro-cid-j7pv25f6>Page-level compositions that combine Foundations, Layout, Components, and Patterns while preserving their underlying contracts.</p> </a><a class="home-area-card" href="/concord/resources/" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>06</span> <strong data-astro-cid-j7pv25f6>Resources</strong> <i aria-hidden="true" data-astro-cid-j7pv25f6>↗</i> </header> <div class="home-area-card__visual home-area-card__visual--resources" aria-hidden="true" data-astro-cid-j7pv25f6>      <div class="mini-resources" data-astro-cid-j7pv25f6> <code data-astro-cid-j7pv25f6>&lt;/&gt;</code> <span data-astro-cid-j7pv25f6> <b data-astro-cid-j7pv25f6>Architecture</b> <i data-astro-cid-j7pv25f6></i> </span> <span data-astro-cid-j7pv25f6> <b data-astro-cid-j7pv25f6>Testing</b> <i data-astro-cid-j7pv25f6></i> </span> <span data-astro-cid-j7pv25f6> <b data-astro-cid-j7pv25f6>Governance</b> <i data-astro-cid-j7pv25f6></i> </span> </div> </div> <p data-astro-cid-j7pv25f6>Architecture, integration, delivery, testing, accessibility, contribution, lifecycle, governance, and ownership.</p> </a> </div> </section> <section class="home-principles" aria-labelledby="principles-title" data-astro-cid-j7pv25f6> <header class="home-section-heading" data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>System character</p> <h2 id="principles-title" data-astro-cid-j7pv25f6>
-The implementation can change. The principles should not.
-</h2> </div> <p data-astro-cid-j7pv25f6>
-Concord is designed around durable web foundations so that visual expression can
-          evolve without destabilizing structure, meaning, or accessibility.
-</p> </header> <div class="home-principle-grid" data-astro-cid-j7pv25f6> <article data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>Semantic first</span> <strong data-astro-cid-j7pv25f6>Meaning exists before styling.</strong> <p data-astro-cid-j7pv25f6>HTML structure and browser behavior remain first-class while the visual language evolves around them.</p> </article><article data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>Accessible by construction</span> <strong data-astro-cid-j7pv25f6>Accessibility belongs to the contract.</strong> <p data-astro-cid-j7pv25f6>Focus, state, naming, motion, content resilience, and interaction are system concerns rather than a remediation phase.</p> </article><article data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>Framework agnostic</span> <strong data-astro-cid-j7pv25f6>Delivery is a choice, not the foundation.</strong> <p data-astro-cid-j7pv25f6>HTML and CSS own the canonical web contract. Lit provides Web Component delivery; React has a typed adapter, while other frameworks can consume the same custom elements.</p> </article> </div> </section> <section class="home-facts" aria-labelledby="facts-title" data-astro-cid-j7pv25f6> <header data-astro-cid-j7pv25f6> <div data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>Live system</p> <h2 id="facts-title" data-astro-cid-j7pv25f6>The documentation reflects the repository.</h2> </div> <p data-astro-cid-j7pv25f6>
-Component and theme counts are read from the same registries used by the docs
-          build rather than maintained as separate marketing numbers.
-</p> </header> <div class="home-fact-grid" data-astro-cid-j7pv25f6> <article data-astro-cid-j7pv25f6> <strong data-astro-cid-j7pv25f6>4</strong> <span data-astro-cid-j7pv25f6>token tiers</span> <small data-astro-cid-j7pv25f6>Foundation → System → Semantic → Component</small> </article><article data-astro-cid-j7pv25f6> <strong data-astro-cid-j7pv25f6>31</strong> <span data-astro-cid-j7pv25f6>curated components</span> <small data-astro-cid-j7pv25f6>shared semantic contracts</small> </article><article data-astro-cid-j7pv25f6> <strong data-astro-cid-j7pv25f6>12</strong> <span data-astro-cid-j7pv25f6>registered themes</span> <small data-astro-cid-j7pv25f6>discovered from repository truth</small> </article><article data-astro-cid-j7pv25f6> <strong data-astro-cid-j7pv25f6>3</strong> <span data-astro-cid-j7pv25f6>density modes</span> <small data-astro-cid-j7pv25f6>Default · Compact · Spacious</small> </article> </div> </section> <section class="home-closing" aria-labelledby="closing-title" data-astro-cid-j7pv25f6> <div class="home-closing__mark" aria-hidden="true" data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6></span> <span data-astro-cid-j7pv25f6></span> <span data-astro-cid-j7pv25f6></span> <span data-astro-cid-j7pv25f6></span> </div> <div data-astro-cid-j7pv25f6> <p class="home-kicker" data-astro-cid-j7pv25f6>Concord</p> <h2 id="closing-title" data-astro-cid-j7pv25f6>A common language between design and technology.</h2> <p data-astro-cid-j7pv25f6>
-The system turns visual decisions into inspectable contracts that can be themed,
-          validated, governed, and delivered without binding the language to one
-          framework.
-</p> </div> <a class="home-action home-action--primary" href="/concord/foundations/design-tokens/" data-astro-cid-j7pv25f6>
-See the architecture
-<span aria-hidden="true" data-astro-cid-j7pv25f6>→</span> </a> </section> </main>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/HomeLayout.astro_astro_type_script_index_0_lang.B_vCkfnU.js"></script> </body> </html>
+</span> </div> <div class="home-architecture__contract" data-astro-cid-6paxggr3> <span class="home-architecture__caption-label" data-astro-cid-6paxggr3>TOKEN ARCHITECTURE</span> <div class="home-architecture__tier-list" aria-label="Concord token architecture" data-astro-cid-6paxggr3> <span class="home-architecture__tier home-architecture__tier--foundation" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>01</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Foundation</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--system" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>02</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>System</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--semantic" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>03</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Semantic</span> </span> <span class="home-architecture__tier-connector" aria-hidden="true" data-astro-cid-6paxggr3></span> <span class="home-architecture__tier home-architecture__tier--component" data-astro-cid-6paxggr3> <span class="home-architecture__tier-index" data-astro-cid-6paxggr3>04</span> <span class="home-architecture__tier-name" data-astro-cid-6paxggr3>Component</span> </span> </div> </div> </figcaption> </figure>  <dl class="home-contracts"> <div> <dt>One contract across delivery</dt><dd>
+Semantic HTML and CSS define the interface. Native behavior enhances it where
+            needed. Lit and React adapters consume Concord rather than redefine it.
+</dd> </div> <div> <dt>Expression has clear owners</dt><dd>
+Theme owns visual language. Appearance handles light and dark. Density changes
+            space, not typography or shape.
+</dd> </div> <div> <dt>Composition keeps its source</dt><dd>
+Patterns and Templates select canonical components. Page arrangement changes
+            without creating another implementation.
+</dd> </div> </dl> <a class="home-text-link" data-home-cta href="/concord/resources/system-architecture/">Inspect the architecture <span aria-hidden="true">→</span></a> </section> <section class="home-library home-section" aria-labelledby="library-title"> <header class="home-section-heading"> <div> <p class="home-kicker">A system at every scale</p><h2 id="library-title">
+From one control<br>to a complete page.
+</h2> </div> <p>
+Explore the individual decisions, the relationships between them, and the
+          guidance for using them together.
+</p> </header> <div class="home-library-facts" aria-label="Repository inventory"> <p> <strong data-home-fact="stable-components">31</strong> stable components
+</p> <p><strong data-home-fact="themes">12</strong> themes</p> <p>
+HTML/CSS <span aria-hidden="true">·</span> Lit <span aria-hidden="true">·</span> React
+</p> </div> <nav aria-label="Explore the system" class="home-area-list"> <a href="/concord/foundations/overview/"> <span class="home-index" aria-hidden="true">
+01 </span> <div>  <h3>Foundations</h3> <p>Color, typography, tokens, and accessible visual language.</p>  </div> <span aria-hidden="true">↗</span> </a><a href="/concord/components/"> <span class="home-index" aria-hidden="true">
+02 </span> <div>  <h3>Components</h3> <p>Semantic controls and surfaces, with inspectable source.</p>  </div> <span aria-hidden="true">↗</span> </a><a href="/concord/layout/"> <span class="home-index" aria-hidden="true">
+03 </span> <div>  <h3>Layout</h3> <p>Readable relationships that respond to available space.</p>  </div> <span aria-hidden="true">↗</span> </a><a href="/concord/patterns/"> <span class="home-index" aria-hidden="true">
+04 </span> <div>  <h3>Patterns</h3> <p>Connected interactions composed from existing contracts.</p>  </div> <span aria-hidden="true">↗</span> </a><a href="/concord/templates/"> <span class="home-index" aria-hidden="true">
+05 </span> <div>  <h3>Templates</h3> <p>Page structures that compose components without copying them.</p>  </div> <span aria-hidden="true">↗</span> </a><a href="/concord/resources/"> <span class="home-index" aria-hidden="true">
+06 </span> <div>  <h3>Resources</h3> <p>Installation, delivery, testing, ownership, and adoption.</p>  </div> <span aria-hidden="true">↗</span> </a> </nav> </section> <section class="home-evidence home-section" aria-labelledby="evidence-title"> <header class="home-section-heading"> <div> <p class="home-kicker">Inspectable, not just presentable</p><h2 id="evidence-title">
+Follow the evidence.
+</h2> </div> <p>
+A coherent experience needs more than a polished screen. Concord checks its
+          contracts where they can fail.
+</p> </header> <ul class="home-evidence-list"> <li>  <h3>Accessible interactions</h3> <p>Native semantics, keyboard and focus contracts, plus accessibility and responsive regression checks.</p> <a href="/concord/resources/accessibility/"> Accessibility contracts <span aria-hidden="true">→</span> </a>  </li><li>  <h3>Browser and consumer evidence</h3> <p>Checks exercise Chromium, Firefox, WebKit, and packaged consumers. Coverage and remaining device qualification are documented.</p> <a href="/concord/resources/testing/"> Validation and its boundaries <span aria-hidden="true">→</span> </a>  </li><li>  <h3>Traceable decisions</h3> <p>Token ownership, generated distributions, and canonical Components → Patterns → Templates provenance are enforced by validation.</p> <a href="/concord/resources/ownership/"> Source and ownership rules <span aria-hidden="true">→</span> </a>  </li> </ul> <p class="home-evidence-boundary">
+A working system and a basis for a production pilot. Automated evidence does not
+        replace real-device, assistive-technology, or product-specific qualification.
+</p> <a class="home-text-link" data-home-workbench href="/concord/resources/ai-workbench/">
+Inspect recorded AI workflows <span aria-hidden="true">→</span> </a> </section> <section id="your-starting-point" class="home-audiences home-section" aria-labelledby="audience-title"> <header class="home-section-heading"> <div> <p class="home-kicker">Choose a useful starting point</p><h2 id="audience-title">
+What do you want<br>to understand?
+</h2> </div> <p>
+Follow the questions that matter to your work. The same system is underneath
+          each path.
+</p> </header> <div class="home-audience-list"> <nav aria-labelledby="home-designers"> <div>  <h3 id="home-designers">Designers</h3> <p>Explore how a visual language holds together across products and conditions.</p>  </div> <ul> <li> <a data-home-cta href="/concord/foundations/design-tokens/"> Tokens &amp; visual language <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/foundations/themes-density/"> Themes &amp; density <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/layout/responsive-composition/"> Responsive composition <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/foundations/accessibility-foundations/"> Accessibility foundations <span aria-hidden="true">→</span> </a> </li> </ul> </nav><nav aria-labelledby="home-developers"> <div>  <h3 id="home-developers">Developers</h3> <p>Start with the platform contract and choose the delivery your product needs.</p>  </div> <ul> <li> <a data-home-cta href="/concord/resources/installation/"> Installation <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/using-html-css/"> HTML, CSS &amp; behavior <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/using-lit/"> Lit delivery <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/using-react/"> React adapters <span aria-hidden="true">→</span> </a> </li> </ul> </nav><nav aria-labelledby="home-leaders"> <div>  <h3 id="home-leaders">Product &amp; system leaders</h3> <p>Connect reusable interface decisions to adoption, ownership, and change.</p>  </div> <ul> <li> <a data-home-cta href="/concord/patterns/"> Patterns &amp; workflows <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/templates/"> Page templates <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/adoption-migration/"> Adoption &amp; migration <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/ownership/"> Ownership &amp; governance <span aria-hidden="true">→</span> </a> </li><li> <a data-home-cta href="/concord/resources/component-lifecycle/"> Component lifecycle <span aria-hidden="true">→</span> </a> </li> </ul> </nav> </div> </section> </main>  <footer class="site-footer"> <p>© 2026 Oleg Ivanov</p> <p>Concord Design System · Version 1.0.0</p> </footer> <script type="module" src="/concord/_astro/HomeLayout.astro_astro_type_script_index_0_lang.B_vCkfnU.js"></script> </body> </html>
